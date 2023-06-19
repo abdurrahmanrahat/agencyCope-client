@@ -19,8 +19,8 @@ const BannerSection = () => {
                 </span>
             </div>
             <div className='w-full md:relative flex items-center justify-center p-8 md:p-0'>
-                <div className='md:absolute md:top-44'>
-                    <img src={HeaderImg} className='w-96 rounded' alt="" />
+                <div className='md:absolute md:top-44 shadow-md shadow-black rounded w-96'>
+                    <img src={HeaderImg} className='rounded' alt="" />
                 </div>
             </div>
         </div>
