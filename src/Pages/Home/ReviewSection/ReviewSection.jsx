@@ -17,8 +17,8 @@ const ReviewSection = () => {
     }, [])
 
     return (
-        <div className="text-center">
-            <h4 className="uppercase text-lg text-[#28ADD7]">TESTIMONIALS</h4>
+        <div className="text-center my-12">
+            <h4 className="uppercase text-lg text-[#28ADD7] font-semibold">TESTIMONIALS</h4>
             <h2 className="text-2xl mt-4">Clients share their experience of working with us</h2>
             <Swiper
                 spaceBetween={30}

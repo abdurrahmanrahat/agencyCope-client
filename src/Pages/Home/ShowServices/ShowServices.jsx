@@ -11,8 +11,8 @@ const ShowServices = () => {
     }, [])
 
     return (
-        <div className="text-center my-32">
-            <h4 className="uppercase text-lg text-[#28ADD7]">HOW MAY I HELP YOU</h4>
+        <div className="text-center mt-32 mb-20">
+            <h4 className="uppercase text-lg text-[#28ADD7] font-semibold">HOW MAY I HELP YOU</h4>
             <h2 className="text-2xl my-6">I specialize in creating beautiful design & websites that convert & generate revenue while making an impact with marketing for growing your brand.</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
                 {
@@ -22,8 +22,8 @@ const ShowServices = () => {
                             <span>
                                 <ButtonDesign
                                     name={service.title}
-                                    bgColor={'#FEE600'}
-                                    hoverColor={'#4CBED2'}
+                                    bgColor='#FEE600'
+                                    hoverColor='#4CBED2'
                                 ></ButtonDesign>
                             </span>
                         </div>
