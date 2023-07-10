@@ -1,0 +1,54 @@
+[
+    {
+        "_id": "1",
+        "image": "https://i.ibb.co/fdFHJ22/graphic-min.jpg",
+        "title": "Graphic Design",
+        "includes": [
+            "Logo Design",
+            "Print Design",
+            "Illustrations",
+            "Branding"
+        ],
+        "price": 99,
+        "time": "2 weeks"
+    },
+    {
+        "_id": "2",
+        "image": "https://i.ibb.co/JRNdc9M/web-min.jpg",
+        "title": "Web Design & Development",
+        "includes": [
+            "Responsive Design",
+            "Frontend Development",
+            "Backend Development",
+            "CMS Integration"
+        ],
+        "price": 199,
+        "time": "3 weeks"
+    },
+    {
+        "_id": "3",
+        "image": "https://i.ibb.co/0V2QpHK/markeing2-min.jpg",
+        "title": "Digital Marketing",
+        "includes": [
+            "SEO",
+            "Social Media Marketing",
+            "Content Marketing",
+            "Email Marketing"
+        ],
+        "price": 149,
+        "time": "4 weeks"
+    },
+    {
+        "_id": "4",
+        "image": "https://i.ibb.co/GQKP1Sf/f-page-min.jpg",
+        "title": "Facebook Page Management",
+        "includes": [
+            "Page Creation",
+            "Content Creation",
+            "Audience Engagement",
+            "Analytics"
+        ],
+        "price": 79,
+        "time": "2 weeks"
+    }
+]
