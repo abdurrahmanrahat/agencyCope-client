@@ -1,6 +1,7 @@
 ul li {
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 12px;
+    text-transform: uppercase;
 }
 
 ul li:hover {
