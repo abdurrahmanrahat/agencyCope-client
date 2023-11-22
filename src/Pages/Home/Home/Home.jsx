@@ -1,4 +1,5 @@
 import BannerSection from "../BannerSection/BannerSection";
+import FreeGuide from "../FreeGuide/FreeGuide";
 import ReviewSection from "../ReviewSection/ReviewSection";
 import ShopSection from "../ShopSection/ShopSection";
 import ShowServices from "../ShowServices/ShowServices";
@@ -16,6 +17,8 @@ const Home = () => {
       <ShopSection></ShopSection>
 
       <ReviewSection></ReviewSection>
+
+      <FreeGuide></FreeGuide>
     </div>
   );
 };
