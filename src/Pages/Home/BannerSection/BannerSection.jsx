@@ -1,30 +1,69 @@
-import coverImage from '../../../assets/agency-cover.jpg';
-import HeaderImg from '../../../assets/header-img.jpg';
-import ButtonDesign from '../../../components/ButtonDesign/ButtonDesign';
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
+import BannerImage from "../../../assets/home/banner-photo.jpg";
 
 const BannerSection = () => {
-
-    return (
-        <div className="bg-cover text-white grid grid-cols-1 md:grid-cols-2 mt-4" style={{ backgroundImage: `url(${coverImage})`, height: 'calc(100vh - 80px)' }}>
-            <div className='w-full flex flex-col items-start justify-center gap-6 md:ml-16 p-4 md:p-0 mt-16 md:mt-0'>
-                <h2 className='text-3xl'>Branding with Web & Graphic Design for fearless impact-makers.</h2>
-                <h4 className='text-lg'>PROVIDING <span className='font-semibold'>#FOUR</span> PACHAGE THAT CONNECTS, CONVERTS & IMPACTS ON YOUR BRAND.</h4>
-                {/* <button className='btn'>Free Brand Consultation</button> */}
-                <span>
-                    <ButtonDesign 
-                    name={'Free Brand Consultation'}
-                    bgColor={'#FEE600'}
-                    hoverColor={'#4CBED2'}
-                     ></ButtonDesign>
-                </span>
-            </div>
-            <div className='w-full md:relative flex items-center justify-center p-8 md:p-0'>
-                <div className='md:absolute md:top-44 shadow-md shadow-black rounded w-96'>
-                    <img src={HeaderImg} className='rounded' alt="" />
-                </div>
-            </div>
+  return (
+    <div className="md:flex md:gap-4">
+      <div className="md:w-1/2 flex flex-col gap-y-4 justify-center my-12 md:my-0">
+        <div>
+          <h3 className="text-[22px] md:text-[36px] font-bold">
+            Hi! We Agency Cope Company
+          </h3>
+          <span className="font-semibold text-[#EE9322] text-[20px] md:text-[32px] 2xl:text-[36px]">
+            <TypeAnimation
+              sequence={[
+                "Graphic Design",
+                1500,
+                "Web Development",
+                1500,
+                "Digital Marketing",
+                1500,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ display: "inline-block" }}
+              repeat={Infinity}
+              cursor={false}
+            />
+          </span>
         </div>
-    );
+        <p className="my-4 text-justify text-[14px] md:text-[16px] font-medium">
+          Agency Cope is a performance and ROI-focused Digital Marketing agency
+          providing Graphic Design, SEO, Web Design & Development, and Brand
+          Identity in Bangladesh with 10+ years of hands-on experience.
+        </p>
+
+        {/* social icons */}
+        <div className="md:flex justify-between">
+          <div className="flex gap-2 mb-4 md:mb-0 justify-center ">
+            <button className="text-[24px] p-[4px] md:p-[12px] border border-black rounded-md hover:bg-black hover:text-white duration-700">
+              <FaFacebook />
+            </button>
+            <button className="text-[24px] p-[4px] md:p-[12px] border border-black rounded-md hover:bg-black hover:text-white duration-700">
+              <FaLinkedin />
+            </button>
+            <button className="text-[24px] p-[4px] md:p-[12px] border border-black rounded-md hover:bg-black hover:text-white duration-700">
+              <FaInstagram />
+            </button>
+            <button className="text-[24px] p-[4px] md:p-[12px] border border-black rounded-md hover:bg-black hover:text-white duration-700">
+              <FaYoutube />
+            </button>
+          </div>
+
+          {/* hire button */}
+          <div className="flex justify-center">
+            <button className="text-[16px] font-semibold p-[8px] md:p-[12px] border border-black rounded-md hover:bg-black hover:text-white duration-1000">
+              Hire My Agency
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="md:w-1/2 flex justify-center items-center">
+        <img src={BannerImage} alt="" />
+      </div>
+    </div>
+  );
 };
 
 export default BannerSection;
