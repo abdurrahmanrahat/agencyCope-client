@@ -1,10 +1,11 @@
 ul li {
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 12px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 ul li:hover {
-    color: #FEE600;
+    color: #afafaf;
+    transition-duration: 500ms;
 }
-

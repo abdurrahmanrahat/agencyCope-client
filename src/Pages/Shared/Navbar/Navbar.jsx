@@ -1,10 +1,10 @@
-import ActiveLink from "../../../components/ActiveLink/ActiveLink";
-import Logo from "../../../assets/logo.jpg";
-import "./Navbar.css";
+import { useState } from "react";
 import { BsFillCartFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import Logo from "../../../assets/logo.jpg";
+import ActiveLink from "../../../components/ActiveLink/ActiveLink";
+import "./Navbar.css";
 
 const Navbar = () => {
   // const [navToggle, setNavToggle] = useState(false);
@@ -14,26 +14,11 @@ const Navbar = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="p-4">
-        <img src={Logo} className="w-48 h-20 rounded" alt="" />
+        <img src={Logo} className="w-40 h-16 rounded" alt="" />
       </div>
 
-      {/* Nav Toggle
-      <div className="lg:hidden flex gap-40">
-        <div className="ml-2 " onClick={() => setNavToggle(!navToggle)}>
-          {navToggle ? (
-            <IoMdClose className="text-[32px]" />
-          ) : (
-            <GiHamburgerMenu className="text-[32px]" />
-          )}
-        </div>
-
-        <div className="text-[20px] items-center font-semibold">
-          <p>Select Page</p>
-        </div>
-      </div> */}
-
       <div className="hidden md:block">
-        <ul className="flex flex-col md:flex-row items-center gap-3">
+        <ul className="flex flex-col md:flex-row items-center gap-3 font-medium">
           <li>
             <ActiveLink to="/">Home</ActiveLink>
           </li>
@@ -56,8 +41,9 @@ const Navbar = () => {
           </button>
         </ul>
       </div>
+
       {/* sm */}
-      <div className="sm:hidden cursor-pointer flex justify-between gap-36">
+      <div className="md:hidden cursor-pointer flex justify-between gap-36">
         <div onClick={toggleMenu} className="flex items-center justify-center">
           <GiHamburgerMenu className="w-9 h-9 text-black ms-1 " />
         </div>
@@ -70,7 +56,7 @@ const Navbar = () => {
       <div
         className={
           menuOpen
-            ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-indigo-50 p-10 ease-in-out duration-500"
+            ? "fixed top-0 left-0 w-[75%] z-10 sm:hidden h-screen bg-indigo-50 p-10 ease-in-out duration-500"
             : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
       >
