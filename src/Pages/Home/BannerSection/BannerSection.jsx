@@ -4,7 +4,7 @@ import BannerImage from "../../../assets/home/banner-photo.jpg";
 
 const BannerSection = () => {
   return (
-    <div className="md:flex md:gap-4">
+    <div className="md:flex md:gap-4 px-4 md:px-0">
       <div className="md:w-1/2 flex flex-col gap-y-4 justify-center my-12 md:my-0">
         <div>
           <h3 className="text-[22px] md:text-[36px] font-bold">
@@ -59,8 +59,8 @@ const BannerSection = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 flex justify-center items-center">
-        <img src={BannerImage} alt="" />
+      <div className="md:w-1/2">
+        <img src={BannerImage} className="" alt="" />
       </div>
     </div>
   );

@@ -5,19 +5,19 @@ import ShowServices from "../ShowServices/ShowServices";
 import WorkSection from "../WorkSection/WorkSection";
 
 const Home = () => {
-    return (
-        <div>
-            <BannerSection></BannerSection>
+  return (
+    <div>
+      <BannerSection></BannerSection>
 
-            <ShowServices></ShowServices>
+      <ShowServices></ShowServices>
 
-            <WorkSection></WorkSection>
+      <WorkSection></WorkSection>
 
-            <ShopSection></ShopSection>
+      <ShopSection></ShopSection>
 
-            <ReviewSection></ReviewSection>
-        </div>
-    );
+      <ReviewSection></ReviewSection>
+    </div>
+  );
 };
 
 export default Home;

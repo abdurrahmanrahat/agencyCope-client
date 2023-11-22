@@ -1,46 +1,94 @@
-import { FaFacebook, FaInstagramSquare, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import Logo from '../../../assets/logo.jpg';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterestP,
+  FaTwitter,
+} from "react-icons/fa";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import FooterFav from "../../../assets/footer-fav.png";
 
 const Footer = () => {
-    return (
-        <div className='p-8 pb-0'>
-            <footer className="footer pt-12 p-8 text-base-content">
-                <div>
-                    <div className='flex items-center'>
-                        <img className='w-28 rounded' src={Logo} alt="" />
-                    </div>
-                    <p className='text-lg'>AgencyCope is running on best <br /> ever performance throught the world.</p>
-                </div>
-                <div>
-                    <span className="footer-title opacity-100 text-2xl underline">Contact Info</span>
-                    <div className='flex flex-col text-lg'>
-                        <p>Phone: 0088-3674-3972</p>
-                        <p>Email: info@example.com</p>
-                    </div>
-                </div>
-                <div>
-                    <span className="footer-title opacity-100 text-2xl underline">Let&apos;s Contact</span>
-                    <div className='text-2xl flex gap-3 mx-auto pt-2'>
-                        <FaFacebook></FaFacebook>
-                        <FaTwitter></FaTwitter>
-                        <FaInstagramSquare></FaInstagramSquare>
-                        <FaLinkedin></FaLinkedin>
-                    </div>
-                </div>
-                <div>
-                    <span className="footer-title opacity-100 text-2xl underline">Address</span>
-                    <p className='text-lg'>123 Main Street <br />
-                        Anytown, USA 12345
-                    </p>
-                </div>
-            </footer>
+  return (
+    <div className="bg-black opacity-90 md:flex justify-between px-10 py-14">
+      {/* one */}
+      <div className="flex items-center justify-center ">
+        <img src={FooterFav} alt="" />
+      </div>
 
-            {/* Copyright */}
-            <div className="text-center pb-2 ">
-                <p className='text-center m-0 text-xl'><small>© copyright of my design.</small></p>
-            </div>
+      {/* two */}
+      <div className="mt-4 md:mt-0">
+        <div>
+          <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            WORK WITH ME
+          </span>
+          <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
+            <p>BRAND IDENTITY</p>
+            <p>WEBSITE-IN-A-DAY</p>
+            <p>LAUNCH DESIGN + TECH</p>
+          </div>
         </div>
-    );
+        <div className="mt-8">
+          <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            FOR DESIGNERS
+          </span>
+          <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
+            <p>1:1 COACHING</p>
+            <p>WIZARDS OF WEB DESIGN</p>
+            <p>DESIGNER TEMPLATES</p>
+          </div>
+        </div>
+      </div>
+
+      {/* three */}
+      <div className="mt-4 md:mt-0">
+        <div>
+          <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            IMPORTANT
+          </span>
+          <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
+            <p>BLOG</p>
+            <p>CONTACT</p>
+            <p>PRIVACY POLICY</p>
+            <p>TERMS AND CONDITIONS</p>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <button className="bg-[#FFD6CA] text-black px-[16px] py-[12px] font-semibold border-4 border-transparent hover:border-[#EE9322] duration-700">
+            FREE CONSULT{" "}
+            <IoIosArrowRoundForward className="inline-block text-[24px]" />
+          </button>
+        </div>
+      </div>
+
+      {/* four */}
+      <div className="mt-4 md:mt-0">
+        <div>
+          <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            GET SOCIAL
+          </span>
+          <div className="text-black text-[16px] flex gap-2 mt-4">
+            <button className="p-[10px] bg-[#FFD6CA] rounded-full">
+              <FaFacebookF></FaFacebookF>
+            </button>
+            <button className="p-[10px] bg-[#FFD6CA] rounded-full">
+              <FaTwitter></FaTwitter>
+            </button>
+            <button className="p-[10px] bg-[#FFD6CA] rounded-full">
+              <FaInstagram></FaInstagram>
+            </button>
+            <button className="p-[10px] bg-[#FFD6CA] rounded-full">
+              <FaLinkedin></FaLinkedin>
+            </button>
+            <button className="p-[10px] bg-[#FFD6CA] rounded-full">
+              <FaPinterestP />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;
