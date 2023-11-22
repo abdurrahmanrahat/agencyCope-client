@@ -1,5 +1,6 @@
 import BannerSection from "../BannerSection/BannerSection";
 import FreeGuide from "../FreeGuide/FreeGuide";
+import InfinityScroll from "../InfinityScroll/InfinityScroll";
 import ReviewSection from "../ReviewSection/ReviewSection";
 import ShopSection from "../ShopSection/ShopSection";
 import ShowServices from "../ShowServices/ShowServices";
@@ -12,9 +13,11 @@ const Home = () => {
 
       <ShowServices></ShowServices>
 
-      <WorkSection></WorkSection>
-
       <ShopSection></ShopSection>
+
+      <InfinityScroll></InfinityScroll>
+
+      <WorkSection></WorkSection>
 
       <ReviewSection></ReviewSection>
 
