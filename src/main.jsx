@@ -6,7 +6,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className="max-w-screen-xl md:px-12 font-roboto">
+    <div className="font-roboto">
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>
