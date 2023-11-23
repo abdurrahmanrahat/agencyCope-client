@@ -1,3 +1,4 @@
+import AboutMe from "../AboutMe/AboutMe";
 import BannerSection from "../BannerSection/BannerSection";
 import FreeGuide from "../FreeGuide/FreeGuide";
 import InfinityScroll from "../InfinityScroll/InfinityScroll";
@@ -19,6 +20,8 @@ const Home = () => {
       <ShopSection></ShopSection>
 
       <InfinityScroll></InfinityScroll>
+
+      <AboutMe></AboutMe>
 
       <WorkSection></WorkSection>
 

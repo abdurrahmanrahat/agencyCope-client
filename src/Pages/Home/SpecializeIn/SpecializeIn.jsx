@@ -2,7 +2,7 @@ import SpecialImage from "../../../assets/home/specialized-design.png";
 
 const SpecializeIn = () => {
   return (
-    <div className="mt-24">
+    <div className="mt-24 mx-4 md:mx-0">
       {/* title */}
       <div className="text-center">
         <h4 className="uppercase text-lg font-semibold">
