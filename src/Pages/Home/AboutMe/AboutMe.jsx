@@ -22,12 +22,12 @@ const AboutMe = () => {
       {/* img and content */}
       <div className="md:flex gap-12 mt-12 md:mx-20">
         {/* img */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 mb-12 md:mb-0">
           <img src={AboutPhoto} alt="" />
         </div>
 
         {/* content */}
-        <div className="md:w-1/2 text-[18px] flex flex-col justify-evenly">
+        <div className="md:w-1/2 text-[18px] flex flex-col justify-evenly gap-y-2">
           <p>
             A tech enthusiast, fantasy-lover, and design aficionado ready to
             shine my light on your world, so you can shine your light on others!
@@ -54,7 +54,6 @@ const AboutMe = () => {
             brand stand out!
           </h4>
           <div>
-            {" "}
             <button className="bg-[#EE9322] text-white text-[16px] px-[16px] py-[12px] font-semibold">
               MORE ABOUT ME{" "}
               <IoIosArrowRoundForward className="inline-block text-[24px]" />
