@@ -1,3 +1,4 @@
+import Demand from "./Demand";
 import Web from "./Web";
 
 const Designers = () => {
@@ -16,8 +17,11 @@ const Designers = () => {
 
       {/* all lists */}
       <div className="mt-20">
-        {/* web */}
+        {/* first: web */}
         <Web></Web>
+
+        {/* third: demand */}
+        <Demand></Demand>
       </div>
     </div>
   );
