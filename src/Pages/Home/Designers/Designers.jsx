@@ -1,4 +1,5 @@
 import Demand from "./Demand";
+import Template from "./Template";
 import Web from "./Web";
 
 const Designers = () => {
@@ -19,6 +20,9 @@ const Designers = () => {
       <div className="mt-20">
         {/* first: web */}
         <Web></Web>
+
+        {/* second: template */}
+        <Template></Template>
 
         {/* third: demand */}
         <Demand></Demand>

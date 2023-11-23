@@ -4,7 +4,6 @@ import Designers from "../Designers/Designers";
 import FreeGuide from "../FreeGuide/FreeGuide";
 import InfinityScroll from "../InfinityScroll/InfinityScroll";
 import ReviewSection from "../ReviewSection/ReviewSection";
-import ShopSection from "../ShopSection/ShopSection";
 import ShowServices from "../ShowServices/ShowServices";
 import SpecializeIn from "../SpecializeIn/SpecializeIn";
 import WorkSection from "../WorkSection/WorkSection";
@@ -18,7 +17,7 @@ const Home = () => {
 
       <ShowServices></ShowServices>
 
-      <ShopSection></ShopSection>
+      {/* <ShopSection></ShopSection> */}
 
       <Designers></Designers>
 
