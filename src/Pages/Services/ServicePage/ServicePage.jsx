@@ -1,5 +1,6 @@
 import CountingUp from "../ServicesThings/CountingUp";
 import ServicesBanner from "../ServicesThings/ServicesBanner";
+import ServicesContainer from "../ServicesThings/ServicesContainer";
 
 const ServicePage = () => {
   return (
@@ -8,6 +9,9 @@ const ServicePage = () => {
 
       {/* count up */}
       <CountingUp></CountingUp>
+
+      {/* container clickable lists */}
+      <ServicesContainer></ServicesContainer>
     </div>
   );
 };
