@@ -16,12 +16,15 @@ const ServicesContainer = () => {
 
       {/* clickable services list */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-16 text-center mt-12">
-        {/* BRAND IDENTITY DESIGN */}
+        {/* Item one */}
+
         <div>
-          <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
-            BRAND IDENTITY DESIGN{" "}
-            <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
-          </span>
+          <a href="#item-one">
+            <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
+              BRAND IDENTITY DESIGN{" "}
+              <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
+            </span>
+          </a>
         </div>
         <div>
           <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
