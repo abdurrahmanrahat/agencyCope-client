@@ -3,7 +3,7 @@ import Image from "../../../assets/services/click-container-img.png";
 
 const ServicesContainer = () => {
   return (
-    <div className="mb-28 mx-4 md:mx-0">
+    <div className="mx-4 md:mx-0">
       {/* head section */}
       <div className="flex flex-col justify-center items-center">
         <img src={Image} className="w-40" alt="" />

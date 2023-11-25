@@ -3,7 +3,7 @@ import GIF from "../../../assets/services/services-one.gif";
 
 const ItemOne = () => {
   return (
-    <div className="mx-4 lg:mx-0 mb-24" id="item-one">
+    <div className="mx-4 lg:mx-0 mt-24" id="item-one">
       <div className="text-center">
         <h2 className="text-[28px] font-medium">01. Brand Identity Design</h2>
         <p className="md:text-[18px] md:px-28">
