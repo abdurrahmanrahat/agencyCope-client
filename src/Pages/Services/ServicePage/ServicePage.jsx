@@ -1,5 +1,7 @@
 import FAQ from "../FAQ/FAQ";
+import ItemFour from "../ServicesItems/ItemFour";
 import ItemOne from "../ServicesItems/ItemOne";
+import ItemThree from "../ServicesItems/ItemThree";
 import ItemTwo from "../ServicesItems/ItemTwo";
 import CountingUp from "../ServicesThings/CountingUp";
 import ServicesBanner from "../ServicesThings/ServicesBanner";
@@ -21,6 +23,12 @@ const ServicePage = () => {
 
       {/* item two */}
       <ItemTwo></ItemTwo>
+
+      {/* item three */}
+      <ItemThree></ItemThree>
+
+      {/* item four */}
+      <ItemFour></ItemFour>
 
       {/* FAQ */}
       <FAQ></FAQ>
