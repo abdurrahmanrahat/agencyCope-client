@@ -1,3 +1,4 @@
+import FAQ from "../FAQ/FAQ";
 import ItemOne from "../ServicesItems/ItemOne";
 import CountingUp from "../ServicesThings/CountingUp";
 import ServicesBanner from "../ServicesThings/ServicesBanner";
@@ -16,6 +17,9 @@ const ServicePage = () => {
 
       {/* item one */}
       <ItemOne></ItemOne>
+
+      {/* FAQ */}
+      <FAQ></FAQ>
     </div>
   );
 };
