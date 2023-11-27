@@ -73,7 +73,7 @@ const Schedual = () => {
           <div className="form-control mt-6">
             <input
               type="submit"
-              className="w-[100%] bg-[#EE9322] py-2 text-[16px] text-white font-[600] uppercase cursor-pointer"
+              className="w-[100%] bg-[#ffe600] py-2 text-[16px] text-white font-[600] uppercase cursor-pointer"
               value="Send Message"
             />
           </div>

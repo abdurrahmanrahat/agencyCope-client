@@ -10,8 +10,8 @@ import FooterFav from "../../../assets/footer-fav.png";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="bg-black opacity-90 md:flex justify-between px-10 py-14">
+    <div className="">
+      <div className="bg-[#16191e] md:flex justify-between px-10 py-14">
         {/* one */}
         <div className="flex items-center justify-center ">
           <img src={FooterFav} alt="" />
@@ -20,7 +20,7 @@ const Footer = () => {
         {/* two */}
         <div className="mt-4 md:mt-0">
           <div>
-            <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            <span className="text-[#ffe600] md:text-[18px] font-semibold border-b-2 border-[#ffe600]">
               WORK WITH ME
             </span>
             <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-8">
-            <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            <span className="text-[#ffe600] md:text-[18px] font-semibold border-b-2 border-[#ffe600]">
               FOR DESIGNERS
             </span>
             <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
@@ -44,7 +44,7 @@ const Footer = () => {
         {/* three */}
         <div className="mt-4 md:mt-0">
           <div>
-            <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            <span className="text-[#ffe600] md:text-[18px] font-semibold border-b-2 border-[#ffe600]">
               IMPORTANT
             </span>
             <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
@@ -56,9 +56,9 @@ const Footer = () => {
           </div>
 
           <div className="mt-8">
-            <button className="bg-[#FFD6CA] text-black px-[16px] py-[12px] font-semibold border-4 border-transparent hover:border-[#EE9322] duration-700">
+            <button className="bg-[#FFD6CA] text-black px-[16px] py-[12px] font-semibold border-4 border-transparent hover:border-[#ffe600] duration-700">
               FREE CONSULT{" "}
-              <IoIosArrowRoundForward className="inline-block text-[24px]" />
+              <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
             </button>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Footer = () => {
         {/* four */}
         <div className="mt-4 md:mt-0">
           <div>
-            <span className="text-[#EE9322] md:text-[18px] font-semibold border-b-2 border-[#EE9322]">
+            <span className="text-[#ffe600] md:text-[18px] font-semibold border-b-2 border-[#ffe600]">
               GET SOCIAL
             </span>
             <div className="text-black text-[16px] flex gap-2 mt-4">
@@ -91,7 +91,7 @@ const Footer = () => {
       </div>
 
       {/* copyright */}
-      <div className="py-4 text-[14px] text-center">
+      <div className="bg-[#f4f4f4] py-4 text-[14px] text-center">
         <p>© DIGITAL AGENCY COPE 2023. ALL RIGHTS RESERVED</p>
       </div>
     </div>

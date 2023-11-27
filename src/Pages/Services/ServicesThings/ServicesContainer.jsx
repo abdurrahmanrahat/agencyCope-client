@@ -20,7 +20,7 @@ const ServicesContainer = () => {
 
         <div>
           <a href="#item-one">
-            <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
+            <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
               BRAND IDENTITY DESIGN{" "}
               <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
             </span>
@@ -28,7 +28,7 @@ const ServicesContainer = () => {
         </div>
         <div>
           <a href="#item-two">
-            <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
+            <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
               Website-In-A-Day{" "}
               <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
             </span>
@@ -36,7 +36,7 @@ const ServicesContainer = () => {
         </div>
         <div>
           <a href="#item-three">
-            <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
+            <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
               GRAPHIC DESIGN{" "}
               <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
             </span>
@@ -45,20 +45,20 @@ const ServicesContainer = () => {
         <div>
           <a href="#item-four">
             {" "}
-            <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
+            <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
               DIGITAL MARKETING{" "}
               <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
             </span>
           </a>
         </div>
         <div>
-          <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
+          <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
             BRAND IDENTITY DESIGN{" "}
             <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
           </span>
         </div>
         <div>
-          <span className="border-b-2 border-[#EE9322] hover:border-transparent duration-700 text-[24px] font-semibold">
+          <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
             BRAND IDENTITY DESIGN{" "}
             <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
           </span>

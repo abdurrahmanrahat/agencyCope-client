@@ -49,7 +49,7 @@ const ItemTwo = () => {
             </p>
           </div>
           <div>
-            <button className="bg-[#EE9322] text-white text-[16px] px-[16px] py-[12px] font-medium">
+            <button className="bg-[#ffe600] text-white text-[16px] px-[16px] py-[12px] font-medium">
               LET&apos;S GET STARTED{" "}
               <IoIosArrowRoundForward className="inline-block text-[24px]" />
             </button>

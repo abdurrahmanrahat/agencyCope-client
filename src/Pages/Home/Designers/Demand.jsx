@@ -14,7 +14,7 @@ const Demand = () => {
         {/* content */}
         <div className="text-[18px] flex flex-col justify-center gap-y-2">
           <h2 className="text-[32px] font-semibold">1:1 On Demand Coaching</h2>
-          <h4 className="font-bold  text-[#EE9322]">
+          <h4 className="font-bold  text-[#ffe600]">
             FOR SERVICE-BASED ENTREPRENEURS
           </h4>
           <p>
@@ -26,9 +26,9 @@ const Demand = () => {
             Business coaching ranges from 1 month to 3 month commitments.
           </p>
           <div>
-            <button className="bg-[#EE9322] text-white text-[16px] px-[16px] py-[12px] font-semibold">
+            <button className="bg-[#ffe600] text-white text-[16px] px-[16px] py-[12px] font-semibold">
               LEARN MORE
-              <IoIosArrowRoundForward className="inline-block text-[24px]" />
+              <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
             </button>
           </div>
         </div>

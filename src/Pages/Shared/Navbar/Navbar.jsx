@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BsFillCartFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import Logo from "../../../assets/logo.jpg";
+import Logo from "../../../assets/agency-logo.png";
 import ActiveLink from "../../../components/ActiveLink/ActiveLink";
 import "./Navbar.css";
 
@@ -12,9 +12,9 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-[#16191e] text-[#f4f4f4]">
       <div className="p-4">
-        <img src={Logo} className="w-40 h-16 rounded" alt="" />
+        <img src={Logo} className="w-48 h-18 rounded" alt="" />
       </div>
 
       <div className="hidden md:block">
@@ -36,7 +36,7 @@ const Navbar = () => {
           <li>
             <ActiveLink to="/about">About</ActiveLink>
           </li>
-          <button>
+          <button className="text-[#ffe600]">
             <BsFillCartFill />
           </button>
         </ul>

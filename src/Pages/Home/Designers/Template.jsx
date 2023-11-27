@@ -10,7 +10,7 @@ const Template = () => {
         {/* content */}
         <div className="text-[18px] flex flex-col justify-center gap-y-2 ml-12 md:ml-20">
           <h2 className="text-[32px] font-semibold">Design Templates</h2>
-          <h4 className="font-bold  text-[#EE9322]">
+          <h4 className="font-bold  text-[#ffe600]">
             FOR BEGINNER BRANDS / BUSINESSES
           </h4>
           <p>
@@ -23,9 +23,9 @@ const Template = () => {
             revamp on a budget.
           </p>
           <div>
-            <button className="bg-[#EE9322] text-white text-[16px] px-[16px] py-[12px] font-semibold">
+            <button className="bg-[#ffe600] text-white text-[16px] px-[16px] py-[12px] font-semibold">
               I&apos;M READY
-              <IoIosArrowRoundForward className="inline-block text-[24px]" />
+              <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
             </button>
           </div>
         </div>
