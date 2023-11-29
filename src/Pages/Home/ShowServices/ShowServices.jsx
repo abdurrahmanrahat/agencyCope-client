@@ -32,11 +32,11 @@ const ShowServices = () => {
                   className="w-4/5 md:w-80 mx-auto"
                   alt="Name_of_Product"
                 />
-                <div className="card-body">
+                <div className="card-body text-center">
                   <p className="text-lg">{service.description}</p>
                 </div>
                 <div className="flex justify-center">
-                  <button className="bg-[#ffe600] py-[10px] px-4 text-[14px] text-white font-[600] uppercase">
+                  <button className="bg-[#ffe600] py-[10px] px-4 text-[14px] text-[#16191e] rounded-md font-[600] uppercase">
                     Learn More
                   </button>
                 </div>

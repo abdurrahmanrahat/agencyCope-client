@@ -28,7 +28,7 @@ const Web = () => {
             sales.
           </p>
           <div>
-            <button className="bg-[#ffe600] text-white text-[16px] px-[16px] py-[12px] font-semibold">
+            <button className="bg-[#ffe600] text-[#16191e] rounded-md text-[16px] px-[16px] py-[12px] font-semibold">
               I NEED THIS
               <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
             </button>

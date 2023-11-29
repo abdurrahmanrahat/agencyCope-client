@@ -68,7 +68,7 @@ const ReviewSection = () => {
                   <div className="flex items-center">
                     <div className="w-20 h-20 mt-5">
                       <img
-                        className="rounded-full hover:border-4 group-hover:border-yellow-500 border-4 border-gray-300 duration-300"
+                        className="rounded-full hover:border-4 group-hover:border-yellow-500 border-4 border-gray-300 duration-300 w-36 h-20"
                         src={data?.image}
                         alt=""
                       />

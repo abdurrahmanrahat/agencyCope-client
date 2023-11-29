@@ -26,7 +26,7 @@ const WorkSection = () => {
             <img src={img6} alt="" />
           </div>
           <span>
-            <button className=" bg-[#ffe600] py-[10px] px-4 text-[16px] text-white font-[600] uppercase">
+            <button className=" bg-[#ffe600] py-[12px] px-4 text-[16px] text-[#16191e] rounded-md font-[600] uppercase">
               See the Portfolio
             </button>
           </span>

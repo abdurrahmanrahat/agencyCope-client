@@ -5,7 +5,7 @@ import BannerImage from "../../../assets/home/banner-photo.jpg";
 const BannerSection = () => {
   return (
     <div className="bg-[#16191e] text-[#f4f4f4]">
-      <div className="max-w-screen-xl mx-auto md:flex md:gap-4 px-4 md:px-0 pt-16">
+      <div className="max-w-screen-xl mx-auto md:flex md:gap-4 px-4 md:px-0 pt-12">
         <div className="md:w-1/2 flex flex-col gap-y-4 justify-center  my-12 md:my-0">
           <div>
             <h3 className="text-[22px] md:text-[36px] font-bold">
@@ -29,7 +29,11 @@ const BannerSection = () => {
               />
             </span>
           </div>
-          <p className="my-4 text-justify text-[14px] md:text-[16px] font-medium">
+          <p
+            className="my-4 text-justify text-[14px] md:text-[16px] font-medium"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             Agency Cope is a performance and ROI-focused Digital Marketing
             agency providing Graphic Design, SEO, Web Design & Development, and
             Brand Identity in Bangladesh with 10+ years of hands-on experience.
@@ -54,7 +58,7 @@ const BannerSection = () => {
 
             {/* hire button */}
             <div className="flex justify-center">
-              <button className="text-[16px] font-semibold p-[8px] md:p-[12px] border border-black rounded-md bg-[#ffe600] border-none text-black hover:bg-black hover:text-white duration-1000">
+              <button className="text-[16px] font-semibold p-[8px] md:p-[12px] border border-black rounded-md bg-[#ffe600] border-none text-[#16191e] hover:bg-black hover:text-white duration-1000">
                 Hire My Agency
               </button>
             </div>

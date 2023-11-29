@@ -12,7 +12,7 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="flex flex-col items-center bg-[#16191e] text-[#f4f4f4]">
+    <div className="flex flex-col items-center bg-[#16191e] text-[#f4f4f4] pb-6">
       <div className="p-4">
         <img src={Logo} className="w-48 h-18 rounded" alt="" />
       </div>

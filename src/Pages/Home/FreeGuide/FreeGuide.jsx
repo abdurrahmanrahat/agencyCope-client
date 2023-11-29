@@ -71,7 +71,7 @@ const FreeGuide = () => {
               <div className="flex items-center justify-center mt-4">
                 <button
                   type="submit"
-                  className="w-[100%] bg-[#ffe600] py-2 text-[16px] text-white font-[600] uppercase"
+                  className="w-[100%] bg-[#ffe600] py-2 text-[16px] text-[#16191e] rounded-md font-[600] uppercase"
                 >
                   Get Instant Access
                 </button>
