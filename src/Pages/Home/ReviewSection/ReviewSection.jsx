@@ -17,7 +17,7 @@ const ReviewSection = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto">
-      <div className="text-center my-12">
+      <div className="text-center my-16 md:my-24">
         <h4 className="uppercase text-lg font-semibold">
           <span className="border-b-4 border-[#ffe600]">TESTIMONIALS</span>
         </h4>

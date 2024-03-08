@@ -1,7 +1,6 @@
 import AboutMe from "../AboutMe/AboutMe";
 import BannerSection from "../BannerSection/BannerSection";
 import Designers from "../Designers/Designers";
-import FreeGuide from "../FreeGuide/FreeGuide";
 import InfinityScroll from "../InfinityScroll/InfinityScroll";
 import ReviewSection from "../ReviewSection/ReviewSection";
 import ShowServices from "../ShowServices/ShowServices";
@@ -29,7 +28,7 @@ const Home = () => {
 
       <ReviewSection></ReviewSection>
 
-      <FreeGuide></FreeGuide>
+      {/* <FreeGuide></FreeGuide> */}
     </div>
   );
 };

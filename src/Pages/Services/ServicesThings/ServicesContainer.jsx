@@ -19,7 +19,6 @@ const ServicesContainer = () => {
           {/* clickable services list */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-16 text-center mt-12">
             {/* Item one */}
-
             <div>
               <a href="#item-one">
                 <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
@@ -28,6 +27,8 @@ const ServicesContainer = () => {
                 </span>
               </a>
             </div>
+
+            {/* Item two */}
             <div>
               <a href="#item-two">
                 <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
@@ -36,6 +37,8 @@ const ServicesContainer = () => {
                 </span>
               </a>
             </div>
+
+            {/* item three */}
             <div>
               <a href="#item-three">
                 <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
@@ -44,6 +47,8 @@ const ServicesContainer = () => {
                 </span>
               </a>
             </div>
+
+            {/* item four */}
             <div>
               <a href="#item-four">
                 {" "}
@@ -53,12 +58,18 @@ const ServicesContainer = () => {
                 </span>
               </a>
             </div>
+
+            {/* item five */}
             <div>
-              <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
-                BRAND IDENTITY DESIGN{" "}
-                <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
-              </span>
+              <a href="#item-five">
+                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
+                  Social Media Content
+                  <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
+                </span>
+              </a>
             </div>
+
+            {/* item six */}
             <div>
               <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
                 BRAND IDENTITY DESIGN{" "}

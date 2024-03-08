@@ -1,4 +1,5 @@
 import FAQ from "../FAQ/FAQ";
+import ItemFive from "../ServicesItems/ItemFive";
 import ItemFour from "../ServicesItems/ItemFour";
 import ItemOne from "../ServicesItems/ItemOne";
 import ItemThree from "../ServicesItems/ItemThree";
@@ -29,6 +30,9 @@ const ServicePage = () => {
 
       {/* item four */}
       <ItemFour></ItemFour>
+
+      {/* item five */}
+      <ItemFive></ItemFive>
 
       {/* FAQ */}
       <FAQ></FAQ>

@@ -1,5 +1,6 @@
 {
   "name": "agencycope-client",
+  "homepage": "http://www.agencycope.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +17,7 @@
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
+    "react-calendly": "^4.3.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.48.2",

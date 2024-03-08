@@ -2,7 +2,7 @@ import InfinityScrollImg from "../../../assets/home/Infinite-Scroll.png";
 
 const InfinityScroll = () => {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto overflow-hidden">
       <div
         className="my-24"
         data-aos="fade-left"

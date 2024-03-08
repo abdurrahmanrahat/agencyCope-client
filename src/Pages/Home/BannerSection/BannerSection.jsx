@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import BannerImage from "../../../assets/home/banner-photo.jpg";
+import BannerImage from "../../../assets/home/banner-photo.png";
 
 const BannerSection = () => {
   return (

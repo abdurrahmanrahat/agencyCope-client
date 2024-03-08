@@ -1,20 +1,7 @@
 const Schedual = () => {
-  //   const [service, setService] = useState("");
-  //   const [time, setTime] = useState("");
-
-  //   const handleContactForm = (event) => {
-  //     event.preventDefault();
-
-  //     const form = event.target;
-  //     const name = form.name.value;
-  //     const email = form.email.value;
-  //     const whatsapp = form.whatsapp.value;
-  //     const date = form.date.value;
-  //   };
-
   return (
     <div>
-      <div className="mt-16">
+      <div className="">
         <h3 className="text-[24px] font-medium text-center">
           Any Query? Keep In Tauch Please!
         </h3>

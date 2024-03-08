@@ -7,8 +7,8 @@ const SpecializeIn = () => {
         <div className="pt-24 pb-14 mx-4 md:mx-0">
           {/* title */}
           <div className="text-center">
-            <h4 className="uppercase text-lg font-semibold">
-              <span className="border-b-4 border-[#ffe600]">
+            <h4 className="uppercase text-lg font-semibold mb-6">
+              <span className="border-b-2 border-[#ffe600] text-[#ffe600] shadow-class bg-black rounded-md p-[10px]">
                 SPECIALIZING IN
               </span>
             </h4>
