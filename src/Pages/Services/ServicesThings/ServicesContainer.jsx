@@ -9,11 +9,13 @@ const ServicesContainer = () => {
           {/* head section */}
           <div className="flex flex-col justify-center items-center">
             <img src={Image} className="w-40" alt="" />
-            <h2 className="text-[28px] font-medium text-center md:px-32 mt-4">
+            <h2 className="text-[20px] md:text-[22px] text-center max-w-[50ch] mt-4">
               You deserve the confidence that comes with having a powerful,
               strategic, and eye-catching Design + Systems
             </h2>
-            <h4 className="font-medium">Here’s how we can work together!</h4>
+            <h4 className="font-medium mt-2">
+              Here’s how we can work together!
+            </h4>
           </div>
 
           {/* clickable services list */}
@@ -21,7 +23,7 @@ const ServicesContainer = () => {
             {/* Item one */}
             <div>
               <a href="#item-one">
-                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
+                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[20px] md:text-[24px]">
                   BRAND IDENTITY DESIGN{" "}
                   <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
                 </span>
@@ -31,7 +33,7 @@ const ServicesContainer = () => {
             {/* Item two */}
             <div>
               <a href="#item-two">
-                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
+                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[20px] md:text-[24px]">
                   Website-In-A-Day{" "}
                   <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
                 </span>
@@ -41,7 +43,7 @@ const ServicesContainer = () => {
             {/* item three */}
             <div>
               <a href="#item-three">
-                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
+                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[20px] md:text-[24px]">
                   GRAPHIC DESIGN{" "}
                   <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
                 </span>
@@ -52,7 +54,7 @@ const ServicesContainer = () => {
             <div>
               <a href="#item-four">
                 {" "}
-                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
+                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[20px] md:text-[24px]">
                   DIGITAL MARKETING{" "}
                   <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
                 </span>
@@ -62,7 +64,7 @@ const ServicesContainer = () => {
             {/* item five */}
             <div>
               <a href="#item-five">
-                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
+                <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[20px] md:text-[24px]">
                   Social Media Content
                   <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
                 </span>
@@ -71,7 +73,7 @@ const ServicesContainer = () => {
 
             {/* item six */}
             <div>
-              <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[24px] font-semibold">
+              <span className="border-b-2 border-[#ffe600] hover:border-transparent duration-700 text-[20px] md:text-[24px]">
                 BRAND IDENTITY DESIGN{" "}
                 <IoIosArrowRoundForward className="inline-block text-[36px] font-bold" />
               </span>

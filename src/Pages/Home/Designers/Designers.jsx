@@ -12,7 +12,7 @@ const Designers = () => {
             <h4 className="uppercase text-lg font-semibold">
               <span className="border-b-4 border-[#ffe600]">FOR DESIGNERS</span>
             </h4>
-            <h2 className="text-[30px] font-medium mx-auto md:mx-44 mt-2">
+            <h2 className="lg:text-[20px] mx-auto max-w-[60ch] mt-2">
               Want to stand out from the crowd with spellbinding skills and
               (effortlessly!) book marvelous high-ticket clients
             </h2>

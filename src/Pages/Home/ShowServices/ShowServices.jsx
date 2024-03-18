@@ -13,16 +13,18 @@ const ShowServices = () => {
     <div className="bg-[#16191e] text-[#f4f4f4]">
       <div className="py-20 mx-4 md:mx-0">
         <div className="max-w-screen-xl mx-auto">
-          <h4 className="uppercase text-lg font-semibold text-center">
-            <span className="border-b-4 border-[#ffe600]">
-              HOW MAY I HELP YOU
-            </span>
-          </h4>
-          <h2 className="md:text-[20px] md:w-[60%] mx-auto mt-2">
-            I specialize in creating beautiful design & websites that convert &
-            generate revenue while making an impact with marketing for growing
-            your brand.
-          </h2>
+          <div className="flex flex-col justify-center items-center">
+            <h4 className="uppercase text-lg font-semibold text-center">
+              <span className="border-b-4 border-[#ffe600]">
+                HOW MAY I HELP YOU
+              </span>
+            </h4>
+            <h2 className="lg:text-[20px] max-w-[70ch] text-center mt-2">
+              I specialize in creating beautiful design & websites that convert
+              & generate revenue while making an impact with marketing for
+              growing your brand.
+            </h2>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-12">
             {services.map((service) => (

@@ -26,9 +26,7 @@ const Navbar = () => {
             <ActiveLink to="/services">Services</ActiveLink>
           </li>
           <li>
-            <ActiveLink to="https://rahatsportfolio.netlify.app/">
-              Portfolio
-            </ActiveLink>
+            <ActiveLink to="/portfolio">Portfolio</ActiveLink>
           </li>
           <li>
             <ActiveLink to="/contact">Contact</ActiveLink>
@@ -36,16 +34,16 @@ const Navbar = () => {
           <li>
             <ActiveLink to="/about">About</ActiveLink>
           </li>
-          <button className="text-[#ffe600]">
+          {/* <button className="text-[#ffe600]">
             <BsFillCartFill />
-          </button>
+          </button> */}
         </ul>
       </div>
 
       {/* sm */}
       <div className="md:hidden cursor-pointer flex justify-between gap-36">
         <div onClick={toggleMenu} className="flex items-center justify-center">
-          <GiHamburgerMenu className="w-9 h-9 text-black ms-1 " />
+          <GiHamburgerMenu className="w-8 h-8 text-white ms-1 " />
         </div>
         <div className="text-[20px] items-center font-semibold">
           <p>Select Page</p>
@@ -56,13 +54,13 @@ const Navbar = () => {
       <div
         className={
           menuOpen
-            ? "fixed top-0 left-0 w-[75%] z-10 sm:hidden h-screen bg-indigo-50 p-10 ease-in-out duration-500"
+            ? "fixed top-0 left-0 w-[75%] z-10 sm:hidden h-screen bg-indigo-50 p-10 ease-in-out duration-500 text-[#16191e]"
             : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
       >
         <div>
           <div onClick={toggleMenu} className="cursor-pointer">
-            <IoMdClose className="h-8 w-8 text-black" />
+            <IoMdClose className="h-8 w-8 text-[#16191e]" />
           </div>
         </div>
         <div>
@@ -74,9 +72,7 @@ const Navbar = () => {
               <ActiveLink to="/services">Services</ActiveLink>
             </li>
             <li onClick={toggleMenu}>
-              <ActiveLink to="https://rahatsportfolio.netlify.app/">
-                Portfolio
-              </ActiveLink>
+              <ActiveLink to="/portfolio">Portfolio</ActiveLink>
             </li>
             <li onClick={toggleMenu}>
               <ActiveLink to="/contact">Contact</ActiveLink>
