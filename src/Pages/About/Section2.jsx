@@ -1,11 +1,15 @@
-import About2Image from "../../assets/about/about2.png";
+import AboutImage from "../../assets/about/about.jpg";
 
 const Section2 = () => {
   return (
-    <div className="bg-[#16191E] mx-4 md:mx-0">
-      <div className="md:flex">
+    <div className="bg-[#16191E] mx-4 md:mx-0 overflow-hidden">
+      <div
+        className="max-w-screen-xl mx-auto md:flex"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div>
-          <img src={About2Image} className="" alt="" />
+          <img src={AboutImage} className="md:w-[320px]" alt="" />
         </div>
         <div className="text-[#F4F4F4] p-10 flex flex-col justify-center space-y-4">
           <h2 className="text-[24px] md:text-[36px] lg:text-[44px] font-bold uppercase">
@@ -31,12 +35,6 @@ const Section2 = () => {
             <div>
               <button className="text-[16px] font-semibold  border border-black rounded-md bg-[#ffe600] border-none text-[#16191e] hover:bg-black hover:text-white duration-1000 w-[150px] p-[8px] md:p-[12px]">
                 Let&apos;s Talk
-              </button>
-            </div>
-
-            <div>
-              <button className="text-[16px] font-semibold border border-black rounded-md bg-[#ffe600] border-none text-[#16191e] hover:bg-black hover:text-white duration-1000 w-[150px] p-[8px] md:p-[12px]">
-                Upwork Profile
               </button>
             </div>
           </div>

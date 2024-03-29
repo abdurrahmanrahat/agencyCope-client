@@ -1,4 +1,3 @@
-import FAQ from "../FAQ/FAQ";
 import ItemFive from "../ServicesItems/ItemFive";
 import ItemFour from "../ServicesItems/ItemFour";
 import ItemOne from "../ServicesItems/ItemOne";
@@ -35,7 +34,7 @@ const ServicePage = () => {
       <ItemFive></ItemFive>
 
       {/* FAQ */}
-      <FAQ></FAQ>
+      {/* <FAQ></FAQ> */}
     </div>
   );
 };

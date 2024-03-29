@@ -9,13 +9,13 @@ const ServicesContainer = () => {
           {/* head section */}
           <div className="flex flex-col justify-center items-center">
             <img src={Image} className="w-40" alt="" />
-            <h2 className="text-[20px] md:text-[22px] text-center max-w-[50ch] mt-4">
-              You deserve the confidence that comes with having a powerful,
-              strategic, and eye-catching Design + Systems
-            </h2>
-            <h4 className="font-medium mt-2">
+            <h4 className="text-[24px] lg:text-[32px] font-medium mt-4">
               Here’s how we can work together!
             </h4>
+            <p className="text-[16px] text-center max-w-[50ch] mt-2">
+              You deserve the confidence that comes with having a powerful,
+              strategic, and eye-catching Design + Systems
+            </p>
           </div>
 
           {/* clickable services list */}

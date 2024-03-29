@@ -1,13 +1,24 @@
-import AboutImage from "../../assets/about/about.png";
+import AboutImage from "../../assets/about/about.jpg";
 
 const Section1 = () => {
   return (
     <div className="bg-[#F4F4F4]">
-      <div className="max-w-screen-xl mx-auto md:flex py-16 md:py-24 px-4 md:px-0">
-        <div className="md:w-1/2 pb-8 md:pb-0 md:flex justify-center">
-          <img src={AboutImage} alt="" />
+      <div className="max-w-screen-xl mx-auto md:flex py-16 md:py-24 px-4 md:px-0 overflow-hidden">
+        {/* image */}
+        <div
+          className="md:w-1/2 pb-8 md:pb-0 md:flex justify-center"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <img src={AboutImage} className="lg:w-[500px]" alt="" />
         </div>
-        <div className="md:w-1/2 flex flex-col justify-center space-y-4">
+
+        {/* content */}
+        <div
+          className="md:w-1/2 flex flex-col justify-center space-y-4"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <div>
             <h4 className="text-[28px] md:text-[36px] lg:text-[40px] font-bold uppercase">
               Md. Yeasin Mahbub

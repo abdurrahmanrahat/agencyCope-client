@@ -6,7 +6,7 @@ const Designers = () => {
   return (
     <div className="bg-[#16191e] text-[#f4f4f4]">
       <div className="max-w-screen-xl mx-auto">
-        <div className="mx-4 py-14 md:mx-0">
+        <div className="mx-4 md:mx-0 pb-16 md:pb-24">
           {/* title */}
           <div
             className="flex flex-col justify-center items-center overflow-hidden"
