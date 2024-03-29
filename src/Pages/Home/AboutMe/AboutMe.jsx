@@ -3,8 +3,12 @@ import AboutPhoto from "../../../assets/home/about-photo.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="max-w-screen-xl mx-auto">
-      <div className="mb-24 mx-4 md:mx-0">
+    <div className="max-w-screen-xl mx-auto overflow-hidden">
+      <div
+        className="mb-24 mx-4 md:mx-0"
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+      >
         {/* title */}
         <div className="text-center">
           <h4 className="uppercase text-lg font-semibold">

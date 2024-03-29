@@ -4,13 +4,23 @@ import WebTop from "../../../assets/home/web-top.png";
 
 const Web = () => {
   return (
-    <div className="md:flex gap-12 md:mx-20">
+    <div className="md:flex gap-12 md:mx-20 overflow-hidden">
       {/* img div */}
       <div className="md:w-1/2 mb-16 md:mb-0">
-        <img src={WebHome} alt="" />
+        <img
+          src={WebHome}
+          alt=""
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        />
       </div>
+
       {/* content div */}
-      <div className="md:w-1/2 relative flex justify-center ">
+      <div
+        className="md:w-1/2 relative flex justify-center"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         {/* content */}
         <div className="text-[18px] flex flex-col justify-center gap-y-2">
           <h2 className="text-[32px] font-semibold">Wizards of Web Design</h2>

@@ -4,7 +4,11 @@ import TemplateImg from "../../../assets/home/template.jpg";
 
 const Template = () => {
   return (
-    <div className="md:flex gap-12 md:mx-20  my-32">
+    <div
+      className="md:flex gap-12 md:mx-20 my-32"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       {/* content div */}
       <div className="md:w-1/2 relative flex justify-center mb-12 md:mb-0">
         {/* content */}

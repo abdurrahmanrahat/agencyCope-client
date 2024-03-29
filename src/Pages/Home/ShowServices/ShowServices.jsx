@@ -13,7 +13,11 @@ const ShowServices = () => {
     <div className="bg-[#16191e] text-[#f4f4f4]">
       <div className="py-20 mx-4 md:mx-0">
         <div className="max-w-screen-xl mx-auto">
-          <div className="flex flex-col justify-center items-center">
+          <div
+            className="flex flex-col justify-center items-center overflow-hidden"
+            data-aos="fade-right"
+            data-aos-duration="1700"
+          >
             <h4 className="uppercase text-lg font-semibold text-center">
               <span className="border-b-4 border-[#ffe600]">
                 HOW MAY I HELP YOU
@@ -26,9 +30,14 @@ const ShowServices = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-12 overflow-hidden">
             {services.map((service) => (
-              <div key={service._id} className="card md:w-96">
+              <div
+                key={service._id}
+                className="card md:w-96"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 <img
                   src={service.image}
                   className="w-4/5 md:w-80 mx-auto"

@@ -8,7 +8,11 @@ const Designers = () => {
       <div className="max-w-screen-xl mx-auto">
         <div className="mx-4 py-14 md:mx-0">
           {/* title */}
-          <div className="text-center">
+          <div
+            className="text-center overflow-hidden"
+            data-aos="fade-up"
+            data-aos-duration="1700"
+          >
             <h4 className="uppercase text-lg font-semibold">
               <span className="border-b-4 border-[#ffe600]">FOR DESIGNERS</span>
             </h4>

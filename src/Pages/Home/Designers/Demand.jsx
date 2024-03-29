@@ -4,13 +4,22 @@ import DemandHome from "../../../assets/home/demand.jpg";
 
 const Demand = () => {
   return (
-    <div className="md:flex gap-12 md:mx-20">
+    <div className="md:flex gap-12 md:mx-20 overflow-hidden">
       {/* img div */}
-      <div className="md:w-1/2 mb-16 md:mb-0">
+      <div
+        className="md:w-1/2 mb-16 md:mb-0"
+        data-aos="fade-right"
+        data-aos-duration="1700"
+      >
         <img src={DemandHome} alt="" />
       </div>
+
       {/* content div */}
-      <div className="md:w-1/2 relative flex justify-center ">
+      <div
+        className="md:w-1/2 relative flex justify-center"
+        data-aos="fade-left"
+        data-aos-duration="1700"
+      >
         {/* content */}
         <div className="text-[18px] flex flex-col justify-center gap-y-2">
           <h2 className="text-[32px] font-semibold">1:1 On Demand Coaching</h2>

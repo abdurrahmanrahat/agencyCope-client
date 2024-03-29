@@ -70,7 +70,7 @@ const BannerSection = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 overflow-hidden">
           <img
             src={BannerImage}
             className=""
