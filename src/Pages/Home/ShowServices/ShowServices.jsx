@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ShowServices = () => {
   const [services, serServices] = useState([]);
@@ -34,22 +35,26 @@ const ShowServices = () => {
             {services.map((service) => (
               <div
                 key={service._id}
-                className="card md:w-96"
+                className="card md:w-96 bg-black py-6"
                 data-aos="fade-right"
                 data-aos-duration="2000"
               >
                 <img
                   src={service.image}
-                  className="w-4/5 md:w-80 mx-auto"
+                  className="w-4/5 md:w-80 mx-auto rounded-md"
                   alt="Name_of_Product"
                 />
                 <div className="card-body text-center">
-                  <p className="text-lg">{service.description}</p>
+                  <p className="text-[14px] lg:text-[16px]">
+                    {service.description}
+                  </p>
                 </div>
                 <div className="flex justify-center">
-                  <button className="bg-[#ffe600] py-[10px] px-4 text-[15px] text-[#16191e] rounded-md font-medium capitalize hover:bg-[#16191e] hover:text-white hover:border border-[#ffe600] transition-all duration-500">
-                    Learn More
-                  </button>
+                  <Link to={service.url}>
+                    <button className="bg-[#ffe600] py-[10px] px-4 text-[15px] text-[#16191e] rounded-md font-medium capitalize hover:bg-[#16191e] hover:text-white hover:border border-[#ffe600] transition-all duration-500">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}

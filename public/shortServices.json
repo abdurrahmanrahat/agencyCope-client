@@ -1,20 +1,23 @@
 [
-    {
-        "_id": 1,
-        "image": "https://i.ibb.co/fdFHJ22/graphic-min.jpg",
-        "title": "Graphic Design",
-        "description": "Creative designs that effectively communicate your brand identity, engage your audience, and captivate their attention."
-    },
-    {
-        "_id": 2,
-        "image": "https://i.ibb.co/JRNdc9M/web-min.jpg",
-        "title": "Web Design",
-        "description": "Modern and responsive websites tailored to your business needs, providing an exceptional user experience."
-    },
-    {
-        "_id": 3,
-        "image": "https://i.ibb.co/0V2QpHK/markeing2-min.jpg",
-        "title": "Digital Marketing",
-        "description": "Strategies to boost your online presence, reach your target audience, and drive measurable results for your business."
-    }
+  {
+    "_id": 1,
+    "image": "https://i.ibb.co/fdFHJ22/graphic-min.jpg",
+    "title": "Graphic Design",
+    "description": "Creative designs that communicate your brand, engage your audience, and captivate their attention.",
+    "url": "/services/#item-three"
+  },
+  {
+    "_id": 2,
+    "image": "https://i.ibb.co/JRNdc9M/web-min.jpg",
+    "title": "Web Design",
+    "description": "Modern and responsive websites tailored to your business needs, providing an exceptional user experience.",
+    "url": "/services/#item-three"
+  },
+  {
+    "_id": 3,
+    "image": "https://i.ibb.co/0V2QpHK/markeing2-min.jpg",
+    "title": "Digital Marketing",
+    "description": "Strategies to boost your online presence, reach your target audience, and drive measurable result for your business.",
+    "url": "/services/#item-three"
+  }
 ]

@@ -9,14 +9,14 @@ const Section3 = () => {
         <div className="md:flex justify-evenly gap-12">
           <div className="flex flex-col justify-center items-center">
             <img src={Image1} className="w-[170px] 2xl:w-[180px] mb-2" alt="" />
-            <h2 className="font-extrabold text-[30px] text-[#ffe600]">298+</h2>
+            <h2 className="font-extrabold text-[30px] text-[#16191e]">298+</h2>
             <p className="text-[#909090] lg:text-[18px] font-semibold">
               PROJECTS COMPLETED
             </p>
           </div>
           <div className="flex flex-col justify-center items-center my-16 md:my-0">
             <img src={Image1} className="w-[170px] 2xl:w-[180px] mb-2" alt="" />
-            <h2 className="font-extrabold text-[30px] text-[#ffe600] uppercase">
+            <h2 className="font-extrabold text-[30px] text-[#16191e] uppercase">
               24 Hours
             </h2>
             <p className="text-[#909090] lg:text-[18px] font-semibold">
@@ -25,7 +25,7 @@ const Section3 = () => {
           </div>
           <div className="flex flex-col justify-center items-center">
             <img src={Image1} className="w-[170px] 2xl:w-[180px] mb-2" alt="" />
-            <h2 className="font-extrabold text-[30px] text-[#ffe600]">
+            <h2 className="font-extrabold text-[30px] text-[#16191e]">
               97.00%
             </h2>
             <p className="text-[#909090] lg:text-[18px] font-semibold">
