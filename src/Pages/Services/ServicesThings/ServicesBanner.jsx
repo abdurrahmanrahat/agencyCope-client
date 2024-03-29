@@ -1,4 +1,3 @@
-// import ServicesCover from "../../../assets/service-cover.jpg";
 import ServicesCover from "../../../assets/services/service-img.png";
 
 const ServicesBanner = () => {
@@ -8,7 +7,7 @@ const ServicesBanner = () => {
         className="bg-cover h-80 lg:h-[360px] xl:h-[400px] 2xl:h-[440px] relative"
         style={{ backgroundImage: `url(${ServicesCover})` }}
       >
-        <div className="w-full flex flex-col items-center justify-center gap-4 p-4 md:p-0 py-8 md:py-0 absolute inset-0 bg-[#16191e] bg-opacity-80">
+        <div className="w-full flex flex-col items-center justify-center gap-4 p-4 md:p-0 py-8 md:py-0 absolute inset-0 bg-[#16191ebb] bg-opacity-90">
           <h2 className="text-[24px] lg:text-[36px] 2xl:text-[40px] font-medium">
             Let’s work together
           </h2>
