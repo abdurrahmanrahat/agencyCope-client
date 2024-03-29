@@ -22,12 +22,15 @@ const ReviewSection = () => {
         data-aos="fade-up"
         data-aos-duration="2000"
       >
-        <h4 className="uppercase text-lg font-semibold">
-          <span className="border-b-4 border-[#ffe600]">TESTIMONIALS</span>
-        </h4>
-        <h2 className="text-2xl mt-2">
-          Clients share their thoughts and experience of working with us
-        </h2>
+        <div className="flex flex-col justify-center items-center ">
+          <h4 className="uppercase text-[16px] font-semibold mb-2">
+            <span className="border-b-2 border-[#ffe600]">TESTIMONIALS</span>
+          </h4>
+          <h2 className="text-[14px] lg:text-[16px] max-w-[60ch] text-center mt-2">
+            Clients share their thoughts and experience of working with our
+            agency, providing invaluable insights and comments
+          </h2>
+        </div>
 
         {/* slider section start */}
         <Swiper
@@ -56,7 +59,7 @@ const ReviewSection = () => {
         >
           {/* map section start */}
           {reviews?.map((data) => (
-            <SwiperSlide key={data.id}>
+            <SwiperSlide key={data._id}>
               <div className="group group/item mt-10 bg-gray-50 lg:px-12 mx-3 rounded-md">
                 <div className="flex items-center justify-center mb-5 pt-6">
                   <FaQuoteLeft className="text-4xl text- hover:text-yellow-300 text-gray-400 duration-500" />

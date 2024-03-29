@@ -11,8 +11,8 @@ const SpecializeIn = () => {
             data-aos="fade-right"
             data-aos-duration="1700"
           >
-            <h4 className="uppercase text-lg font-semibold mb-6">
-              <span className="border-b-2 border-[#ffe600] text-[#ffe600] shadow-class bg-black rounded-md p-[10px]">
+            <h4 className="uppercase text-[16px] font-medium mb-6 pt-2">
+              <span className="border-b-2 border-[#ffe600] text-[#ffe600] shadow-class bg-[#16191E] rounded-md p-[10px]">
                 SPECIALIZING IN
               </span>
             </h4>

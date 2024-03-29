@@ -18,12 +18,12 @@ const ShowServices = () => {
             data-aos="fade-right"
             data-aos-duration="1700"
           >
-            <h4 className="uppercase text-lg font-semibold text-center">
-              <span className="border-b-4 border-[#ffe600]">
+            <h4 className="uppercase text-[16px] font-semibold text-center mb-2">
+              <span className="border-b-[2px] border-[#ffe600]">
                 HOW MAY I HELP YOU
               </span>
             </h4>
-            <h2 className="lg:text-[20px] max-w-[70ch] text-center mt-2">
+            <h2 className="text-[14px] lg:text-[16px] max-w-[70ch] text-center mt-2">
               I specialize in creating beautiful design & websites that convert
               & generate revenue while making an impact with marketing for
               growing your brand.
@@ -47,7 +47,7 @@ const ShowServices = () => {
                   <p className="text-lg">{service.description}</p>
                 </div>
                 <div className="flex justify-center">
-                  <button className="bg-[#ffe600] py-[10px] px-4 text-[14px] text-[#16191e] rounded-md font-[600] uppercase">
+                  <button className="bg-[#ffe600] py-[10px] px-4 text-[15px] text-[#16191e] rounded-md font-medium capitalize hover:bg-[#16191e] hover:text-white hover:border border-[#ffe600] transition-all duration-500">
                     Learn More
                   </button>
                 </div>
