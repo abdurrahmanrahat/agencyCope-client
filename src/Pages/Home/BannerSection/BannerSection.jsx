@@ -2,6 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 // import BannerImage from "../../../assets/home/banner-photo.png";
 // import BannerImage from "../../../assets/home/person2.jpg";
+import { Link } from "react-router-dom";
 import BannerImage from "../../../assets/home/person1.png";
 // import BannerImage from "../../../assets/home/person.png";
 
@@ -61,14 +62,22 @@ const BannerSection = () => {
 
             {/* hire button */}
             <div className="flex justify-center">
-              <button className="text-[16px] font-semibold p-[8px] md:p-[12px] border border-black rounded-md bg-[#ffe600] border-none text-[#16191e] hover:bg-black hover:text-white duration-1000">
-                Hire My Agency
-              </button>
+              <Link to="/contact">
+                <button className="text-[16px] font-semibold p-[8px] md:p-[12px] border border-black rounded-md bg-[#ffe600] border-none text-[#16191e] hover:bg-black hover:text-white duration-1000">
+                  Hire My Agency
+                </button>
+              </Link>
             </div>
           </div>
         </div>
         <div className="md:w-1/2">
-          <img src={BannerImage} className="" alt="" />
+          <img
+            src={BannerImage}
+            className=""
+            alt="person image"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          />
         </div>
       </div>
     </div>

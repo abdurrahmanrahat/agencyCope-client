@@ -5,11 +5,16 @@ import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home/Home";
 import ServicePage from "../Pages/Services/ServicePage/ServicePage";
 import Services from "../Pages/Services/Services";
+import ScrollToTop from "../components/ui/ScrollToTop";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: (
+      <ScrollToTop>
+        <Main></Main>
+      </ScrollToTop>
+    ),
     children: [
       {
         path: "/",
