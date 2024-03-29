@@ -1,16 +1,21 @@
-import ServicesCover from "../../../assets/service-cover.jpg";
+// import ServicesCover from "../../../assets/service-cover.jpg";
+import ServicesCover from "../../../assets/services/service-img.png";
 
 const ServicesBanner = () => {
   return (
     <div className="bg-[#16191e] text-[#f4f4f4]">
       <div
-        className="bg-cover h-80 lg:h-[340px] 2xl:h-[380px] relative"
+        className="bg-cover h-80 lg:h-[360px] xl:h-[400px] 2xl:h-[440px] relative"
         style={{ backgroundImage: `url(${ServicesCover})` }}
       >
-        <div className="w-full flex flex-col items-center justify-center gap-6 p-4 md:p-0 py-8 md:py-0 absolute inset-0 bg-[#16191e] opacity-75">
-          <h2 className="text-4xl text-center">Let’s work together</h2>
-          <h4 className="text-lg text-center">
-            TOWARDS BUILDING YOUR DREAM BRAND IDENTITY & WEBSITE
+        <div className="w-full flex flex-col items-center justify-center gap-4 p-4 md:p-0 py-8 md:py-0 absolute inset-0 bg-[#16191e] bg-opacity-80">
+          <h2 className="text-[24px] lg:text-[36px] 2xl:text-[40px] font-medium">
+            Let’s work together
+          </h2>
+          <h4 className="text-[16px] max-w-[60ch] text-center">
+            Towards Building Your Dream Brand Identity with Attractive Graphics,
+            Banner & Logo Design, etc., and Make Website for Brand Identity
+            Establishment
           </h4>
         </div>
       </div>

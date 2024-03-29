@@ -7,7 +7,7 @@ const ItemTwo = () => {
       <div
         className="max-w-screen-xl mx-auto"
         data-aos="fade-up"
-        data-aos-duration="1000"
+        data-aos-duration="1700"
       >
         <div className="mx-4 lg:mx-0 py-16" id="item-two">
           <div className="text-center">

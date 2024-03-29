@@ -7,7 +7,7 @@ const ItemOne = () => {
       <div
         className="max-w-screen-xl mx-auto"
         data-aos="fade-up"
-        data-aos-duration="1000"
+        data-aos-duration="1700"
         id="item-one"
       >
         <div className="px-4 lg:px-0 py-20">

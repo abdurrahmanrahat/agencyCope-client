@@ -7,7 +7,7 @@ const ItemThree = () => {
       <div
         className="max-w-screen-xl mx-auto"
         data-aos="fade-up"
-        data-aos-duration="800"
+        data-aos-duration="1700"
       >
         <div className="mx-4 lg:mx-0 py-20" id="item-three">
           <div className="text-center">
