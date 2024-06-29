@@ -21,12 +21,48 @@ const WorkSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-6 p-4 md:p-10">
-            <img src={img1} alt="" />
-            <img src={img2} alt="" />
-            <img src={img3} alt="" />
-            <img src={img4} alt="" />
-            <img src={img5} alt="" />
-            <img src={img6} alt="" />
+            <div className="overflow-hidden">
+              <img
+                className="hover:scale-125 duration-[1500ms]"
+                src={img1}
+                alt=""
+              />
+            </div>
+            <div className="overflow-hidden">
+              <img
+                className="hover:scale-125 duration-[1500ms]"
+                src={img2}
+                alt=""
+              />
+            </div>
+            <div className="overflow-hidden">
+              <img
+                className="hover:scale-125 duration-[1500ms]"
+                src={img3}
+                alt=""
+              />
+            </div>
+            <div className="overflow-hidden">
+              <img
+                className="hover:scale-125 duration-[1500ms]"
+                src={img4}
+                alt=""
+              />
+            </div>
+            <div className="overflow-hidden">
+              <img
+                className="hover:scale-125 duration-[1500ms]"
+                src={img5}
+                alt=""
+              />
+            </div>
+            <div className="overflow-hidden">
+              <img
+                className="hover:scale-125 duration-[1500ms]"
+                src={img6}
+                alt=""
+              />
+            </div>
           </div>
           <span>
             <button className=" bg-[#ffe600] py-[12px] px-4 text-[16px] text-[#16191e] rounded-md font-[600] uppercase">

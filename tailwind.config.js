@@ -9,6 +9,11 @@ export default {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif']
       },
+      colors: {
+        primary: "#ffe600",
+        dark: "#16191e",
+        light: "#f4f4f4",
+      }
     },
   },
   plugins: [require("daisyui")],

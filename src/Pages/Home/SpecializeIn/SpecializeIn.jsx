@@ -2,7 +2,7 @@ import SpecialImage from "../../../assets/home/specialized-design.png";
 
 const SpecializeIn = () => {
   return (
-    <div className="bg-[#f4f4f4]">
+    <div className="bg-light">
       <div className="max-w-screen-xl mx-auto">
         <div className="pt-24 pb-14 mx-4 md:mx-0">
           {/* title */}
