@@ -10,9 +10,10 @@ export default {
         roboto: ['Roboto', 'sans-serif']
       },
       colors: {
-        primary: "#ffe600",
-        dark: "#16191e",
-        light: "#f4f4f4",
+        primary: "#ffe600", // yellow
+        dark: "#16191e", // black
+        light: "#f4f4f4", // light gray
+        myGray: "#afafaf"
       }
     },
   },
