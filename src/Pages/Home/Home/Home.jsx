@@ -4,7 +4,6 @@ import Designers from "../Designers/Designers";
 import InfinityScroll from "../InfinityScroll/InfinityScroll";
 import ReviewSection from "../ReviewSection/ReviewSection";
 import ShowServices from "../ShowServices/ShowServices";
-import SpecializeIn from "../SpecializeIn/SpecializeIn";
 import WorkSection from "../WorkSection/WorkSection";
 
 const Home = () => {
@@ -12,7 +11,7 @@ const Home = () => {
     <div>
       <BannerSection></BannerSection>
 
-      <SpecializeIn></SpecializeIn>
+      {/* <SpecializeIn></SpecializeIn> */}
 
       <ShowServices></ShowServices>
 

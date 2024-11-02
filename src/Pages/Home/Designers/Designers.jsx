@@ -5,18 +5,20 @@ import Web from "./Web";
 const Designers = () => {
   return (
     <div className="bg-[#16191e] text-[#f4f4f4]">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="mx-4 md:mx-0 pb-16 md:pb-24">
+      <div className="container-class">
+        <div className="mx-4 md:mx-0 py-16 md:py-24">
           {/* title */}
           <div
             className="flex flex-col justify-center items-center overflow-hidden"
-            data-aos="fade-up"
-            data-aos-duration="1700"
+            // data-aos="fade-up"
+            // data-aos-duration="1700"
           >
-            <h4 className="uppercase text-[16px] font-semibold mb-2">
-              <span className="border-b-2 border-[#ffe600]">FOR DESIGNERS</span>
+            <h4 className="uppercase text-lg font-semibold">
+              <span className="border-b-[3px] border-primary">
+                FOR DESIGNERS
+              </span>
             </h4>
-            <h2 className="text-[14px] lg:text-[16px] max-w-[60ch] text-center mt-2">
+            <h2 className="text-[14px] lg:text-[16px] max-w-[60ch] text-center mt-3">
               Want to stand out from the crowd with spellbinding skills and
               (effortlessly!) book marvelous high-ticket clients
             </h2>

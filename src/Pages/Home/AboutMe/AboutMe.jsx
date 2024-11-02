@@ -1,5 +1,5 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
 import AboutPhoto from "../../../assets/home/about-photo.jpg";
+import Button from "../../../components/ui/Button";
 
 const AboutMe = () => {
   return (
@@ -12,15 +12,15 @@ const AboutMe = () => {
         {/* title */}
         <div className="text-center">
           <h4 className="uppercase text-lg font-semibold">
-            <span className="border-b-4 border-[#ffe600]">
+            <span className="border-b-[3px] border-primary">
               MEET YOUR DESIGNER
             </span>
           </h4>
           <h2 className="md:text-[32px] font-medium mx-auto mt-2">
             Hey there! I’m Yeasin Mahbub
           </h2>
-          <h2 className="text-[#ffe600] md:text-[28px] font-semibold">
-            BRAND IDENTITY, GRAPHIC DESIGNER, AND WEB DESIGNER
+          <h2 className="text-primary md:text-[18px]">
+            BRAND IDENTITY AND GRAPHIC DESIGNER
           </h2>
         </div>
 
@@ -60,10 +60,11 @@ const AboutMe = () => {
               brand stand out!
             </h4>
             <div>
-              <button className="bg-[#ffe600] text-[#16191e] rounded-md text-[16px] px-[16px] py-[12px] font-semibold">
-                MORE ABOUT ME{" "}
-                <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
-              </button>
+              {/* <button className="text-[14px] md:text-[15px] bg-primary text-dark rounded-md px-[16px] py-[12px] font-medium uppercase">
+                More About Me{" "}
+                <FaArrowRightLong className="inline-block bg-transparent pl-1 text-[18px]" />
+              </button> */}
+              <Button text={"More About Me"} />
             </div>
           </div>
         </div>

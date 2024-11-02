@@ -1,6 +1,6 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
 import DemandTop from "../../../assets/home/demand-top.png";
 import DemandHome from "../../../assets/home/demand.jpg";
+import Button from "../../../components/ui/Button";
 
 const Demand = () => {
   return (
@@ -35,10 +35,7 @@ const Demand = () => {
             Business coaching ranges from 1 month to 3 month commitments.
           </p>
           <div>
-            <button className="bg-[#ffe600] text-[#16191e] rounded-md text-[16px] px-[16px] py-[12px] font-semibold">
-              LEARN MORE
-              <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
-            </button>
+            <Button text={"LEARN MORE"} />
           </div>
         </div>
         {/* img for positioning */}

@@ -1,6 +1,6 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
 import WebHome from "../../../assets/home/web-home.png";
 import WebTop from "../../../assets/home/web-top.png";
+import Button from "../../../components/ui/Button";
 
 const Web = () => {
   return (
@@ -38,10 +38,7 @@ const Web = () => {
             sales.
           </p>
           <div>
-            <button className="bg-[#ffe600] text-[#16191e] rounded-md text-[16px] px-[16px] py-[12px] font-semibold">
-              I NEED THIS
-              <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
-            </button>
+            <Button text={"I NEED THIS"} />
           </div>
         </div>
         {/* img for positioning */}

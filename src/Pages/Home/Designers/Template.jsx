@@ -1,6 +1,6 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
 import TemplateTop from "../../../assets/home/template-top.png";
 import TemplateImg from "../../../assets/home/template.jpg";
+import Button from "../../../components/ui/Button";
 
 const Template = () => {
   return (
@@ -27,10 +27,7 @@ const Template = () => {
             revamp on a budget.
           </p>
           <div>
-            <button className="bg-[#ffe600] text-[#16191e] rounded-md text-[16px] px-[16px] py-[12px] font-semibold">
-              I&apos;M READY
-              <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
-            </button>
+            <Button text={"I'M READY"} />
           </div>
         </div>
         {/* img for positioning */}

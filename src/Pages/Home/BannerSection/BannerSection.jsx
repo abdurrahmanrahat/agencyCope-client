@@ -4,11 +4,21 @@ import { TypeAnimation } from "react-type-animation";
 // import BannerImage from "../../../assets/home/banner-photo.png";
 // import BannerImage from "../../../assets/home/person1.png";
 import BannerImage from "../../../assets/home/person.png";
+import Button from "../../../components/ui/Button";
 
 const BannerSection = () => {
   return (
     <div className="bg-dark text-light">
-      <div className="max-w-screen-xl mx-auto md:flex md:gap-4 px-4 md:px-0 pt-12">
+      <div className="container-class md:flex flex-row-reverse md:gap-4 pt-20 pb-10 lg:pb-0">
+        <div className="md:w-1/2 overflow-hidden flex justify-center items-center ">
+          <img
+            src={BannerImage}
+            className="w-[80%]"
+            alt="person image"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          />
+        </div>
         <div className="md:w-1/2 flex flex-col gap-y-4 justify-center  my-12 md:my-0">
           <div>
             <h3 className="text-[22px] md:text-[36px] font-bold">
@@ -43,18 +53,18 @@ const BannerSection = () => {
           </p>
 
           {/* social icons */}
-          <div className="md:flex justify-between">
-            <div className="flex gap-2 mb-4 md:mb-0 justify-center ">
-              <button className="text-[24px] p-[4px] md:p-[12px] border border-primary rounded-md hover:bg-black hover:text-white duration-700">
+          <div className="md:flex justify-between items-center">
+            <div className="flex gap-4 md:gap-6 justify-center pb-5 md:pb-0">
+              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
                 <FaFacebook />
               </button>
-              <button className="text-[24px] p-[4px] md:p-[12px] border border-primary rounded-md hover:bg-black hover:text-white duration-700">
+              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
                 <FaLinkedin />
               </button>
-              <button className="text-[24px] p-[4px] md:p-[12px] border border-primary rounded-md hover:bg-black hover:text-white duration-700">
+              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
                 <FaInstagram />
               </button>
-              <button className="text-[24px] p-[4px] md:p-[12px] border border-primary rounded-md hover:bg-black hover:text-white duration-700">
+              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
                 <FaYoutube />
               </button>
             </div>
@@ -62,21 +72,13 @@ const BannerSection = () => {
             {/* hire button */}
             <div className="flex justify-center">
               <Link to="/contact">
-                <button className="text-[16px] font-semibold p-[8px] md:p-[12px] border border-black rounded-md bg-primary border-none text-dark hover:bg-black hover:text-white duration-1000">
+                {/* <button className="text-[15px] font-semibold py-[8px] px-[12px] md:py-[12px] md:px-[16px] rounded-md bg-primary border-none text-dark uppercase">
                   Hire My Agency
-                </button>
+                </button> */}
+                <Button text={"Hire Us"} />
               </Link>
             </div>
           </div>
-        </div>
-        <div className="md:w-1/2 overflow-hidden">
-          <img
-            src={BannerImage}
-            className=""
-            alt="person image"
-            data-aos="fade-left"
-            data-aos-duration="2000"
-          />
         </div>
       </div>
     </div>
