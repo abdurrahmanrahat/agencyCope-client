@@ -1,10 +1,10 @@
+import Button from "../../../../components/ui/Button";
 import img1 from "../../../assets/portfolioImg/graphic-flyer-min.jpg";
 import img2 from "../../../assets/portfolioImg/graphic-logo-min.jpg";
 import img3 from "../../../assets/portfolioImg/marketing1-min.jpg";
 import img4 from "../../../assets/portfolioImg/marketing2-min.jpg";
 import img5 from "../../../assets/portfolioImg/web-img1-min.jpg";
 import img6 from "../../../assets/portfolioImg/web-img2-min.jpg";
-import Button from "../../../components/ui/Button";
 
 const WorkSection = () => {
   return (

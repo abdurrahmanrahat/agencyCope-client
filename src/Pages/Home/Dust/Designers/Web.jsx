@@ -1,6 +1,6 @@
+import Button from "../../../../components/ui/Button";
 import WebHome from "../../../assets/home/web-home.png";
 import WebTop from "../../../assets/home/web-top.png";
-import Button from "../../../components/ui/Button";
 
 const Web = () => {
   return (

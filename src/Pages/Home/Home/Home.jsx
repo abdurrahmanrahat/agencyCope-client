@@ -1,10 +1,8 @@
 import AboutMe from "../AboutMe/AboutMe";
 import BannerSection from "../BannerSection/BannerSection";
-import Designers from "../Designers/Designers";
-import InfinityScroll from "../InfinityScroll/InfinityScroll";
+import Portfolio from "../Portfolio/Portfolio";
 import ReviewSection from "../ReviewSection/ReviewSection";
 import ShowServices from "../ShowServices/ShowServices";
-import WorkSection from "../WorkSection/WorkSection";
 
 const Home = () => {
   return (
@@ -14,16 +12,11 @@ const Home = () => {
       {/* <SpecializeIn></SpecializeIn> */}
 
       <ShowServices></ShowServices>
-
-      {/* <ShopSection></ShopSection> */}
-
-      <Designers></Designers>
-
-      <InfinityScroll></InfinityScroll>
+      <Portfolio />
 
       <AboutMe></AboutMe>
 
-      <WorkSection></WorkSection>
+      {/* <WorkSection></WorkSection> */}
 
       <ReviewSection></ReviewSection>
 

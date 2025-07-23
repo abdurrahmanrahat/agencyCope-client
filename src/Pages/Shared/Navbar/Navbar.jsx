@@ -18,9 +18,9 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: "Home", url: "/" },
     { id: 2, text: "Services", url: "/services" },
-    { id: 1, text: "Portfolio", url: "/portfolio" },
-    { id: 1, text: "Contact", url: "/contact" },
-    { id: 1, text: "About", url: "/about" },
+    { id: 3, text: "Portfolio", url: "/portfolio" },
+    { id: 4, text: "Contact", url: "/contact" },
+    { id: 5, text: "About", url: "/about" },
   ];
 
   // Function to handle clicks outside of the navbar

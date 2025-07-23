@@ -18,7 +18,7 @@ const BannerSection = () => {
         <div className="absolute w-32 h-[1px] bg-gray-800 rotate-45 bottom-0 right-0 origin-bottom-right -translate-x-[10px] -translate-y-[10px]" />
 
         {/* Image Section */}
-        <div className="lg:w-1/2 overflow-hidden flex justify-center items-end ">
+        <div className="lg:w-1/2 overflow-hidden flex justify-center items-center ">
           <img
             src={BannerImage}
             className="w-[80%]"
