@@ -1,17 +1,18 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoMdArrowForward } from "react-icons/io";
 import Image from "../../../assets/services/services-two.png";
+import MyButton from "../../../components/ui/MyButton";
 
 const ItemTwo = () => {
   return (
-    <div className="bg-[#16191e] text-[#f4f4f4]">
+    <div className="">
       <div
-        className="max-w-screen-xl mx-auto"
+        className="container-class"
         data-aos="fade-up"
         data-aos-duration="1700"
       >
         <div className="mx-4 lg:mx-0 py-16" id="item-two">
           <div className="text-center">
-            <h2 className="text-[28px] font-medium">02. Website-In-A-Day</h2>
+            <h2 className="text-[28px] font-medium">02. Website Development</h2>
             <p className="mx-auto lg:text-[18px] max-w-[80ch]">
               Are u looking for DESKTOP, MOBILE & TABLET friendly responsive and
               beautiful website? So you are on right place. I can create best
@@ -48,10 +49,12 @@ const ItemTwo = () => {
                 </p>
               </div>
               <div>
-                <button className="bg-[#ffe600] text-[#16191e] rounded-md text-[16px] px-[16px] py-[12px] font-medium">
-                  LET&apos;S GET STARTED{" "}
-                  <IoIosArrowRoundForward className="inline-block text-[28px]" />
-                </button>
+                <MyButton
+                  mobileText="GET STARTED"
+                  desktopText="LET'S GET STARTED"
+                  isOutline={false}
+                  icon={<IoMdArrowForward />}
+                />
               </div>
             </div>
           </div>

@@ -1,11 +1,12 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoMdArrowForward } from "react-icons/io";
 import Image from "../../../assets/services/services-three.png";
+import MyButton from "../../../components/ui/MyButton";
 
 const ItemFive = () => {
   return (
-    <div className="bg-[#f4f4f4]">
+    <div className="">
       <div
-        className="max-w-screen-xl mx-auto"
+        className="container-class"
         data-aos="fade-up"
         data-aos-duration="1700"
         id="item-five"
@@ -54,10 +55,12 @@ const ItemFive = () => {
                 </p>
               </div>
               <div>
-                <button className="bg-[#ffe600] text-[#16191e] rounded-md text-[16px] px-[16px] py-[12px] font-medium">
-                  LET&apos;S GET STARTED{" "}
-                  <IoIosArrowRoundForward className="inline-block text-[28px]" />
-                </button>
+                <MyButton
+                  mobileText="GET STARTED"
+                  desktopText="LET'S GET STARTED"
+                  isOutline={false}
+                  icon={<IoMdArrowForward />}
+                />
               </div>
             </div>
           </div>
