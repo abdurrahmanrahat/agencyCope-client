@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import MyButton from "../../../components/ui/MyButton";
+import SectionTitle from "../../../components/ui/SectionTitle";
 import { projectCategories, projects } from "../../../data/project";
 import PortfolioCard from "./PortfolioCard";
 
@@ -15,12 +16,10 @@ const Portfolio = () => {
 
   return (
     <section className="container-class my-14 md:my-24">
-      <h5 className="text-primary uppercase text-base md:text-[20px] font-medium mb-2">
-        Select Works
-      </h5>
-      <h2 className="text-2xl md:text-4xl mb-8">
-        Projects that showcase my expertise and creativity
-      </h2>
+      <SectionTitle
+        title={"Select Works"}
+        description={"Projects that showcase my expertise and creativity"}
+      />
 
       {/* Filter Buttons */}
       <div className="flex flex-wrap gap-3 mb-8">

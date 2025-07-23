@@ -2,7 +2,6 @@ import AboutSection from "../../About/AboutSection";
 import BannerSection from "../BannerSection/BannerSection";
 import Portfolio from "../Portfolio/Portfolio";
 import ReviewSection from "../ReviewSection/ReviewSection";
-import ShowServices from "../ShowServices/ShowServices";
 
 const Home = () => {
   return (
@@ -11,7 +10,7 @@ const Home = () => {
 
       {/* <SpecializeIn></SpecializeIn> */}
 
-      <ShowServices></ShowServices>
+      {/* <ShowServices></ShowServices> */}
       <Portfolio />
 
       {/* <AboutMe></AboutMe> */}

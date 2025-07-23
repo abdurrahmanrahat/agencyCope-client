@@ -14,6 +14,7 @@ export default {
         primary: "#ffe600", // yellow
         dark: "#080708", // black
         darkShed: "#151415",
+        borderColor: "#2a2a2a",
         light: "#f4f4f4", // light gray
         myGray: "#afafaf"
       },

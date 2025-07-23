@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SectionTitle from "../../../components/ui/SectionTitle";
 
 const ReviewSection = () => {
   const [reviews, setReviews] = useState([]);
@@ -22,12 +23,10 @@ const ReviewSection = () => {
         data-aos="fade-up"
         data-aos-duration="2000"
       >
-        <h5 className="text-primary uppercase text-base md:text-[20px] font-medium mb-2">
-          TESTIMONIALS
-        </h5>
-        <h2 className="text-2xl md:text-4xl mb-8">
-          Clients review with whom i work before
-        </h2>
+        <SectionTitle
+          title={"Testimonials"}
+          description={"Clients review with whom i work before"}
+        />
 
         {/* slider section start */}
         <Swiper

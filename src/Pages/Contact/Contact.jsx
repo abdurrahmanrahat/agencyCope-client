@@ -1,4 +1,4 @@
-import Appointment from "./Appointment";
+import Calendly from "../About/Calendly";
 import ContactBanner from "./ContactBanner";
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="mt-10 mb-16">
         {/* <Schedual /> */}
 
-        <Appointment />
+        <Calendly />
       </div>
     </div>
   );

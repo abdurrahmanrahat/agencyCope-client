@@ -1,102 +1,108 @@
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaFacebook, FaYoutube } from "react-icons/fa6";
-import FooterFav from "../../../assets/footer-fav.png";
-import Button from "../../../components/ui/Button";
+import Logo from "../../../assets/agency-logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#16191e]">
-      <div className="container-class md:flex justify-between py-16 2xl:py-20">
-        {/* one */}
-        <div className="flex items-center justify-center ">
-          <img src={FooterFav} alt="" />
+    <footer className="bg-[#0b0b0b] text-white">
+      {/* Top section */}
+      <div className="container-class grid md:grid-cols-4 gap-10 py-16 2xl:py-20">
+        {/* Logo */}
+        <div className="flex flex-col items-center md:items-start">
+          <img src={Logo} alt="Agency Logo" className="w-40 mb-4" />
+          <p className="text-sm text-gray-200 text-center md:text-left">
+            We help brands unlock their full potential through strategic design,
+            storytelling, and digital solutions.
+          </p>
         </div>
 
-        {/* two */}
-        <div className="mt-4 md:mt-0">
-          <div>
-            <h4 className="uppercase md:text-lg text-white font-medium">
-              <span className="border-b-[2px] border-primary">
-                WORK WITH ME
-              </span>
-            </h4>
-
-            <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
-              <p>BRAND IDENTITY</p>
-              <p>WEBSITE-IN-A-DAY</p>
-              <p>LAUNCH DESIGN + TECH</p>
-            </div>
-          </div>
-
-          <div className="mt-8">
-            <h4 className="uppercase md:text-lg text-white font-medium">
-              <span className="border-b-[2px] border-primary">
-                FOR DESIGNERS
-              </span>
-            </h4>
-
-            <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
-              <p>1:1 COACHING</p>
-              <p>WIZARDS OF WEB DESIGN</p>
-              <p>DESIGNER TEMPLATES</p>
-            </div>
-          </div>
+        {/* Services */}
+        <div>
+          <h4 className="uppercase text-base font-medium border-b-2 border-primary inline-block mb-4">
+            Services
+          </h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>Brand Strategy</li>
+            <li>Logo & Visual Identity</li>
+            <li>Web Design & Development</li>
+            <li>Digital Marketing</li>
+          </ul>
         </div>
 
-        {/* three */}
-        <div className="mt-4 md:mt-0">
-          <div>
-            <h4 className="uppercase md:text-lg text-white font-medium">
-              <span className="border-b-[2px] border-primary">IMPORTANT</span>
-            </h4>
-
-            <div className="text-white text-[14px] mt-6 flex flex-col gap-y-1">
-              <p>BLOG</p>
-              <p>CONTACT</p>
-              <p>PRIVACY POLICY</p>
-              <p>TERMS AND CONDITIONS</p>
-            </div>
-          </div>
-
-          <div className="mt-8">
-            {/* <button className="bg-[#FFD6CA] text-black px-[16px] py-[12px] font-semibold border-4 border-transparent hover:border-[#ffe600] duration-700">
-              FREE CONSULT{" "}
-              <IoIosArrowRoundForward className="inline-block bg-transparent text-[28px]" />
-            </button> */}
-            <Button text={"FREE CONSULT"} />
-          </div>
+        {/* Resources */}
+        <div>
+          <h4 className="uppercase text-base font-medium border-b-2 border-primary inline-block mb-4">
+            Resources
+          </h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>Case Studies</li>
+            <li>Client Reviews</li>
+            <li>Free Guides</li>
+            <li>Pricing & Packages</li>
+          </ul>
         </div>
 
-        {/* four */}
-        <div className="mt-4 md:mt-0">
-          <div>
-            <h4 className="uppercase md:text-lg text-white font-medium">
-              <span className="border-b-[2px] border-primary">GET SOCIAL</span>
-            </h4>
-
-            <div className="flex gap-4 md:gap-6 justify-center text-light mt-4">
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaFacebook />
-              </button>
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaLinkedin />
-              </button>
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaInstagram />
-              </button>
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaYoutube />
-              </button>
-            </div>
-          </div>
+        {/* Support */}
+        <div>
+          <h4 className="uppercase text-base font-medium border-b-2 border-primary inline-block mb-4">
+            Support
+          </h4>
+          <ul className="space-y-2 text-sm text-gray-300 mb-6">
+            <li>FAQs</li>
+            <li>Schedule a Call</li>
+            <li>Contact Support</li>
+            <li>Terms & Privacy</li>
+          </ul>
         </div>
       </div>
 
-      {/* copyright */}
-      <div className="bg-light py-4 text-[14px] text-center">
-        <p>© DIGITAL AGENCY COPE 2023. ALL RIGHTS RESERVED</p>
+      {/* Bottom bar */}
+      <div className="border-t border-borderColor pt-5 pb-4">
+        <div className="container-class flex flex-col md:flex-row-reverse items-center justify-between gap-4">
+          {/* Social Icons */}
+          <div className="flex gap-4 md:gap-6">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[22px] hover:text-primary transition-all duration-300"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[22px] hover:text-primary transition-all duration-300"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[22px] hover:text-primary transition-all duration-300"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[22px] hover:text-primary transition-all duration-300"
+            >
+              <FaYoutube />
+            </a>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-[14px] text-gray-300 text-center md:text-right">
+            © DIGITAL AGENCY COPE {new Date().getFullYear()}. All rights
+            reserved.
+          </p>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

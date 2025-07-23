@@ -1,4 +1,5 @@
 import MahbubImage from "../../assets/home/image2.png";
+import SectionTitle from "../../components/ui/SectionTitle";
 import { skills, tools } from "../../data/about";
 import SkillBar from "./SkillBar";
 import Stats from "./Stats";
@@ -7,13 +8,12 @@ import ToolBadge from "./ToolBadge";
 const AboutSection = () => {
   return (
     <section className="container-class my-14 md:my-24">
-      <h5 className="text-primary uppercase text-base md:text-[20px] font-medium mb-2">
-        About Me
-      </h5>
-      <h2 className="text-2xl md:text-4xl mb-8 max-w-[30ch]">
-        Get a glimpse of the person behind the work and the values I stand by
-        ...
-      </h2>
+      <SectionTitle
+        title={"About Me"}
+        description={
+          "Get a glimpse of the person behind the work and the values I stand by..."
+        }
+      />
 
       <div className="max-w-[1080px] mx-auto border border-gray-900 rounded-lg">
         <div className="grid md:grid-cols-2 gap-10 items-center ">

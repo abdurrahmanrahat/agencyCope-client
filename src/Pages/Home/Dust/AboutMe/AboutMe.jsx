@@ -1,5 +1,5 @@
+import Button from "../../../../components/ui/Button";
 import AboutPhoto from "../../../assets/home/about-photo.jpg";
-import Button from "../../../components/ui/Button";
 
 const AboutMe = () => {
   return (
