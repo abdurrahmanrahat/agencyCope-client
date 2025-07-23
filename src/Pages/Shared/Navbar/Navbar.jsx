@@ -86,7 +86,7 @@ const Navbar = () => {
             </div>
 
             {/* mobile nav items */}
-            <nav className="mx-10 mt-10">
+            <nav className="mx-10 mt-16">
               <ul className="space-y-6">
                 {navItems.map((item) => (
                   <li key={item.id} onClick={handleNavToggle}>

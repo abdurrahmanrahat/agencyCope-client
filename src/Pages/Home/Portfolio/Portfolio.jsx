@@ -15,7 +15,7 @@ const Portfolio = () => {
       : projects.filter((p) => p.tags.includes(selected));
 
   return (
-    <section className="container-class my-14 md:my-24">
+    <section className="container-class mb-14 md:mb-24">
       <SectionTitle
         title={"Select Works"}
         description={"Projects that showcase my expertise and creativity"}
