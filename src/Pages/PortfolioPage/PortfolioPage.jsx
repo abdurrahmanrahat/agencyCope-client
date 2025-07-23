@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projectCategories, projects } from "../../utils/project";
+import { projectCategories, projects } from "../../data/project";
 import PortfolioCard from "../Home/Portfolio/PortfolioCard";
 
 const PortfolioPage = () => {

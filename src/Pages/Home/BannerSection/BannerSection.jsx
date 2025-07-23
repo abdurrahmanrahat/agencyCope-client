@@ -9,7 +9,7 @@ import MyButton from "../../../components/ui/MyButton";
 
 const BannerSection = () => {
   return (
-    <div className="relative bg-[#151415] rounded-lg mx-[2%] lg:mx-[3%] 2xl:mx-[5%]">
+    <div className="relative bg-darkShed rounded-lg mx-[2%] lg:mx-[3%] 2xl:mx-[5%]">
       <div className="container-class lg:flex flex-row-reverse lg:gap-4 overflow-hidden min-h-screen lg:px-10">
         {/* Corner Lines */}
         <div className="absolute w-32 h-[1px] bg-gray-800 rotate-45 top-0 left-0 origin-top-left translate-x-[10px] translate-y-[10px]" />

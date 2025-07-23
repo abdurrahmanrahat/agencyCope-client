@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ramonak/react-progress-bar": "^5.4.0",
     "aos": "^2.3.4",
     "clsx": "^2.1.0",
     "localforage": "^1.10.0",

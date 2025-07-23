@@ -13,7 +13,7 @@ const ShowServices = () => {
 
   return (
     <div className="">
-      <div className="py-16 md:py-24">
+      <div className="my-14 md:my-24">
         <div className="container-class">
           <div
             className="flex flex-col justify-center items-center overflow-hidden"
