@@ -16,25 +16,22 @@ const ReviewSection = () => {
   }, []);
 
   return (
-    <div className="max-w-screen-xl mx-auto overflow-hidden">
+    <div className="container-class">
       <div
-        className="text-center my-16 md:my-24"
+        className="my-16 md:my-24"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
-        <div className="flex flex-col justify-center items-center ">
-          <h4 className="uppercase text-lg font-semibold">
-            <span className="border-b-[3px] border-primary">TESTIMONIALS</span>
-          </h4>
-          <h2 className="text-[14px] lg:text-[16px] max-w-[60ch] text-center mt-3">
-            Clients share their thoughts and experience of working with our
-            agency, providing invaluable insights and comments
-          </h2>
-        </div>
+        <h5 className="text-primary uppercase text-base md:text-[20px] font-medium mb-2">
+          TESTIMONIALS
+        </h5>
+        <h2 className="text-2xl md:text-4xl mb-8">
+          Clients review with whom i work before
+        </h2>
 
         {/* slider section start */}
         <Swiper
-          spaceBetween={50}
+          spaceBetween={30}
           slidesPerView={2}
           autoplay={{
             delay: 2500,
@@ -53,44 +50,42 @@ const ReviewSection = () => {
             },
             840: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
           }}
         >
           {/* map section start */}
           {reviews?.map((data) => (
             <SwiperSlide key={data._id}>
-              <div className="group group/item mt-10 py-6 bg-light lg:px-12 mx-3 rounded-md">
+              <div className="group mt-10 px-6 py-8 bg-[#0b0b0b] rounded-xl shadow-md hover:shadow-lg transition-all duration-700 border border-transparent">
+                {/* Quote Icon */}
                 <div className="flex items-center justify-center mb-5">
-                  <FaQuoteLeft className="text-4xl text- hover:text-yellow-300 text-gray-400 duration-500" />
+                  <FaQuoteLeft className="text-4xl text-primary group-hover:scale-110 transition-transform duration-500" />
                 </div>
 
-                <div>
-                  <p className="font-medium text-gray-700 text-center lg:text-base text-sm">
-                    {data?.review}
-                  </p>
-                </div>
+                {/* Review Text */}
+                <p className="text-gray-300 text-center text-base leading-relaxed mb-6">
+                  {data?.review}
+                </p>
 
-                <div className="flex items-center justify-center">
-                  <div className="flex items-center">
-                    <div className="w-20 h-20 mt-5">
-                      <img
-                        className="rounded-full hover:border-4 group-hover:border-yellow-500 border-4 border-gray-300 duration-300 w-36 h-20"
-                        src={data?.image}
-                        alt=""
-                      />
-                    </div>
-                    <div className="ms-4 mt-5">
-                      <h2 className="text-xl font-black">{data?.name}</h2>
-                      <p className="text-center font-semibold text-gray-500 text-sm">
-                        Client
-                      </p>
-                    </div>
+                {/* Reviewer Info */}
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-primary transition-all duration-500">
+                    <img
+                      src={data?.image}
+                      alt={data?.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
+                  <h2 className="text-lg font-bold text-white mt-4">
+                    {data?.name}
+                  </h2>
+                  <p className="text-sm text-gray-400">Client</p>
                 </div>
               </div>
             </SwiperSlide>
           ))}
+
           {/* map section end */}
         </Swiper>
       </div>
