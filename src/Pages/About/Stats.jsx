@@ -16,6 +16,7 @@ const Stats = () => {
       label: "Client retention rate",
     },
   ];
+
   return (
     <div className="grid md:grid-cols-3 gap-6 lg:gap-8 text-center">
       {stats.map((stat, index) => (

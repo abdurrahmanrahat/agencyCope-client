@@ -2,23 +2,26 @@ import ServicesCover from "../../../assets/services/service-img.png";
 
 const ServicesBanner = () => {
   return (
-    <div className="bg-[#16191e] text-[#f4f4f4]">
+    <section className="relative">
       <div
-        className="bg-cover h-80 lg:h-[360px] xl:h-[400px] 2xl:h-[440px] relative"
+        className="bg-cover bg-center bg-no-repeat h-80 lg:h-[380px] xl:h-[420px] 2xl:h-[460px] relative"
         style={{ backgroundImage: `url(${ServicesCover})` }}
       >
-        <div className="w-full flex flex-col items-center justify-center gap-4 p-4 md:p-0 py-8 md:py-0 absolute inset-0 bg-[#16191ebb] bg-opacity-90">
-          <h2 className="text-[24px] lg:text-[36px] 2xl:text-[40px] font-medium">
-            Let’s work together
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm"></div>
+
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+          <h2 className="text-white text-[26px] md:text-[36px] lg:text-[44px] font-medium leading-snug drop-shadow-md">
+            Let’s Build Your Brand Together
           </h2>
-          <h4 className="text-[16px] max-w-[60ch] text-center">
-            Towards Building Your Dream Brand Identity with Attractive Graphics,
-            Banner & Logo Design, etc., and Make Website for Brand Identity
-            Establishment
-          </h4>
+          <p className="text-gray-200 mt-4 max-w-2xl text-[15px] md:text-[18px] leading-relaxed">
+            From impactful brand identity and logo designs to responsive
+            websites — we design to elevate your digital presence.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
