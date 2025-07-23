@@ -99,12 +99,14 @@ const Navbar = () => {
           {/* Mobile Navlinks end */}
 
           <div className="hidden lg:block">
-            <MyButton
-              mobileText="Book"
-              desktopText="Book a Call"
-              isOutline={false}
-              icon={<IoMdArrowForward />}
-            />
+            <Link to={`/contact`}>
+              <MyButton
+                mobileText="Book"
+                desktopText="Book a Call"
+                isOutline={false}
+                icon={<IoMdArrowForward />}
+              />
+            </Link>
           </div>
         </div>
       </div>

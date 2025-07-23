@@ -1,13 +1,16 @@
-import { TypeAnimation } from "react-type-animation";
-// import BannerImage from "../../../assets/home/banner-photo.png";
-// import BannerImage from "../../../assets/home/person1.png";
 import { FaWhatsapp } from "react-icons/fa6";
 import { SiGooglemeet } from "react-icons/si";
 import { Link } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
 import BannerImage from "../../../assets/home/image1.png";
 import MyButton from "../../../components/ui/MyButton";
 
 const BannerSection = () => {
+  const whatsAppNumber = "8801929157108";
+  const baseUrl = "https://api.whatsapp.com/send/";
+  const encodedMessage = "Hi there, is there anyone to assist me?";
+  const whatsAppLink = `${baseUrl}?phone=${whatsAppNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
+
   return (
     <div className="relative bg-darkShed rounded-lg mx-[2%] lg:mx-[3%] 2xl:mx-[5%]">
       <div className="container-class lg:flex flex-row-reverse items-center justify-center lg:gap-4 overflow-hidden md:min-h-screen lg:px-10 py-20 md:py-0">
@@ -89,12 +92,14 @@ const BannerSection = () => {
             </div>
           </div> */}
           <div className="flex gap-2">
-            <MyButton
-              mobileText="WhatsApp"
-              desktopText="Chat Real-Time"
-              isOutline={false}
-              icon={<FaWhatsapp className="w-7 h-7" />}
-            />
+            <Link to={whatsAppLink} target="_blank" rel="noreferrer noopener">
+              <MyButton
+                mobileText="WhatsApp"
+                desktopText="Chat Real-Time"
+                isOutline={false}
+                icon={<FaWhatsapp className="w-7 h-7" />}
+              />
+            </Link>
             <Link to={`/contact`}>
               <MyButton
                 mobileText="Meeting"
