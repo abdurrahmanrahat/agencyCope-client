@@ -1,0 +1,34 @@
+/* Cursor.css */
+.custom-cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    /* background-color: #caff00; */
+    background-color: transparent;
+    border: 1px solid #caff00;
+    /* Replace with #0B3B87 or any glow color */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px 3px #caff00;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0px 0px #caff00;
+    }
+
+    40% {
+        box-shadow: 0 0 6px 2px #caff00;
+    }
+
+    60% {
+        box-shadow: 0 0 6px 2px #caff00;
+    }
+
+    100% {
+        box-shadow: 0 0 0px 0px #caff00;
+    }
+}

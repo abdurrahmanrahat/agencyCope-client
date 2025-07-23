@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif']
+        roboto: ['Roboto', 'sans-serif'],
+        clashDisplay: ['ClashDisplay', 'sans-serif']
       },
       colors: {
         primary: "#ffe600", // yellow
-        dark: "#16191e", // black
+        dark: "#080708", // black
+        darkShed: "#151415",
         light: "#f4f4f4", // light gray
         myGray: "#afafaf"
       },

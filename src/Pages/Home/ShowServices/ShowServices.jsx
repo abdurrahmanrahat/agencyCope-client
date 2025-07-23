@@ -12,7 +12,7 @@ const ShowServices = () => {
   }, []);
 
   return (
-    <div className="bg-light">
+    <div className="">
       <div className="py-16 md:py-24">
         <div className="container-class">
           <div
