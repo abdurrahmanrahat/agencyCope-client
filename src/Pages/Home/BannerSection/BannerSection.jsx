@@ -91,13 +91,13 @@ const BannerSection = () => {
               </Link>
             </div>
           </div> */}
-          <div className="flex gap-2">
+          <div className="flex gap-[6px] md:gap-2 justify-between md:justify-start">
             <Link to={whatsAppLink} target="_blank" rel="noreferrer noopener">
               <MyButton
                 mobileText="WhatsApp"
                 desktopText="Chat Real-Time"
                 isOutline={false}
-                icon={<FaWhatsapp className="w-7 h-7" />}
+                icon={<FaWhatsapp className="w-5 h-5 md:w-7 md:h-7" />}
               />
             </Link>
             <Link to={`/contact`}>
@@ -105,7 +105,7 @@ const BannerSection = () => {
                 mobileText="Meeting"
                 desktopText="Schedule Meeting"
                 isOutline={true}
-                icon={<SiGooglemeet className="w-7 h-7" />}
+                icon={<SiGooglemeet className="w-5 h-5 md:w-7 md:h-7" />}
               />
             </Link>
           </div>
