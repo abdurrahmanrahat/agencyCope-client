@@ -6,6 +6,8 @@ const EmailSection = () => {
   return (
     <>
       {isCopy ? (
+        <span className="text-[#caff00] font-medium text-sm mt-1">copied!</span>
+      ) : (
         <span
           onClick={() => {
             navigator.clipboard.writeText("gdmarket20@gmail.com");
@@ -15,8 +17,6 @@ const EmailSection = () => {
         >
           gdmarket20@gmail.com
         </span>
-      ) : (
-        <span className="text-[#caff00] font-medium text-sm mt-1">copied!</span>
       )}
     </>
   );
