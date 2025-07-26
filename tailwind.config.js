@@ -11,12 +11,10 @@ export default {
         clashDisplay: ['ClashDisplay', 'sans-serif']
       },
       colors: {
-        primary: "#ffe600", // yellow
+        primary: "#D8FE00", // yellow
         dark: "#080708", // black
         darkShed: "#151415",
         borderColor: "#2a2a2a",
-        light: "#f4f4f4", // light gray
-        myGray: "#afafaf"
       },
       boxShadow: {
         myCustomShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"

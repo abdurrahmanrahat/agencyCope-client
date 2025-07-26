@@ -1,7 +1,7 @@
 const Stats = () => {
   const stats = [
     {
-      value: "5",
+      value: "6",
       valueSign: "+",
       label: "Years of experience",
     },

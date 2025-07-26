@@ -7,21 +7,11 @@ import ServicesSection from "../ServicesSection/ServicesSection";
 const Home = () => {
   return (
     <div>
-      <BannerSection></BannerSection>
-
-      {/* <SpecializeIn></SpecializeIn> */}
-
+      <BannerSection />
       <ServicesSection />
       <Portfolio />
-
-      {/* <AboutMe></AboutMe> */}
       <AboutSection />
-
-      {/* <WorkSection></WorkSection> */}
-
-      <ReviewSection></ReviewSection>
-
-      {/* <FreeGuide></FreeGuide> */}
+      <ReviewSection />
     </div>
   );
 };

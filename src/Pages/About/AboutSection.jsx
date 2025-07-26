@@ -1,4 +1,4 @@
-import MahbubImage from "../../assets/home/image2.png";
+import MahbubImage from "../../assets/about/mahbub-about.png";
 import SectionTitle from "../../components/ui/SectionTitle";
 import { skills, tools } from "../../data/about";
 import SkillBar from "./SkillBar";

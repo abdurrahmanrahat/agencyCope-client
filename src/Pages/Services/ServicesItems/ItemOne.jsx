@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import GIF from "../../../assets/services/services-one.gif";
+import ServiceModal from "../../../components/Modal/ServiceModal";
 import MyButton from "../../../components/ui/MyButton";
 
 const ItemOne = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="">
       <div
@@ -55,17 +59,20 @@ const ItemOne = () => {
                 </p>
               </div>
               <div>
-                <MyButton
-                  mobileText="GET STARTED"
-                  desktopText="LET'S GET STARTED"
-                  isOutline={false}
-                  icon={<IoMdArrowForward />}
-                />
+                <span onClick={() => setShowModal(true)}>
+                  <MyButton
+                    mobileText="GET STARTED"
+                    desktopText="LET'S GET STARTED"
+                    isOutline={false}
+                    icon={<IoMdArrowForward />}
+                  />
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <ServiceModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };
