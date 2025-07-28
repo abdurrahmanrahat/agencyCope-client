@@ -1,4 +1,6 @@
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const servicesList = [
   "Brand Identity",
@@ -36,7 +38,42 @@ const ServiceModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
+
+    // Prepare the email payload
+    const templateParams = {
+      name: form.name,
+      email: form.email,
+      message: form.message,
+      services: form.services.join(", "),
+      time: new Date().toLocaleString(), // Better readable format
+    };
+
+    // Send using EmailJS
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        (response) => {
+          if (response.status === 200) {
+            toast.success("Success! We’ll reach out to you.");
+            setForm({ name: "", email: "", services: [], message: "" });
+          } else {
+            toast.error("Something went wrong. Please try again.");
+          }
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          toast.error("❌ Failed to send your request. Try again later.");
+        }
+      );
+
+    // Close the modal after sending
     onClose();
   };
 
