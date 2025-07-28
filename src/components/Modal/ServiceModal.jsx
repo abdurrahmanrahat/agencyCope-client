@@ -3,19 +3,19 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 
 const servicesList = [
-  "Brand Identity",
+  "Brand Identity Design",
   "Graphic Design",
-  "Website Design",
+  "Website Development",
   "Digital Marketing",
   "Social Media Content",
-  "Brand Identity Design",
+  "Motion Graphics",
 ];
 
-const ServiceModal = ({ isOpen, onClose }) => {
+const ServiceModal = ({ isOpen, onClose, defaultService }) => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    services: [],
+    services: [defaultService],
     message: "",
   });
 

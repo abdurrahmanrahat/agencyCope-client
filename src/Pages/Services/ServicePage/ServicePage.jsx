@@ -1,13 +1,11 @@
-import ItemFive from "../ServicesItems/ItemFive";
-import ItemFour from "../ServicesItems/ItemFour";
-import ItemOne from "../ServicesItems/ItemOne";
-import ItemThree from "../ServicesItems/ItemThree";
-import ItemTwo from "../ServicesItems/ItemTwo";
+import { getAllServices } from "../../../data/services";
 import CountingUp from "../ServicesThings/CountingUp";
+import ServiceCard from "../ServicesThings/ServiceCard";
 import ServicesBanner from "../ServicesThings/ServicesBanner";
 import ServicesContainer from "../ServicesThings/ServicesContainer";
 
 const ServicePage = () => {
+  const servicesData = getAllServices();
   return (
     <div>
       <ServicesBanner></ServicesBanner>
@@ -18,20 +16,11 @@ const ServicePage = () => {
       {/* container clickable lists */}
       <ServicesContainer></ServicesContainer>
 
-      {/* item one */}
-      <ItemOne></ItemOne>
-
-      {/* item two */}
-      <ItemTwo></ItemTwo>
-
-      {/* item three */}
-      <ItemThree></ItemThree>
-
-      {/* item four */}
-      <ItemFour></ItemFour>
-
-      {/* item five */}
-      <ItemFive></ItemFive>
+      <div>
+        {servicesData.map((service) => (
+          <ServiceCard key={service.id} service={service} />
+        ))}
+      </div>
 
       {/* FAQ */}
       {/* <FAQ></FAQ> */}
