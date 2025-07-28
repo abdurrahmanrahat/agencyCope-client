@@ -1,5 +1,5 @@
 import AboutSocial from "../About/AboutSocial";
-import Calendly from "../About/Calendly";
+import ScheduleEvent from "../About/ScheduleEvent";
 import ContactBanner from "./ContactBanner";
 
 const Contact = () => {
@@ -8,11 +8,11 @@ const Contact = () => {
       <ContactBanner></ContactBanner>
 
       <div className="my-14 md:my-20">
-        <AboutSocial />
+        <ScheduleEvent />
       </div>
 
       <div className="mt-10 mb-16">
-        <Calendly />
+        <AboutSocial />
       </div>
     </div>
   );

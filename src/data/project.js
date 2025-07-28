@@ -1,4 +1,4 @@
-import Logo from "../assets/portfolioImg/graphic-logo-min.jpg";
+import Logo from "../assets/portfolioImg/graphic-logo.jpg";
 
 export const projectCategories = ["All", "Branding", "Logo Design"];
 

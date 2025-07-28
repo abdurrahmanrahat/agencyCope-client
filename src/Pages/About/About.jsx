@@ -1,13 +1,14 @@
 import AboutSection from "./AboutSection";
 import AboutSocial from "./AboutSocial";
-import Calendly from "./Calendly";
+import ScheduleEvent from "./ScheduleEvent";
 
 const About = () => {
   return (
     <div>
       <AboutSection />
       <AboutSocial />
-      <Calendly />
+      {/* <Calendly /> */}
+      <ScheduleEvent />
     </div>
   );
 };
