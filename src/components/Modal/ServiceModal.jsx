@@ -44,7 +44,7 @@ const ServiceModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 px-4">
-      <div className="bg-[#0e0e0e] w-full max-w-2xl rounded-2xl shadow-2xl px-8 py-5 relative text-white">
+      <div className="bg-[#0e0e0e] w-full max-w-2xl rounded-2xl shadow-2xl px-4 md:px-8 py-5 relative text-white">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -53,7 +53,7 @@ const ServiceModal = ({ isOpen, onClose }) => {
           &times;
         </button>
 
-        <h2 className="text-2xl font-medium text-center mb-8 text-[#caff00] tracking-wide uppercase">
+        <h2 className="text-2xl font-medium text-center mb-8 text-primary tracking-wide uppercase">
           Service Inquiry Form
         </h2>
 
@@ -68,7 +68,7 @@ const ServiceModal = ({ isOpen, onClose }) => {
                 required
                 value={form.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-[#caff00]"
+                className="w-full px-4 py-2 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -80,7 +80,7 @@ const ServiceModal = ({ isOpen, onClose }) => {
                 required
                 value={form.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-[#caff00]"
+                className="w-full px-4 py-2 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
           </div>
@@ -88,14 +88,14 @@ const ServiceModal = ({ isOpen, onClose }) => {
           {/* Services - Responsive Grid */}
           <div>
             <label className="text-sm mb-2 block">Select Services</label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 2xl:gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 2xl:gap-3">
               {servicesList.map((service, idx) => (
                 <label
                   key={idx}
-                  className={`text-sm px-4 py-2 rounded-md cursor-pointer border font-medium text-center transition-all ${
+                  className={`text-sm px-2 md:px-4 py-2 rounded-md cursor-pointer border font-medium text-center transition-all ${
                     form.services.includes(service)
-                      ? "bg-[#caff00] text-black border-transparent"
-                      : "bg-[#1a1a1a] text-gray-300 border-gray-700 hover:border-[#caff00]"
+                      ? "bg-primary text-black border-transparent"
+                      : "bg-[#1a1a1a] text-gray-300 border-gray-700 hover:border-primary"
                   }`}
                 >
                   <input
@@ -115,11 +115,11 @@ const ServiceModal = ({ isOpen, onClose }) => {
             <label className="text-sm mb-1 block">Your Message</label>
             <textarea
               name="message"
-              rows="4"
+              rows="3"
               required
               value={form.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-[#caff00] resize-none"
+              className="w-full px-4 py-3 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-none"
               placeholder="Tell us more about your needs..."
             ></textarea>
           </div>
@@ -127,7 +127,7 @@ const ServiceModal = ({ isOpen, onClose }) => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#caff00] text-black font-semibold py-3 rounded-md hover:bg-[#e6ff4c] transition-all text-center text-[16px]"
+            className="w-full bg-primary text-black font-semibold py-3 rounded-md hover:bg-primary/95 transition-all text-center text-[16px]"
           >
             Submit
           </button>
