@@ -24,7 +24,6 @@ export const tools = [
   { name: "MongoDB", tag: "Dev Tool", icon: mongodb },
 ];
 
-
 export const skills = [
   { label: "Adobe Illustrator", percent: 99 },
   { label: "Adobe Photoshop", percent: 90 },
