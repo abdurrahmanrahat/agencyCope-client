@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* logo section */}
           <Link href="/">
             <div className="">
-              <img src={Logo} className="w-40 rounded" alt="" />
+              <img src={Logo} className="w-48 rounded" alt="" />
             </div>
           </Link>
 

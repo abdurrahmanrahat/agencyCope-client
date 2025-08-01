@@ -22,7 +22,7 @@ const Portfolio = () => {
       />
 
       {/* Filter Buttons */}
-      <div className="flex flex-wrap gap-3 mb-8">
+      <div className="flex flex-wrap gap-2 md:gap-3 mb-8">
         {projectCategories.map((cat, index) => (
           <button
             key={index}
