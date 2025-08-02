@@ -1,11 +1,10 @@
 import AboutSocial from "../About/AboutSocial";
 import ScheduleEvent from "../About/ScheduleEvent";
-import ContactBanner from "./ContactBanner";
 
 const Contact = () => {
   return (
     <div>
-      <ContactBanner></ContactBanner>
+      {/* <ContactBanner></ContactBanner> */}
 
       <div className="my-14 md:my-20">
         <ScheduleEvent />

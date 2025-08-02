@@ -153,7 +153,6 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
             <textarea
               name="message"
               rows="3"
-              required
               value={form.message}
               onChange={handleChange}
               className="w-full px-4 py-3 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-none"

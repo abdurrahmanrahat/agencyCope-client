@@ -66,7 +66,10 @@ const AboutSocial = () => {
               icon={<IoMdArrowForward className="w-4 h-4 md:w-5 md:h-5" />}
             />
           </Link>
-          <Link to={`#`}>
+          <Link
+            to={`https://drive.google.com/file/d/1QMaFPGv1JXQg4O8ZRZUN0BPoE6tdts4s/view?usp=sharing`}
+            target="_blank"
+          >
             <MyButton
               mobileText="Resume"
               desktopText="My Resume"
