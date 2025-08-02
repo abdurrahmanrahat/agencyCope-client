@@ -69,28 +69,6 @@ const BannerSection = () => {
           </p>
 
           {/* social icons + hire button */}
-          {/* <div className="md:flex justify-between items-center">
-            <div className="flex gap-4 md:gap-6 justify-center pb-5 md:pb-0">
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaFacebook />
-              </button>
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaLinkedin />
-              </button>
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaInstagram />
-              </button>
-              <button className="text-[24px] md:text-[28px] hover:text-primary transition-all duration-500">
-                <FaYoutube />
-              </button>
-            </div>
-
-            <div className="flex justify-center">
-              <Link to="/contact">
-                <Button text={"Hire Us"} />
-              </Link>
-            </div>
-          </div> */}
           <div className="flex gap-[6px] md:gap-2 justify-between md:justify-start">
             <Link to={whatsAppLink} target="_blank" rel="noreferrer noopener">
               <MyButton

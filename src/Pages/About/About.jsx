@@ -7,7 +7,6 @@ const About = () => {
     <div>
       <AboutSection />
       <AboutSocial />
-      {/* <Calendly /> */}
       <ScheduleEvent />
     </div>
   );
