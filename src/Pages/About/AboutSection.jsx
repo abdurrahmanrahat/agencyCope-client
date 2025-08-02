@@ -30,21 +30,33 @@ const AboutSection = () => {
 
             <div className="text-gray-300 md:text-lg leading-[25px] text-justify space-y-2">
               <p>
-                I’m a professional Brand Identity and Graphic Designer with over
-                5 years of experience, specializing in impactful designs that
-                drive business growth. Since 2020.
+                I’m a passionate Graphic Designer and Digital Marketing
+                Specialist with over 7 years of experience helping brands grow
+                and thrive in competitive markets. My creative approach blends
+                impactful visuals with data-driven marketing strategies to
+                deliver real results.
               </p>
 
               <p>
-                I’ve completed 1,100+ projects and worked with 200+ brands
-                across 80% of the globe — delivering freelance, remote, and
-                in-office solutions.
+                Since 2018, I’ve successfully completed 1,200+ projects and
+                worked with more than 180 global brands across various
+                industries. My experience spans across freelance, remote, and
+                in-house roles, allowing me to adapt and excel in diverse
+                working environments.
               </p>
 
               <p>
-                I also serve as a Brand & Business Consultant, leading a team
-                that offers full digital services. My goal is to deliver
-                top-tier design that ensures client success.
+                Beyond design and marketing, I provide Business Consultancy
+                services, guiding startups and established businesses alike in
+                building strong brand identities and scalable strategies. I also
+                lead a skilled team that delivers a wide range of digital
+                services — ensuring end-to-end solutions for every client.
+              </p>
+
+              <p>
+                My mission is simple: to empower businesses through powerful
+                design, smart marketing, and strategic consulting that drive
+                long-term success.
               </p>
             </div>
           </div>

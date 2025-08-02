@@ -16,6 +16,7 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
     name: "",
     email: "",
     services: [defaultService],
+    number: "",
     message: "",
   });
 
@@ -43,7 +44,8 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
     const templateParams = {
       name: form.name,
       email: form.email,
-      message: form.message,
+      message: form.message || "Message is not given.",
+      number: form.number || "Number is not given.",
       services: form.services.join(", "),
       time: new Date().toLocaleString(), // Better readable format
     };
@@ -145,6 +147,18 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
                 </label>
               ))}
             </div>
+          </div>
+
+          {/* number */}
+          <div>
+            <label className="text-sm mb-1 block">Mobile Number</label>
+            <input
+              type="number"
+              name="number"
+              value={form.number}
+              onChange={handleChange}
+              className="w-full px-4 py-2 bg-[#1a1a1a] border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            />
           </div>
 
           {/* Message */}

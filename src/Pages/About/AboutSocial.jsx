@@ -6,8 +6,8 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
-import { FiDownload } from "react-icons/fi";
 import { IoMdArrowForward } from "react-icons/io";
+import { LuEye } from "react-icons/lu";
 import { Link } from "react-router-dom";
 import ProfileImg from "../../assets/about/about.jpg";
 import Signature from "../../assets/about/signature.webp";
@@ -74,7 +74,7 @@ const AboutSocial = () => {
               mobileText="Resume"
               desktopText="My Resume"
               isOutline={true}
-              icon={<FiDownload className="w-4 h-4 md:w-5 md:h-5" />}
+              icon={<LuEye className="w-4 h-4 md:w-5 md:h-5" />}
             />
           </Link>
         </div>
@@ -107,7 +107,7 @@ const AboutSocial = () => {
         </div>
 
         {/* EMAIL SECTION */}
-        <div className="border border-[#1a1a1a] rounded-xl p-4 text-center md:text-left ">
+        <div className="border border-[#1a1a1a] rounded-xl p-4 text-center">
           <p className="text-sm text-gray-300">Or, feel free to send a mail</p>
 
           <EmailSection />

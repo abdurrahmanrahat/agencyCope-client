@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <div className="">
       <RouterProvider router={router} />
-      <Toaster />
+      <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
     </div>
   </React.StrictMode>
 );

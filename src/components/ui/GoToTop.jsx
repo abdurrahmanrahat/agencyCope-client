@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import { IoIosArrowUp } from "react-icons/io";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,10 +32,10 @@ const GoToTop = () => {
     <div className="flex justify-center items-center">
       {isVisible && (
         <div
-          className="text-[18px] w-[48px] h-[48px] text-dark bg-primary shadow-topUpShadow rounded-full fixed bottom-[32px] right-[32px] sm:bottom-[50px] sm:right-[50px] z-[999] flex justify-center items-center cursor-pointer"
+          className="text-[18px] w-[40px] h-[40px] 2xl:w-[48px] 2xl:h-[48px] text-primary border-[2.3px] hover:bg-primary hover:text-dark transition-all duration-500 border-primary rounded-full fixed bottom-[32px] right-[32px] sm:bottom-[50px] sm:right-[50px] z-[999] flex justify-center items-center cursor-pointer"
           onClick={goToHandler}
         >
-          <FaArrowUp className="animate-pulse" />
+          <IoIosArrowUp className="" />
         </div>
       )}
     </div>

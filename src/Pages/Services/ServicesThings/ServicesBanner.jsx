@@ -1,24 +1,29 @@
 import ServicesCover from "../../../assets/services/service-img.png";
+import CountingUp from "./CountingUp";
 
 const ServicesBanner = () => {
   return (
     <section className="relative">
       <div
-        className="bg-cover bg-center bg-no-repeat h-80 lg:h-[380px] xl:h-[420px] 2xl:h-[460px] relative"
+        className="bg-cover bg-center bg-no-repeat h-[500px] md:h-[380px] xl:h-[440px] 2xl:h-[460px] relative"
         style={{ backgroundImage: `url(${ServicesCover})` }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <h2 className="text-white text-[26px] md:text-[36px] lg:text-[44px] font-medium leading-snug drop-shadow-md">
-            Let’s Build Your Brand Together
-          </h2>
-          <p className="text-gray-200 mt-4 max-w-2xl text-[15px] md:text-[18px] leading-relaxed">
-            From impactful brand identity and logo designs to responsive
-            websites — we design to elevate your digital presence.
-          </p>
+        <div className="absolute inset-0 px-6 grid place-items-center">
+          <div className="flex flex-col items-center justify-center text-center">
+            <h2 className="text-white text-[26px] md:text-[36px] lg:text-[44px] leading-snug drop-shadow-md">
+              Let’s Build Your Brand Together
+            </h2>
+            <p className="text-gray-200 mt-3 mb-8 max-w-[50ch] text-sm lg:text-base leading-relaxed">
+              From impactful brand identity and logo designs to responsive
+              websites — we design to elevate your digital presence.
+            </p>
+            {/* count up */}
+            <CountingUp />
+          </div>
         </div>
       </div>
     </section>
