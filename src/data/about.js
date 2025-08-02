@@ -25,9 +25,10 @@ export const tools = [
 ];
 
 export const skills = [
-  { label: "Adobe Illustrator", percent: 99 },
+  { label: "Adobe Illustrator", percent: 96 },
   { label: "Adobe Photoshop", percent: 90 },
-  { label: "Design Idea", percent: 93 },
-  { label: "Business Growth Idea", percent: 95 },
-  { label: "Brand Creation", percent: 99 },
+  { label: "Design Idea", percent: 98 },
+  { label: "Business Growth Idea", percent: 99 },
+  { label: "Brand Creation", percent: 97 },
+  { label: "Adobe After Effect", percent: 90 },
 ];

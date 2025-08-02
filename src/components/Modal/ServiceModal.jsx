@@ -93,14 +93,17 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
         </button>
 
         <h2 className="text-2xl font-medium text-center mb-8 text-primary tracking-wide uppercase">
-          Service Inquiry Form
+          Service Request
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-4 2xl:space-y-6">
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-2 lg:space-y-3 2xl:space-y-6 h-[500px] lg:h-[460px] overflow-y-auto px-1"
+        >
           {/* Name & Email - Two Columns */}
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm mb-1 block">Full Name</label>
+              <label className="text-sm mb-[2px] block">Full Name</label>
               <input
                 type="text"
                 name="name"
@@ -112,7 +115,7 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
             </div>
 
             <div>
-              <label className="text-sm mb-1 block">Email Address</label>
+              <label className="text-sm mb-[2px] block">Email Address</label>
               <input
                 type="email"
                 name="email"
@@ -126,7 +129,7 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
 
           {/* Services - Responsive Grid */}
           <div>
-            <label className="text-sm mb-2 block">Select Services</label>
+            <label className="text-sm mb-[2px] block">Select Services</label>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2 2xl:gap-3">
               {servicesList.map((service, idx) => (
                 <label
@@ -151,7 +154,7 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
 
           {/* number */}
           <div>
-            <label className="text-sm mb-1 block">Mobile Number</label>
+            <label className="text-sm mb-[2px] block">Mobile Number</label>
             <input
               type="number"
               name="number"
@@ -163,7 +166,7 @@ const ServiceModal = ({ isOpen, onClose, defaultService }) => {
 
           {/* Message */}
           <div>
-            <label className="text-sm mb-1 block">Your Message</label>
+            <label className="text-sm mb-[2px] block">Your Message</label>
             <textarea
               name="message"
               rows="3"

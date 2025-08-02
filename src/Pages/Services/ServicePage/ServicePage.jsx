@@ -5,6 +5,7 @@ import ServicesContainer from "../ServicesThings/ServicesContainer";
 
 const ServicePage = () => {
   const servicesData = getAllServices();
+
   return (
     <div>
       <ServicesBanner></ServicesBanner>

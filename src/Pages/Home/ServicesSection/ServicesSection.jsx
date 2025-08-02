@@ -1,13 +1,19 @@
 import { FiArrowUpRight } from "react-icons/fi";
 import { IoMdArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import DigitalMarketingImg from "../../../assets/home/services/Digital-marketing.jpg";
+import GraphicDesignImg from "../../../assets/home/services/Graphic-design.jpg";
+import WebDesignImg from "../../../assets/home/services/Web-design.jpg";
+import BrandIdentityImg from "../../../assets/home/services/bran-identity-design.jpg";
+import MotionGraphicsImg from "../../../assets/home/services/motion-graphics.png";
+import SocialMediaImg from "../../../assets/home/services/social-media-design.png";
 import MyButton from "../../../components/ui/MyButton";
 import SectionTitle from "../../../components/ui/SectionTitle";
 
 const services = [
   {
     _id: 1,
-    image: "https://i.ibb.co/dfggGRh/Graphic-design.jpg",
+    image: GraphicDesignImg,
     title: "Graphic Design",
     description:
       "Creative designs that communicate your brand, engage your audience, and captivate their attention.",
@@ -15,7 +21,7 @@ const services = [
   },
   {
     _id: 2,
-    image: "https://i.ibb.co/6XwBqQN/Web-design.jpg",
+    image: WebDesignImg,
     title: "Web Design",
     description:
       "Modern and responsive websites tailored to your business needs, providing an exceptional user experience.",
@@ -23,11 +29,35 @@ const services = [
   },
   {
     _id: 3,
-    image: "https://i.ibb.co/VwFd7zx/Digital-marketing.jpg",
+    image: DigitalMarketingImg,
     title: "Digital Marketing",
     description:
       "Strategies to boost your online presence, reach your target audience, and drive measurable result for your business.",
     url: "/services/#item-three",
+  },
+  {
+    _id: 4,
+    image: BrandIdentityImg,
+    title: "Brand Identity Design",
+    description:
+      "Distinctive brand systems that define your voice, align your visuals, and establish long-term recognition.",
+    url: "/services/#item-four",
+  },
+  {
+    _id: 5,
+    image: SocialMediaImg,
+    title: "Social Media Content",
+    description:
+      "Scroll-stopping content strategies that drive engagement, build community, and amplify your brand story.",
+    url: "/services/#item-five",
+  },
+  {
+    _id: 6,
+    image: MotionGraphicsImg,
+    title: "Motion Graphics",
+    description:
+      "Dynamic visuals and animated storytelling that elevate your messaging and captivate your audience.",
+    url: "/services/#item-six",
   },
 ];
 

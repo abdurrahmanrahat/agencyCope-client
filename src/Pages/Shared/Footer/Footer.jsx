@@ -1,5 +1,6 @@
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaFacebook, FaYoutube } from "react-icons/fa6";
+import { DiEnvato } from "react-icons/di";
+import { FaBehance, FaFlickr, FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 import Logo from "../../../assets/agency-logo.png";
 
 const Footer = () => {
@@ -62,7 +63,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-4 md:gap-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/DAgencyCope"
               target="_blank"
               rel="noreferrer"
               className="text-[22px] hover:text-primary transition-all duration-300"
@@ -70,7 +71,7 @@ const Footer = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/yeasinmahbub"
               target="_blank"
               rel="noreferrer"
               className="text-[22px] hover:text-primary transition-all duration-300"
@@ -78,20 +79,28 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.behance.net/mdyeasin1088"
               target="_blank"
               rel="noreferrer"
               className="text-[22px] hover:text-primary transition-all duration-300"
             >
-              <FaInstagram />
+              <FaBehance />
             </a>
             <a
-              href="https://youtube.com"
+              href="https://flickr.com/photos/expovector"
               target="_blank"
               rel="noreferrer"
               className="text-[22px] hover:text-primary transition-all duration-300"
             >
-              <FaYoutube />
+              <FaFlickr />
+            </a>
+            <a
+              href="https://graphicriver.net/user/yeasin_mahbub/portfolio"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[22px] hover:text-primary transition-all duration-300"
+            >
+              <DiEnvato />
             </a>
           </div>
 

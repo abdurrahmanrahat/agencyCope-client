@@ -7,7 +7,7 @@ const countingData = [
     label: "Happy Clients",
   },
   {
-    value: 8,
+    value: 7,
     sign: "+",
     label: "Years Experience",
   },

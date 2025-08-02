@@ -34,8 +34,10 @@ const BannerSection = () => {
         {/* Text Section */}
         <div className="lg:w-1/2 flex flex-col gap-y-4 justify-center items-center md:items-start my-12 lg:my-0">
           <div>
-            <h3 className="text-lg md:text-[20px]">Hi 👋, We Agency Cope</h3>
-            <div className="lg:flex gap-2 lg:gap-4 items-center">
+            <h3 className="md:text-lg text-center md:text-start">
+              Welcome to Agency Cope — Your Trusted Digital Partner
+            </h3>
+            <div className="md:flex gap-2 lg:gap-4 items-center text-center md:text-start">
               <h2 className="text-[32px] md:text-[40px] font-medium">
                 We Provide
               </h2>
@@ -59,13 +61,14 @@ const BannerSection = () => {
             </div>
           </div>
           <p
-            className="text-center md:text-justify text-[17px] md:text-[19px]"
+            className="text-center md:text-start md:text-[17px]"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            Agency Cope is a performance and ROI-focused Digital Marketing
-            agency providing Graphic Design, SEO, Web Design & Development, and
-            Brand Identity in Bangladesh with 10+ years of hands-on experience.
+            Agency Cope is a performance-driven digital marketing agency
+            specializing in Graphic Design, SEO, Web Development, and Brand
+            Identity. With over 7 years of hands-on experience, we help brands
+            grow smarter and faster. Based in Bangladesh, serving globally.
           </p>
 
           {/* social icons + hire button */}
@@ -94,3 +97,5 @@ const BannerSection = () => {
 };
 
 export default BannerSection;
+
+// 👋

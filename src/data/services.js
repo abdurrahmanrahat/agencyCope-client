@@ -32,7 +32,7 @@ const servicesData = [
     index: "02",
     title: "Website Development",
     description:
-      "Are u looking for DESKTOP, MOBILE & TABLET friendly responsive and beautiful website? So you are on right place. I can create best RESPONSIVE website in very short interval of time for you.",
+      "Looking for a responsive and visually stunning website for your business? You're in the right place. I build modern, fast, and fully functional websites in a short turnaround time.",
     img: service2,
     items: [
       "Up to 5 pages",
@@ -119,6 +119,29 @@ const servicesData = [
     timeframe: "4 weeks",
     price: "$1299 usd",
   },
+  {
+  id: "item-six",
+  index: "06",
+  title: "Motion Graphics",
+  description:
+    "Bring your brand to life through captivating motion graphics that engage, explain, and inspire. Whether it's animated logos, explainer videos, or social content—our visuals deliver impact with every frame.",
+  img: service3,
+  items: [
+    "Animated Logo Reveal",
+    "Explainer Video (up to 60s)",
+    "Kinetic Typography",
+    "Infographic Animation",
+    "Social Media Motion Posts (up to 5)",
+    "Custom Sound Design",
+    "Storyboarding & Scripting",
+    "Revisions Included (3 rounds)",
+    "HD Export (MP4/WEBM)",
+    "YouTube Thumbnail & Cover",
+    "Platform Optimization (IG, FB, TikTok)",
+  ],
+  timeframe: "2–3 weeks",
+  price: "$1499 usd",
+}
 ];
 
 function getAllServices(){
@@ -126,6 +149,6 @@ function getAllServices(){
 }
 
 export {
-    getAllServices
+  getAllServices
 };
 

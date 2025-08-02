@@ -1,21 +1,52 @@
-import { useEffect, useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ElizabethImage from "../../../assets/home/reviews/elizabeth.jpeg";
+import VarimureImage from "../../../assets/home/reviews/varlmure.webp";
 import SectionTitle from "../../../components/ui/SectionTitle";
 
+const reviews = [
+  {
+    _id: 1,
+    name: "Elizabeth Gooch MBE",
+    review:
+      "I've worked with Yeasin on a number of graphic design and presentation tasks. He's reliable, responsive, and offers a very cost-effective service. We've been able to make good use of the time zone difference — I often send over requests at the end of my day and find the work ready by the next morning. If you're looking for a responsive, budget-friendly design support, Yeasin is a lovely guy to work with.",
+    image: ElizabethImage,
+  },
+  {
+    _id: 2,
+    name: "Reviewtracy",
+    review:
+      "Very pleasant cooperation experience, we communicate very frequently, the designer will be patient to listen to my modification comments and make a reasonable design, of course, his modification ideas are also quite good, in short, I got the design I wanted.",
+    image: null,
+  },
+  {
+    _id: 3,
+    name: "Putocall",
+    review:
+      "I enjoyed working on this project. Dave communicated all expectations and requirements upfront and he was responsive to any of my requests for clarification. I liked working with him and hope to have the opportunity to work with him again. Thanks!",
+    image: null,
+  },
+  {
+    _id: 4,
+    name: "Laura Joyce",
+    review:
+      "I wanted a logo for my Business and social media pages and i’ve got exactly what I wanted great service fast very impressed thank you so much MOVE WITH THE TIMES",
+    image: null,
+  },
+  {
+    _id: 5,
+    name: "Vari Mure",
+    review:
+      "Thank you for the logo work. It was what I was looking for. I cannot fault the quality of the work. Just that there where many iterations as the seller did not read the brief and was not clear on what the expectations where, and did not clarify expectations upfront before starting the work. However, once the requirements were understood, the quality was superb.",
+    image: VarimureImage,
+  },
+];
+
 const ReviewSection = () => {
-  const [reviews, setReviews] = useState([]);
-
-  useEffect(() => {
-    fetch("reviews.json")
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
-
   return (
     <div
       className="container-class my-16 md:my-24"
@@ -68,12 +99,16 @@ const ReviewSection = () => {
 
               {/* Reviewer Info */}
               <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-primary transition-all duration-500">
-                  <img
-                    src={data?.image}
-                    alt={data?.name}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-20 h-20 rounded-full overflow-hidden border-[3px] border-gray-600 group-hover:border-primary transition-all duration-500 bg-gray-800 flex items-center justify-center text-white text-3xl font-semibold">
+                  {data?.image ? (
+                    <img
+                      src={data.image}
+                      alt={data.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <span>{data?.name?.[0]?.toUpperCase() || "?"}</span>
+                  )}
                 </div>
                 <h2 className="text-lg font-bold text-white mt-4">
                   {data?.name}

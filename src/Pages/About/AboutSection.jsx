@@ -28,7 +28,7 @@ const AboutSection = () => {
               </h3>
             </div>
 
-            <div className="text-gray-300 md:text-lg leading-[25px] text-justify space-y-2">
+            <div className="text-gray-300 md:text-lg leading-[25px] space-y-2">
               <p>
                 I’m a passionate Graphic Designer and Digital Marketing
                 Specialist with over 7 years of experience helping brands grow
