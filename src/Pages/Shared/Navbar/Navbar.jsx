@@ -5,7 +5,6 @@ import { IoMdArrowForward, IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/agency-logo.png";
 import ActiveLink from "../../../components/ActiveLink/ActiveLink";
-import MyButton from "../../../components/ui/MyButton";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -55,12 +54,13 @@ const Navbar = () => {
 
         <div className="hidden lg:block">
           <Link to="/contact">
-            <MyButton
-              mobileText="Book"
-              desktopText="Book a Call"
-              isOutline={false}
-              icon={<IoMdArrowForward />}
-            />
+            <button
+              className={`text-[18px] rounded-md border border-primary bg-primary text-black hover:bg-transparent hover:text-primary duration-700 px-[16px] py-[8px] flex gap-4 items-center`}
+            >
+              <span className="lg:hidden">Book</span>
+              <span className="hidden lg:block">Book a Call</span>
+              <IoMdArrowForward />
+            </button>
           </Link>
         </div>
       </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
             transition={{ duration: 0.5, ease: "linear" }}
             className="fixed top-0 w-full bg-darkShed text-white shadow-lg z-50 border-b border-borderColor"
           >
-            {NavbarContent("py-4")}
+            {NavbarContent("py-3")}
           </motion.div>
         )}
       </AnimatePresence>

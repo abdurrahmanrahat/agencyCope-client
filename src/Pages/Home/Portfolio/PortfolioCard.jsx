@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const PortfolioCard = ({ project }) => {
   return (
-    <Link to={`#`}>
+    <Link to={project.href} target="_blank">
       <div className="bg-[#151415] rounded-lg p-4 flex flex-col justify-between group overflow-hidden h-[370px]">
         <div className="overflow-hidden rounded-lg h-56">
           <img

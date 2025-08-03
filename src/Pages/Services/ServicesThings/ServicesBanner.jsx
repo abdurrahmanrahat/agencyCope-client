@@ -15,11 +15,12 @@ const ServicesBanner = () => {
         <div className="absolute inset-0 px-6 grid place-items-center">
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-white text-[26px] md:text-[36px] lg:text-[44px] leading-snug drop-shadow-md">
-              Let’s Build Your Brand Together
+              Building Strong Brands, United
             </h2>
             <p className="text-gray-200 mt-3 mb-8 max-w-[50ch] text-sm lg:text-base leading-relaxed">
-              From impactful brand identity and logo designs to responsive
-              websites — we design to elevate your digital presence.
+              Brand identity, logo design, responsive websites, digital
+              marketing, social media content, and motion graphics — all crafted
+              to boost your digital presence.
             </p>
             {/* count up */}
             <CountingUp />

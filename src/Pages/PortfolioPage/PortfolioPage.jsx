@@ -13,18 +13,18 @@ const PortfolioPage = () => {
   return (
     <section className="container-class my-14 md:my-20">
       <h5 className="text-primary uppercase text-base md:text-[20px] font-medium mb-2">
-        Select Works
+        Featured Projects
       </h5>
-      <h2 className="text-2xl md:text-4xl mb-8">
-        Projects that showcase my expertise and creativity
+      <h2 className="text-xl md:text-2xl lg:text-3xl mb-8">
+        Showcasing innovative work that reflects my skills and originality
       </h2>
 
       {/* Filter Buttons */}
-      <div className="flex gap-3 mb-8">
+      <div className="flex flex-wrap gap-2 md:gap-3 mb-8">
         {projectCategories.map((cat, index) => (
           <button
             key={index}
-            className={`px-6 py-[10px] border border-gray-800 hover:bg-primary hover:text-dark rounded-full transition-all duration-300 ${
+            className={`px-4 md:px-6 py-2 md:py-[10px] border border-gray-800 hover:bg-primary hover:text-dark rounded-full transition-all duration-300 ${
               selected === cat ? "text-dark bg-primary" : ""
             }`}
             onClick={() => setSelected(cat)}

@@ -17,8 +17,10 @@ const Portfolio = () => {
   return (
     <section className="container-class mb-14 md:mb-24">
       <SectionTitle
-        title={"Select Works"}
-        description={"Projects that showcase my expertise and creativity"}
+        title={"Featured Projects"}
+        description={
+          "Showcasing innovative work that reflects my skills and originality"
+        }
       />
 
       {/* Filter Buttons */}

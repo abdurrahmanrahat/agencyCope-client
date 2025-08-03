@@ -1,5 +1,5 @@
 import { DiEnvato } from "react-icons/di";
-import { FaBehance, FaFlickr, FaLinkedin } from "react-icons/fa";
+import { FaBehance, FaFlickr, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import Logo from "../../../assets/agency-logo.png";
 
@@ -63,7 +63,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-4 md:gap-6">
             <a
-              href="https://www.facebook.com/DAgencyCope"
+              href="https://www.facebook.com/agency.cope"
               target="_blank"
               rel="noreferrer"
               className="text-[22px] hover:text-primary transition-all duration-300"
@@ -93,6 +93,14 @@ const Footer = () => {
               className="text-[22px] hover:text-primary transition-all duration-300"
             >
               <FaFlickr />
+            </a>
+            <a
+              href="https://www.instagram.com/agencycope"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[22px] hover:text-primary transition-all duration-300"
+            >
+              <FaInstagram />
             </a>
             <a
               href="https://graphicriver.net/user/yeasin_mahbub/portfolio"

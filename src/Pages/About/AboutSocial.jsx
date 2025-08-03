@@ -1,10 +1,10 @@
+import { DiEnvato } from "react-icons/di";
 import {
   FaBehance,
-  FaDribbble,
   FaFacebookF,
+  FaFlickr,
   FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
 } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 import { LuEye } from "react-icons/lu";
@@ -15,12 +15,43 @@ import MyButton from "../../components/ui/MyButton";
 import EmailSection from "./EmailSection";
 
 const socials = [
-  { name: "Dribbble", label: "Explorations", icon: FaDribbble, link: "#" },
-  { name: "Behance", label: "Case Studies", icon: FaBehance, link: "#" },
-  { name: "Instagram", label: "Follow", icon: FaInstagram, link: "#" },
-  { name: "Linkedin", label: "Connect", icon: FaLinkedinIn, link: "#" },
-  { name: "YouTube", label: "Subscribe", icon: FaYoutube, link: "#" },
-  { name: "Facebook", label: "Follow", icon: FaFacebookF, link: "#" },
+  {
+    name: "Facebook",
+    label: "Follow",
+    icon: FaFacebookF,
+    link: "https://www.facebook.com/agency.cope",
+  },
+  {
+    name: "Linkedin",
+    label: "Connect",
+    icon: FaLinkedinIn,
+    link: "https://www.linkedin.com/in/yeasinmahbub",
+  },
+  {
+    name: "Flickr",
+    label: "Case Studies",
+    icon: FaBehance,
+    link: "https://www.behance.net/mdyeasin1088",
+  },
+  {
+    name: "Dribbble",
+    label: "Explorations",
+    icon: FaFlickr,
+    link: "https://flickr.com/photos/expovector",
+  },
+  {
+    name: "Instagram",
+    label: "Follow",
+    icon: FaInstagram,
+    link: "https://www.instagram.com/agencycope",
+  },
+
+  {
+    name: "Graphic River",
+    label: "Visit",
+    icon: DiEnvato,
+    link: "https://graphicriver.net/user/yeasin_mahbub/portfolio",
+  },
 ];
 
 const AboutSocial = () => {
@@ -49,12 +80,6 @@ const AboutSocial = () => {
 
         {/* Signature */}
         <img src={Signature} className="w-28" alt="signature" />
-
-        {/* Status */}
-        {/* <p className="mt-6 text-sm flex items-center gap-2 text-green-400">
-          <span className="h-2 w-2 rounded-full bg-green-400 inline-block"></span>
-          Taking Projects May
-        </p> */}
 
         {/* Buttons */}
         <div className="flex gap-[6px] md:gap-2 justify-between md:justify-start mt-6">

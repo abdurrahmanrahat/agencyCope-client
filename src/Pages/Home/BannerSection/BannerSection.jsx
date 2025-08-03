@@ -68,7 +68,7 @@ const BannerSection = () => {
             Agency Cope is a performance-driven digital marketing agency
             specializing in Graphic Design, SEO, Web Development, and Brand
             Identity. With over 7 years of hands-on experience, we help brands
-            grow smarter and faster. Based in Bangladesh, serving globally.
+            grow smarter and faster, based in Bangladesh serving globally.
           </p>
 
           {/* social icons + hire button */}

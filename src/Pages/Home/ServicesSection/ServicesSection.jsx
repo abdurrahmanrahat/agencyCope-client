@@ -5,8 +5,8 @@ import DigitalMarketingImg from "../../../assets/home/services/Digital-marketing
 import GraphicDesignImg from "../../../assets/home/services/Graphic-design.jpg";
 import WebDesignImg from "../../../assets/home/services/Web-design.jpg";
 import BrandIdentityImg from "../../../assets/home/services/bran-identity-design.jpg";
-import MotionGraphicsImg from "../../../assets/home/services/motion-graphics.png";
-import SocialMediaImg from "../../../assets/home/services/social-media-design.png";
+import MotionGraphicsImg from "../../../assets/home/services/motion-graphics.jpg";
+import SocialMediaImg from "../../../assets/home/services/social-media-design.jpg";
 import MyButton from "../../../components/ui/MyButton";
 import SectionTitle from "../../../components/ui/SectionTitle";
 
@@ -65,8 +65,10 @@ const ServicesSection = () => {
   return (
     <section className="container-class py-14 lg:py-20">
       <SectionTitle
-        title={"Services"}
-        description={"Customized services designed to meet your unique needs"}
+        title={"Our Services"}
+        description={
+          "Custom-built solutions engineered for your brand’s success"
+        }
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

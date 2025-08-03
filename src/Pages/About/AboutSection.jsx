@@ -11,7 +11,7 @@ const AboutSection = () => {
       <SectionTitle
         title={"About Me"}
         description={
-          "Get a glimpse of the person behind the work and the values I stand by..."
+          "Discover the mind behind the craft and the principles that guide it"
         }
       />
 
@@ -28,7 +28,7 @@ const AboutSection = () => {
               </h3>
             </div>
 
-            <div className="text-gray-300 md:text-lg leading-[25px] space-y-2">
+            <div className="text-gray-300 md:text-lg leading-[25px] space-y-2 text-justify">
               <p>
                 I’m a passionate Graphic Designer and Digital Marketing
                 Specialist with over 7 years of experience helping brands grow
@@ -76,9 +76,7 @@ const AboutSection = () => {
         <div className="p-6 space-y-8 md:space-y-12">
           {/* Tools */}
           <div className="">
-            <h3 className="text-xl md:text-[28px] mb-6">
-              Essential tools I use
-            </h3>
+            <h3 className="text-xl md:text-[28px] mb-6">Tools We Use</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4">
               {tools.map((tool, index) => (
                 <ToolBadge key={index} {...tool} />
@@ -89,7 +87,7 @@ const AboutSection = () => {
           {/* Capabilities & Sidebar */}
           <div className="grid md:grid-cols-2 gap-10 ">
             <div>
-              <h3 className="text-xl md:text-[28px] mb-6">Capabilities</h3>
+              <h3 className="text-xl md:text-[28px] mb-6">Abilities</h3>
               {skills.map((skill, index) => (
                 <SkillBar key={index} {...skill} />
               ))}
@@ -98,9 +96,11 @@ const AboutSection = () => {
             <div className="w-full">
               <div className="space-y-6">
                 {/* Languages */}
-                <div className="md:flex justify-between items-center border-y border-gray-900 py-4">
+                <div className="md:flex justify-between items-center border-y border-gray-900 py-4 ">
                   <div className="md:text-[17px] mb-4">Languages</div>
-                  <div className="">English – Professional Level, Bangla</div>
+                  <div className="">
+                    English, Bangla, Italian, French & Spanish
+                  </div>
                 </div>
 
                 {/* Soft Skills */}
@@ -109,12 +109,12 @@ const AboutSection = () => {
                   <div>
                     <ul className="space-y-1 list-disc list-inside marker:text-primary">
                       {[
-                        "Creativity and attention to detail",
+                        "Creative and detailed",
                         "Excellent communication skills",
-                        "Organisational abilities",
-                        "Excellent time management skills",
-                        "Adaptability to client needs",
-                        "Passion for learning",
+                        "Strong organizational abilities",
+                        "Effective time management",
+                        "Adaptive to clients",
+                        "Passionate about learning",
                       ].map((skill, index) => (
                         <li key={index}>{skill}</li>
                       ))}

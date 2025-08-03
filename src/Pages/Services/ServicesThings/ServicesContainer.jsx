@@ -37,16 +37,16 @@ const ServicesContainer = () => {
               Our Services
             </h5>
             <h2 className="md:text-xl text-center ">
-              Confidently grow with strategic, bold design and smart systems
+              Accelerate success with strategic creativity and efficient systems
             </h2>
           </div>
 
           {/* clickable services list */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-16 text-center mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:px-16 text-center mt-12">
             {serviceLinks.map((item, index) => (
               <div key={index}>
                 <a href={item.href}>
-                  <span className="border-b-2 border-primary text-primary shadow-class bg-[#16191E] rounded-md px-3 py-2 capitalize">
+                  <span className="border-b-2 lg:text-lg border-primary text-primary shadow-class bg-[#16191E] rounded-md px-3 py-2 capitalize">
                     {item.label}
                   </span>
                 </a>

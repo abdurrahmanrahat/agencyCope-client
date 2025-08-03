@@ -9,7 +9,7 @@ const servicesData = [
     index: "01",
     title: "Brand Identity Design",
     description:
-      "Position yourself as an established expert in your space with a crystal clear brand identity. Say goodbye to the endless DIY struggle and hours spent in Canva, and get a custom brand style that will make your ideal clients fall in love. When we are done, you will walk away with a brand that looks and feels like you and that you will be proud to share online.",
+      "Crafting distinctive and cohesive brand identities that resonate with your target audience and establish lasting recognition",
     img: service1,
     items: [
       "Brand Consultation",
@@ -32,7 +32,7 @@ const servicesData = [
     index: "02",
     title: "Website Development",
     description:
-      "Looking for a responsive and visually stunning website for your business? You're in the right place. I build modern, fast, and fully functional websites in a short turnaround time.",
+      "Building responsive, user-friendly websites optimized for performance, scalability, and seamless user experiences",
     img: service2,
     items: [
       "Up to 5 pages",
@@ -55,7 +55,7 @@ const servicesData = [
     index: "03",
     title: "Graphic Design",
     description:
-      "Position yourself as an established expert in your space with a crystal clear brand identity. Say goodbye to the endless DIY struggle and hours spent in Canva, and get a custom brand style that will make your ideal clients fall in love. When we are done, you will walk away with a brand that looks and feels like you and that you will be proud to share online.",
+      "Creating visually compelling graphics that communicate your message clearly and enhance your brand’s appeal",
     img: service3,
     items: [
       "Brand Consultation",
@@ -78,7 +78,7 @@ const servicesData = [
     index: "04",
     title: "Digital Marketing",
     description:
-      "Position yourself as an established expert in your space with a crystal clear brand identity. Say goodbye to the endless DIY struggle and hours spent in Canva, and get a custom brand style that will make your ideal clients fall in love. When we are done, you will walk away with a brand that looks and feels like you and that you will be proud to share online.",
+      "Implementing data-driven marketing strategies to increase visibility, engagement, and conversion across digital channels",
     img: service4,
     items: [
       "Brand Consultation",
@@ -101,7 +101,7 @@ const servicesData = [
     index: "05",
     title: "Social Media Content",
     description:
-      "Position yourself as an established expert in your space with a crystal clear brand identity. Say goodbye to the endless DIY struggle and hours spent in Canva, and get a custom brand style that will make your ideal clients fall in love. When we are done, you will walk away with a brand that looks and feels like you and that you will be proud to share online.",
+      "Developing engaging and shareable content tailored to your audience to boost brand awareness and interaction",
     img: service5,
     items: [
       "6 platforms",
@@ -124,7 +124,7 @@ const servicesData = [
   index: "06",
   title: "Motion Graphics",
   description:
-    "Bring your brand to life through captivating motion graphics that engage, explain, and inspire. Whether it's animated logos, explainer videos, or social content—our visuals deliver impact with every frame.",
+    "Producing dynamic animations and videos that bring your brand story to life and captivate your audience",
   img: service3,
   items: [
     "Animated Logo Reveal",

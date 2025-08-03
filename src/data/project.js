@@ -1,30 +1,32 @@
-import Logo from "../assets/portfolioImg/graphic-logo.jpg";
+import Branding from "../assets/portfolio/Branding.jpg";
+import PortfolioImage from "../assets/portfolio/content-creation.jpg";
+import Logo from "../assets/portfolio/logo-branding.jpg";
 
-export const projectCategories = ["All", "Branding", "Logo Design"];
+export const projectCategories = ["All", "Branding", "Logo Design", "Content Creation"];
 
 export const projects = [
   {
     id: 1,
-    title: "Miniety",
-    description: "Miniety – M90 Logo Design, Branding & Identity Project",
+    title: "Logo Design",
+    description: "Crafting memorable logos that define your brand identity",
     tags: ["Branding", "Logo Design"],
     image: Logo,
-    accentColor: "#facc15", // Tailwind yellow-400
+    href: "https://flickr.com/photos/expovector",
   },
   {
     id: 2,
-    title: "Pure Farmers",
-    description: "Crop, Farm, Agriculture, Leaf Logo for Pure Farmers",
-    tags: ["Logo Design"],
-    image: Logo,
-    accentColor: "#15803d", // Tailwind green-700
+    title: "Content Creation",
+    description: "Designing engaging, brand-aligned visual content for digital marketing success",
+    tags: ["Content Creation"],
+    image: PortfolioImage,
+    href: "https://www.behance.net/mdyeasin1088",
   },
   {
     id: 3,
-    title: "Shadhin Digital",
-    description: "Shadhin Digital, Font Based, S Letter, Brandmark Logo Design",
+    title: "Branding",
+    description: "Building cohesive brand strategies that strengthen market presence",
     tags: ["Branding"],
-    image: Logo,
-    accentColor: "#3b82f6", // Tailwind blue-500
+    image: Branding,
+    href: "https://flickr.com/photos/expovector",
   },
 ];
