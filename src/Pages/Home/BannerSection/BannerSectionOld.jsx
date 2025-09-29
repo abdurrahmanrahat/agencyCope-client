@@ -2,7 +2,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { SiGooglemeet } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-import BannerImage from "../../../assets/home/mahbub.png";
+import BannerImage from "../../../assets/about/mahbub.png";
 import MyButton from "../../../components/ui/MyButton";
 
 const BannerSectionOld = () => {

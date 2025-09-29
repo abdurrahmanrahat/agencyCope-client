@@ -1,4 +1,3 @@
-import AboutSection from "../../CEO/AboutSection";
 import BannerSection from "../BannerSection/BannerSection";
 import Portfolio from "../Portfolio/Portfolio";
 import ReviewSection from "../ReviewSection/ReviewSection";
@@ -10,7 +9,7 @@ const Home = () => {
       <BannerSection />
       <ServicesSection />
       <Portfolio />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <ReviewSection />
     </div>
   );

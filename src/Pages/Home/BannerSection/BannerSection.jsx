@@ -14,7 +14,7 @@ const BannerSection = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-dark opacity-80"></div>
+      <div className="absolute inset-0 bg-dark opacity-70"></div>
 
       {/* Content */}
       <div className="relative z-10 text-white text-center px-4 flex flex-col items-center justify-center gap-5 2xl:gap-7">

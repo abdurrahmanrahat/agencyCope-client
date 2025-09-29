@@ -15,5 +15,5 @@ body {
 
 
 .container-class {
-    @apply w-[90%] max-w-[1240px] mx-auto;
+    @apply w-[90%] max-w-[1280px] mx-auto;
 }
