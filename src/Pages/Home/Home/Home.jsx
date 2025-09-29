@@ -1,4 +1,4 @@
-import AboutSection from "../../About/AboutSection";
+import AboutSection from "../../CEO/AboutSection";
 import BannerSection from "../BannerSection/BannerSection";
 import Portfolio from "../Portfolio/Portfolio";
 import ReviewSection from "../ReviewSection/ReviewSection";

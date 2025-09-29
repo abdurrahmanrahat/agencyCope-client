@@ -9,7 +9,7 @@ const AboutSection = () => {
   return (
     <section className="container-class my-14 md:my-24">
       <SectionTitle
-        title={"About Me"}
+        title={"About CEO of AgencyCope"}
         description={
           "Discover the mind behind the craft and the principles that guide it"
         }

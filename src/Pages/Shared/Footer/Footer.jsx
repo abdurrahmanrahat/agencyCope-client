@@ -1,7 +1,9 @@
 import { DiEnvato } from "react-icons/di";
 import { FaBehance, FaFlickr, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/agency-logo.png";
+import { quickLinks, supportLinks } from "./footer.helpers";
 
 const Footer = () => {
   return (
@@ -11,7 +13,7 @@ const Footer = () => {
         {/* Logo */}
         <div className="flex flex-col items-center md:items-start">
           <img src={Logo} alt="Agency Logo" className="w-40 mb-4" />
-          <p className="text-sm text-gray-200 text-center md:text-left">
+          <p className="text-[15px] text-gray-200 text-center md:text-left">
             We help brands unlock their full potential through strategic design,
             storytelling, and digital solutions.
           </p>
@@ -19,10 +21,10 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h4 className="uppercase text-base font-medium border-b-2 border-primary inline-block mb-4">
+          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:4px]">
             Services
           </h4>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <ul className="space-y-2 text-base text-gray-300">
             <li>Brand Strategy</li>
             <li>Logo & Visual Identity</li>
             <li>Web Design & Development</li>
@@ -32,27 +34,31 @@ const Footer = () => {
 
         {/* Resources */}
         <div>
-          <h4 className="uppercase text-base font-medium border-b-2 border-primary inline-block mb-4">
-            Resources
+          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:4px]">
+            Quick Links
           </h4>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li>Case Studies</li>
-            <li>Client Reviews</li>
-            <li>Free Guides</li>
-            <li>Pricing & Packages</li>
+
+          <ul className="space-y-2 text-base text-gray-300">
+            {quickLinks.map(({ label, to }, i) => (
+              <li key={i} className="hover:text-primary transition-colors">
+                <Link to={to}>{label}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Support */}
         <div>
-          <h4 className="uppercase text-base font-medium border-b-2 border-primary inline-block mb-4">
+          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:4px]">
             Support
           </h4>
-          <ul className="space-y-2 text-sm text-gray-300 mb-6">
-            <li>FAQs</li>
-            <li>Schedule a Call</li>
-            <li>Contact Support</li>
-            <li>Terms & Privacy</li>
+
+          <ul className="space-y-2 text-base text-gray-300">
+            {supportLinks.map(({ label, to }, i) => (
+              <li key={i} className="hover:text-primary transition-colors">
+                <Link to={to}>{label}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

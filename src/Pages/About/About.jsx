@@ -1,13 +1,9 @@
-import AboutSection from "./AboutSection";
-import AboutSocial from "./AboutSocial";
-import ScheduleEvent from "./ScheduleEvent";
+import TeamSection from "./Team";
 
 const About = () => {
   return (
     <div>
-      <AboutSection />
-      <AboutSocial />
-      <ScheduleEvent />
+      <TeamSection />
     </div>
   );
 };

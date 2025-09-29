@@ -11,7 +11,7 @@ export default {
         clashDisplay: ['ClashDisplay', 'sans-serif']
       },
       colors: {
-        primary: "#D8FE00", // yellow
+        primary: "#B3D335", // yellow
         dark: "#080708", // black
         darkShed: "#151415",
         borderColor: "#2a2a2a",

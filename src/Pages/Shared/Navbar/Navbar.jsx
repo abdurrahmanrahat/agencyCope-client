@@ -12,6 +12,8 @@ const Navbar = () => {
 
   const handleNavToggle = () => setIsOpenMenu(!isOpenMenu);
 
+  const closeMenu = () => setIsOpenMenu(false);
+
   const navItems = [
     { id: 1, text: "Home", url: "/" },
     { id: 2, text: "Services", url: "/services" },
@@ -30,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   const NavbarContent = (paddingY) => (
-    <div className={`container-class ${paddingY}`}>
+    <div className={`container-class py-4 md:${paddingY}`}>
       <div className="flex items-center justify-between">
         <Link to="/">
           <img src={Logo} className="w-48 rounded" alt="Agency Logo" />
@@ -55,7 +57,7 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <Link to="/contact">
             <button
-              className={`text-[18px] rounded-md border border-primary bg-primary text-black hover:bg-transparent hover:text-primary duration-700 px-[16px] py-[8px] flex gap-4 items-center`}
+              className={`text-[18px] rounded-md border border-primary bg-primary text-black hover:bg-transparent hover:text-primary duration-700 px-[16px] py-[8px] flex gap-3 items-center`}
             >
               <span className="lg:hidden">Book</span>
               <span className="hidden lg:block">Book a Call</span>
@@ -89,10 +91,19 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
+      {/* 🔲 Backdrop (click to close) */}
+      {isOpenMenu && (
+        <div
+          className="fixed inset-0 bg-black/40 z-[998] lg:hidden"
+          onClick={closeMenu}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile menu */}
       <div
         id="navbar"
-        className={`fixed lg:hidden top-0 left-0 w-[70%] h-screen bg-dark text-white z-[999] p-5 transition-transform duration-700 ease-in-out ${
+        className={`fixed lg:hidden top-0 left-0 w-[70%] md:w-[60%] h-screen bg-dark text-white z-[999] p-5 transition-transform duration-700 ease-in-out ${
           isOpenMenu ? "translate-x-0" : "-translate-x-full"
         }`}
       >
