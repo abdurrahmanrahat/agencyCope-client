@@ -12,13 +12,13 @@ const services = [
       "Creative designs that communicate your brand, engage your audience, and captivate their attention.",
     url: "/services/#item-three",
   },
-  {
-    _id: 2,
-    title: "Brand Identity Design",
-    description:
-      "Distinctive brand systems that define your voice, align your visuals, and establish long-term recognition.",
-    url: "/services/#item-four",
-  },
+  // {
+  //   _id: 2,
+  //   title: "Brand Identity Design",
+  //   description:
+  //     "Distinctive brand systems that define your voice, align your visuals, and establish long-term recognition.",
+  //   url: "/services/#item-four",
+  // },
   {
     _id: 3,
     title: "Animation & Motion Graphics",
@@ -47,13 +47,13 @@ const services = [
       "Scroll-stopping content strategies that drive engagement, build community, and amplify your brand story.",
     url: "/services/#item-five",
   },
-  {
-    _id: 7,
-    title: "SEO & PPC",
-    description:
-      "Boost rankings and drive high-quality, conversion-focused traffic.",
-    url: "/services/#item-five",
-  },
+  // {
+  //   _id: 7,
+  //   title: "SEO & PPC",
+  //   description:
+  //     "Boost rankings and drive high-quality, conversion-focused traffic.",
+  //   url: "/services/#item-five",
+  // },
   {
     _id: 8,
     title: "AI Content & Motion",
@@ -61,13 +61,13 @@ const services = [
       "Generate innovative Ai-driven content to save time and maximize productivity.",
     url: "/services/#item-five",
   },
-  {
-    _id: 9,
-    title: "Video Editing",
-    description:
-      "Professional video editing to deliver high-impact, polished content.",
-    url: "/services/#item-five",
-  },
+  // {
+  //   _id: 9,
+  //   title: "Video Editing",
+  //   description:
+  //     "Professional video editing to deliver high-impact, polished content.",
+  //   url: "/services/#item-five",
+  // },
 ];
 
 const ServicesSection = () => {
