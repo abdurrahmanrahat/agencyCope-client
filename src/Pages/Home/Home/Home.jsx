@@ -1,3 +1,4 @@
+import GlobalCoverage from "../../Contact/GlobalCoverage";
 import BannerSection from "../BannerSection/BannerSection";
 import Portfolio from "../Portfolio/Portfolio";
 import ReviewSection from "../ReviewSection/ReviewSection";
@@ -11,6 +12,7 @@ const Home = () => {
       <Portfolio />
       {/* <AboutSection /> */}
       <ReviewSection />
+      <GlobalCoverage />
     </div>
   );
 };

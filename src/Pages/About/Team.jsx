@@ -1,3 +1,8 @@
+import { Autoplay, Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 import SectionTitle from "../../components/ui/SectionTitle";
 
 const TEAM = [
@@ -25,6 +30,12 @@ const TEAM = [
     designation: "UI/UX Designer",
     photo: "/images/team/rahat.jpg",
   },
+  {
+    id: 4,
+    name: "Emma Davis",
+    designation: "UI/UX Designer",
+    photo: "/images/team/rahat.jpg",
+  },
 ];
 
 export default function TeamSection() {
@@ -37,29 +48,55 @@ export default function TeamSection() {
           description="A dedicated team of professionals committed to delivering excellence and innovation."
         />
 
-        {/* Team grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={2}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            620: {
+              slidesPerView: 3,
+              spaceBetween: 25,
+            },
+            1080: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          }}
+        >
           {TEAM.map((member) => (
-            <div
-              key={member.id}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:border-primary/50 py-8"
-            >
-              <div className="mx-auto h-28 w-28 overflow-hidden rounded-full border-4 border-primary/80 shadow-md">
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
-                />
+            <SwiperSlide key={member.id}>
+              <div className="group rounded-2xl border border-white/10 bg-white/5 overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:border-primary/50">
+                {/* Top: Full image */}
+                <div className="h-52 w-full overflow-hidden">
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+
+                {/* Bottom: Info */}
+                <div className="py-4 text-center">
+                  <h3 className="mt-2 text-lg lg:text-xl font-semibold text-white [word-spacing:4px]">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-neutral-400 [word-spacing:4px]">
+                    {member.designation}
+                  </p>
+                </div>
               </div>
-              <h3 className="mt-4 text-lg lg:text-xl font-semibold text-white [word-spacing:4px]">
-                {member.name}
-              </h3>
-              <p className="text-sm text-neutral-400 [word-spacing:4px]">
-                {member.designation}
-              </p>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
