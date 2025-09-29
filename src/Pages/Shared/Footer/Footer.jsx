@@ -21,7 +21,7 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:4px]">
+          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:2px] md:[word-spacing:4px]">
             Services
           </h4>
           <ul className="space-y-2 text-base text-gray-300">
@@ -34,7 +34,7 @@ const Footer = () => {
 
         {/* Resources */}
         <div>
-          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:4px]">
+          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:2px] md:[word-spacing:4px]">
             Quick Links
           </h4>
 
@@ -49,7 +49,7 @@ const Footer = () => {
 
         {/* Support */}
         <div>
-          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:4px]">
+          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:2px] md:[word-spacing:4px]">
             Support
           </h4>
 

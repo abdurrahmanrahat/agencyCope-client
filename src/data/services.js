@@ -25,12 +25,12 @@ const servicesData = [
       "Digital Mockups",
     ],
     timeframe: "3 weeks",
-    price: "$1799 usd",
+    price: "$1799",
   },
   {
     id: "item-two",
     index: "02",
-    title: "Website Development",
+    title: "Web Design & Development",
     description:
       "Building responsive, user-friendly websites optimized for performance, scalability, and seamless user experiences",
     img: service2,
@@ -46,9 +46,10 @@ const servicesData = [
       "Design customization",
       "Brand Consultation",
       "Unlimited Revisions",
+      "2 months maintenance free",
     ],
     timeframe: "9 days",
-    price: "$560 usd",
+    price: "$560 - $760",
   },
   {
     id: "item-three",
@@ -71,7 +72,7 @@ const servicesData = [
       "Digital Mockups",
     ],
     timeframe: "3 weeks",
-    price: "$1799 usd",
+    price: "$1799",
   },
   {
     id: "item-four",
@@ -94,7 +95,7 @@ const servicesData = [
       "Digital Mockups",
     ],
     timeframe: "3 weeks",
-    price: "$1799 usd",
+    price: "$1799",
   },
   {
     id: "item-five",
@@ -117,7 +118,7 @@ const servicesData = [
       "Action plan",
     ],
     timeframe: "4 weeks",
-    price: "$1299 usd",
+    price: "$1299",
   },
   {
   id: "item-six",
@@ -140,7 +141,7 @@ const servicesData = [
     "Platform Optimization (IG, FB, TikTok)",
   ],
   timeframe: "2–3 weeks",
-  price: "$1499 usd",
+  price: "$1499",
 }
 ];
 

@@ -18,9 +18,6 @@ const ServicePage = () => {
           <ServiceCard key={service.id} service={service} />
         ))}
       </div>
-
-      {/* FAQ */}
-      {/* <FAQ></FAQ> */}
     </div>
   );
 };

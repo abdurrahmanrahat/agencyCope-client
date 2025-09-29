@@ -3,20 +3,12 @@ import ScheduleEvent from "./ScheduleEvent";
 
 const Contact = () => {
   return (
-    <div className="container-class">
-      {/* <ContactBanner></ContactBanner> */}
-
+    <div>
       <div className="my-14 md:my-20">
         <ScheduleEvent />
       </div>
 
-      <div>
-        <GlobalCoverage />
-      </div>
-
-      {/* <div className="mt-10 mb-16">
-        <AboutSocial />
-      </div> */}
+      <GlobalCoverage />
     </div>
   );
 };

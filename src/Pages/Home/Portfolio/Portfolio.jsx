@@ -28,7 +28,7 @@ const Portfolio = () => {
         {projectCategories.map((cat, index) => (
           <button
             key={index}
-            className={`px-4 py-[6px] md:px-6 md:py-[10px] border border-gray-800 hover:bg-primary hover:text-dark rounded-full transition-all duration-300 [word-spacing:4px] ${
+            className={`px-4 py-[6px] md:px-6 md:py-[10px] border border-gray-800 hover:bg-primary hover:text-dark rounded-full transition-all duration-300 [word-spacing:2px] md:[word-spacing:4px] ${
               selected === cat ? "text-dark bg-primary" : ""
             }`}
             onClick={() => setSelected(cat)}

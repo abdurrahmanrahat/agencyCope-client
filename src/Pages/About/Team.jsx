@@ -40,7 +40,7 @@ const TEAM = [
 
 export default function TeamSection() {
   return (
-    <section className="relative w-full py-16 md:py-24 bg-neutral-950 text-white">
+    <section className="relative w-full py-16 md:py-24">
       <div className="container-class">
         {/* Section heading */}
         <SectionTitle
@@ -86,10 +86,10 @@ export default function TeamSection() {
 
                 {/* Bottom: Info */}
                 <div className="py-4 text-center">
-                  <h3 className="mt-2 text-lg lg:text-xl font-semibold text-white [word-spacing:4px]">
+                  <h3 className="mt-2 text-lg lg:text-xl font-semibold text-white [word-spacing:2px] md:[word-spacing:4px]">
                     {member.name}
                   </h3>
-                  <p className="text-sm text-neutral-400 [word-spacing:4px]">
+                  <p className="text-sm text-neutral-400 [word-spacing:2px] md:[word-spacing:4px]">
                     {member.designation}
                   </p>
                 </div>
