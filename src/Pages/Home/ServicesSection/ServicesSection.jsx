@@ -80,11 +80,11 @@ const ServicesSection = () => {
         }
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8">
         {services.map((service) => (
           <div
             key={service._id}
-            className="group relative rounded-xl border border-white/10 p-6 px-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/50 overflow-hidden"
+            className="group relative rounded-xl border border-white/10 bg-darkShed p-6 px-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/50 overflow-hidden"
           >
             {/* Title */}
             <h3 className="text-xl font-medium text-white group-hover:text-primary transition-colors duration-300 [word-spacing:2px] md:[word-spacing:4px]">
