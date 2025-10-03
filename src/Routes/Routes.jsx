@@ -5,7 +5,9 @@ import About from "../Pages/About/About";
 import CEOPage from "../Pages/CEO/CEO";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home/Home";
+import TermsAndConditions from "../Pages/Home/TermsAndConditions/TermsAndConditions";
 import PortfolioPage from "../Pages/PortfolioPage/PortfolioPage";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ServicePage from "../Pages/Services/ServicePage/ServicePage";
 
 const router = createBrowserRouter([
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "ceo-of-agency-cope",
         element: <CEOPage />,
+      },
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "terms-and-conditions",
+        element: <TermsAndConditions />,
       },
     ],
   },

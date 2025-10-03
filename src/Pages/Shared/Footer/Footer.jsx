@@ -25,8 +25,8 @@ const Footer = () => {
             Services
           </h4>
           <ul className="space-y-2 text-base text-gray-300">
-            <li>Brand Strategy</li>
-            <li>Logo & Visual Identity</li>
+            <li>Graphic Design</li>
+            <li>Animation & Motion Graphics</li>
             <li>Web Design & Development</li>
             <li>Digital Marketing</li>
           </ul>

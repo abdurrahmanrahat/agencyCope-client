@@ -1,4 +1,5 @@
 import GlobalCoverage from "../../Contact/GlobalCoverage";
+import AboutAgency from "../AboutAgency/AboutAgency";
 import BannerSection from "../BannerSection/BannerSection";
 import Portfolio from "../Portfolio/Portfolio";
 import ReviewSection from "../ReviewSection/ReviewSection";
@@ -8,9 +9,9 @@ const Home = () => {
   return (
     <div>
       <BannerSection />
+      <AboutAgency />
       <ServicesSection />
       <Portfolio />
-      {/* <AboutSection /> */}
       <ReviewSection />
       <GlobalCoverage />
     </div>

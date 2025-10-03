@@ -1,6 +1,4 @@
 export const quickLinks = [
-  { label: "Case Studies", to: "#" },
-  { label: "Client Reviews", to: "#" },
   { label: "Our Team", to: "/about" },
   { label: "CEO of AgencyCope", to: "/ceo-of-agency-cope" },
 ];
