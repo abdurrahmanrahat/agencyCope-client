@@ -5,9 +5,11 @@ import About from "../Pages/About/About";
 import CEOPage from "../Pages/CEO/CEO";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home/Home";
-import TermsAndConditions from "../Pages/Home/TermsAndConditions/TermsAndConditions";
+import FaqPage from "../Pages/Policies/FAQ/FaqPage";
+import PrivacyPolicy from "../Pages/Policies/PrivacyPolicy/PrivacyPolicy";
+import RefundPolicy from "../Pages/Policies/RefundPolicy/RefundPolicy";
+import TermsAndConditions from "../Pages/Policies/TermsAndConditions/TermsAndConditions";
 import PortfolioPage from "../Pages/PortfolioPage/PortfolioPage";
-import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ServicePage from "../Pages/Services/ServicePage/ServicePage";
 
 const router = createBrowserRouter([
@@ -29,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "portfolio",
-        element: <PortfolioPage></PortfolioPage>,
+        element: <PortfolioPage />,
       },
       {
         path: "contact",
@@ -44,12 +46,20 @@ const router = createBrowserRouter([
         element: <CEOPage />,
       },
       {
+        path: "faq",
+        element: <FaqPage />,
+      },
+      {
         path: "privacy-policy",
         element: <PrivacyPolicy />,
       },
       {
         path: "terms-and-conditions",
         element: <TermsAndConditions />,
+      },
+      {
+        path: "refund-policy",
+        element: <RefundPolicy />,
       },
     ],
   },

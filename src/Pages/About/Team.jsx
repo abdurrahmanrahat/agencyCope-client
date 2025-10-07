@@ -9,32 +9,38 @@ const TEAM = [
   {
     id: 1,
     name: "Yeasin Mahbub",
-    designation: "Founder & CEO",
+    designation: "Creative Director",
     photo: "/images/team/mahbub.jpg",
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    designation: "Project Manager",
-    photo: "/images/team/mahbub.jpg",
+    name: "Delwar Khan Anik",
+    designation: "Digital Marketer",
+    photo: "/images/team/anik.jpg",
   },
   {
     id: 3,
+    name: "Eaqub Hasan",
+    designation: "Motion Graphic Designer",
+    photo: "/images/team/eaqub.jpg",
+  },
+  {
+    id: 4,
+    name: "Mk Rasel",
+    designation: "London Regional Manager",
+    photo: "/images/team/rasel.jpg",
+  },
+  {
+    id: 5,
     name: "Abdur Rahman",
-    designation: "Lead Developer",
+    designation: "Web Developer",
     photo: "/images/team/rahat.jpg",
   },
   {
-    id: 4,
-    name: "Emma Davis",
-    designation: "UI/UX Designer",
-    photo: "/images/team/rahat.jpg",
-  },
-  {
-    id: 4,
-    name: "Emma Davis",
-    designation: "UI/UX Designer",
-    photo: "/images/team/rahat.jpg",
+    id: 6,
+    name: "Jannat",
+    designation: "Content Creation",
+    photo: "/images/team/jannat.jpg",
   },
 ];
 
@@ -80,7 +86,7 @@ export default function TeamSection() {
                   <img
                     src={member.photo}
                     alt={member.name}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 "
                   />
                 </div>
 

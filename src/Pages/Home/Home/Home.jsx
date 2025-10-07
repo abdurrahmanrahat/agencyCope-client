@@ -1,3 +1,4 @@
+import TeamSection from "../../About/Team";
 import GlobalCoverage from "../../Contact/GlobalCoverage";
 import AboutAgency from "../AboutAgency/AboutAgency";
 import BannerSection from "../BannerSection/BannerSection";
@@ -11,6 +12,7 @@ const Home = () => {
       <BannerSection />
       <AboutAgency />
       <ServicesSection />
+      <TeamSection />
       <Portfolio />
       <ReviewSection />
       <GlobalCoverage />
