@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
 import { IoMdArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -70,9 +71,22 @@ const services = [
   // },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0.2, x: 80 }, // starts slightly to the right
+  visible: () => ({
+    opacity: 1,
+    x: 0, // slides into place
+    transition: {
+      delay: 0.1,
+      duration: 1.4, // smooth duration
+      ease: "easeOut", // smooth cubic-bezier ease
+    },
+  }),
+};
+
 const ServicesSection = () => {
   return (
-    <section className="container-class py-14 lg:py-20">
+    <section className="container-class py-14 lg:py-20 overflow-hidden">
       <SectionTitle
         title={"Our Services"}
         description={
@@ -80,24 +94,40 @@ const ServicesSection = () => {
         }
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8">
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8 "
+        variants={cardVariants}
+        initial="hidden"
+        whileInView="visible"
+        // viewport={{ once: true, amount: 0.2 }}
+      >
         {services.map((service) => (
           <div
             key={service._id}
-            className="group relative rounded-xl border border-white/10 bg-darkShed p-6 px-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/50 overflow-hidden"
+            className="
+    group relative overflow-hidden rounded-2xl
+    border border-white/20
+    bg-white/10 backdrop-blur-[12px]
+    p-6 md:p-8
+    transition-all duration-500
+     hover:border-primary/40 shadow-[0_0_35px_rgba(0,0,0,0.5)]
+  "
           >
+            {/* Gradient overlay for motion glow */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-transparent to-primary/10 opacity-60"></div>
+
             {/* Title */}
-            <h3 className="text-xl font-medium text-white group-hover:text-primary transition-colors duration-300 [word-spacing:2px] md:[word-spacing:4px]">
+            <h3 className="relative z-10 text-xl font-semibold text-primary transition-colors duration-300">
               {service.title}
             </h3>
 
             {/* Description */}
-            <p className="mt-3 text-gray-300 leading-relaxed">
+            <p className="relative z-10 mt-3 text-gray-200 leading-relaxed">
               {service.description}
             </p>
 
             {/* Button */}
-            <div className="mt-5">
+            <div className="relative z-10 mt-5">
               <Link to={service.url}>
                 <button
                   className={`text-[18px] rounded-md border border-primary text-primary hover:text-primary/80 duration-700 px-[14px] py-[7px] md:px-[16px] md:py-[6px] flex gap-2 items-center`}
@@ -107,12 +137,9 @@ const ServicesSection = () => {
                 </button>
               </Link>
             </div>
-
-            {/* Left color bar */}
-            <div className="absolute top-0 left-0 h-full w-[6px] bg-primary"></div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
       <div className="mt-8 flex justify-center items-center">
         <Link to={`/services`}>
