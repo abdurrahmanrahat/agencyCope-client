@@ -216,7 +216,7 @@ export default function GlobalCoverage() {
             </div>
           </div>
           <div className="lg:col-span-3">
-            <div className="lg:h-[300px] rounded-2xl border border-white/10 px-6 py-4 md:py-4 md:px-8">
+            <div className="lg:h-[300px] rounded-2xl border border-white/10 px-6 py-4 md:py-4 md:px-6">
               <h3 className="text-2xl font-semibold text-center mb-2 text-white">
                 Contact Us
               </h3>
@@ -226,10 +226,10 @@ export default function GlobalCoverage() {
                 <div>
                   <h4 className="font-semibold text-primary">Bangladesh</h4>
                   <p className="text-sm text-neutral-300">
-                    Phone: +8801324-738600
+                    Phone: +8801929157108
                   </p>
                   <p className="text-sm text-neutral-300">
-                    Email: hello@bizcope.com
+                    Email: Agencycope24@gmail.com
                   </p>
                 </div>
 
@@ -237,10 +237,10 @@ export default function GlobalCoverage() {
                 <div>
                   <h4 className="font-semibold text-primary">United Kingdom</h4>
                   <p className="text-sm text-neutral-300">
-                    Phone: +1 (216) 393-3824
+                    Phone: +447404370398
                   </p>
                   <p className="text-sm text-neutral-300">
-                    Email: hello@bizcope.com
+                    Email: Agencycope24@gmail.com
                   </p>
                 </div>
 
@@ -248,10 +248,10 @@ export default function GlobalCoverage() {
                 <div>
                   <h4 className="font-semibold text-primary">Italy</h4>
                   <p className="text-sm text-neutral-300">
-                    Phone: +60103895060
+                    Phone: +393512465569
                   </p>
                   <p className="text-sm text-neutral-300">
-                    Email: hello@bizcope.com
+                    Email: Agencycope24@gmail.com
                   </p>
                 </div>
               </div>
