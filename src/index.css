@@ -17,3 +17,12 @@ body {
 .container-class {
     @apply w-[90%] max-w-[1280px] mx-auto;
 }
+
+.bg-gradient-mine {
+    background: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(179, 211, 53, 0) 25%,
+            rgba(179, 211, 53, 0.5) 50%,
+            rgba(179, 211, 53, 0) 75%,
+            rgba(179, 211, 53, 0.3) 100%);
+}
