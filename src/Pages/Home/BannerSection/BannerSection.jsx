@@ -6,18 +6,18 @@ import HeroImage from "../../../assets/home/banner/hero.jpg";
 const BannerSection = () => {
   return (
     <div
-      className="h-[340px] md:h-[500px] lg:h-screen w-full relative flex items-center justify-center"
+      className="h-[420px] md:h-[600px] lg:h-screen w-full relative flex items-center justify-center"
       style={{
         backgroundImage: `url(${HeroImage})`,
         backgroundSize: "cover",
-        backgroundPosition: "bottom",
+        backgroundPosition: "top",
       }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 "></div>
 
       {/* Content */}
-      <div className="relative z-10 text-white text-center px-4 flex flex-col items-center justify-center gap-5 2xl:gap-7">
+      <div className="relative z-10 text-white text-center px-4 flex flex-col items-center justify-center gap-5 2xl:gap-7 mt-12 lg:mt-12 2xl:mt-14">
         {/* <h2 className="text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl font-semibold max-w-[20ch] leading-tight md:leading-[1.25] uppercase [word-spacing:.15em]">
           Empowering Brands with Creative{" "}
           <span className="text-primary">Design & Digital</span> Growth
