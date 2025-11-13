@@ -8,7 +8,7 @@ const pricing = [
     title: "Graphic Design",
     features: [
       "Brand Consultation",
-      "Logo Design & Variations (Alternate & Submark)",
+      "Logo Design & Variations",
       "Supplemental Brand Fonts",
       "Brand Accents (Patterns / Texture)",
       "Brand Icons (upto 6)",
