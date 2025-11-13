@@ -17,7 +17,7 @@ export default {
         borderColor: "#2a2a2a",
       },
       boxShadow: {
-        myCustomShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+        myCustomShadow: "rgba(0, 0, 0, 0.6) 0px 7px 29px 0px",
         
         // Glowing brand shadows
         glow: "0 0 15px rgba(179, 211, 53, 0.5), 0 0 30px rgba(179, 211, 53, 0.2)"
