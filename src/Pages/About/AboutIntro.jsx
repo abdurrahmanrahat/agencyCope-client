@@ -12,7 +12,7 @@ export default function AboutIntro() {
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-2">
                 <span className="text-4xl xl:text-6xl font-semibold text-primary leading-none">
-                  5
+                  7
                 </span>
                 <span className="text-primary text-2xl font-bold">+</span>
               </div>

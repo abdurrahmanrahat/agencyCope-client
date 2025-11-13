@@ -1,21 +1,39 @@
 import { motion } from "framer-motion";
-import { HiArrowRight } from "react-icons/hi";
 import { IoMdArrowForward } from "react-icons/io";
+// import {
+//   RiGlobalLine,
+//   RiImageEditLine,
+//   RiMegaphoneLine,
+//   RiMovie2Line,
+//   RiPaintBrushLine,
+//   RiRobot2Line,
+// } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import MyButton from "../../../components/ui/MyButton";
 import SectionTitle from "../../../components/ui/SectionTitle";
+
+import { FaRobot } from "react-icons/fa";
+import {
+  RiGlobalLine,
+  RiImageEditLine,
+  RiMegaphoneLine,
+  RiMovie2Line,
+  RiPaintBrushLine,
+} from "react-icons/ri";
 
 const services = [
   {
     _id: 1,
     title: "Graphic Design",
+    icon: RiPaintBrushLine,
     description:
-      "Creative designs that communicate your brand, engage your audience, and captivate their attention.",
+      "Creative designs that communicate your brand, engage your audience, and captivate their attention with lasting impressions.",
     url: "/services/#item-three",
   },
   {
     _id: 2,
-    title: "Animation & Motion Graphics",
+    title: "Motion Graphics",
+    icon: RiMovie2Line,
     description:
       "Dynamic visuals and animated storytelling that elevate your messaging and captivate your audience.",
     url: "/services/#item-six",
@@ -23,6 +41,7 @@ const services = [
   {
     _id: 3,
     title: "Web Design & Development",
+    icon: RiGlobalLine,
     description:
       "Modern and responsive websites tailored to your business needs, providing an exceptional user experience.",
     url: "/services/#item-three",
@@ -30,6 +49,7 @@ const services = [
   {
     _id: 4,
     title: "Digital Marketing",
+    icon: RiMegaphoneLine,
     description:
       "Strategies to boost your online presence, reach your target audience, and drive measurable result for your business.",
     url: "/services/#item-three",
@@ -37,6 +57,7 @@ const services = [
   {
     _id: 5,
     title: "Social Media Content",
+    icon: RiImageEditLine,
     description:
       "Scroll-stopping content strategies that drive engagement, build community, and amplify your brand story.",
     url: "/services/#item-five",
@@ -44,8 +65,9 @@ const services = [
   {
     _id: 6,
     title: "AI Content & Motion",
+    icon: FaRobot,
     description:
-      "Generate innovative Ai-driven content to save time and maximize productivity.",
+      "Generate innovative AI-driven content to save time and maximize productivity for faster, smarter creative output.",
     url: "/services/#item-five",
   },
 ];
@@ -74,49 +96,43 @@ const ServicesSection = () => {
       />
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8 "
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8 px-2"
         variants={cardVariants}
         initial="hidden"
         whileInView="visible"
         // viewport={{ once: true, amount: 0.2 }}
       >
-        {services.map((service) => (
-          <div
-            key={service._id}
+        {services.map(({ _id, url, icon: Icon, title, description }) => (
+          <a
+            key={_id}
+            href={url}
             className="
-    group relative overflow-hidden rounded-2xl
-    border border-white/20
-    bg-white/10 backdrop-blur-[12px]
-    p-6 md:p-8
-    transition-all duration-500
-     hover:border-primary/40 shadow-[0_0_35px_rgba(0,0,0,0.5)]
-  "
+        group relative p-6 rounded-3xl 
+        bg-gradient-to-br from-black via-primary/10 to-primary/40
+        shadow-[-1px_0px_4px_rgba(179,211,53,0.4)]
+        backdrop-blur-sm 
+        transition-all duration-300
+        
+      "
           >
-            {/* Gradient overlay for motion glow */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-transparent to-primary/10 opacity-60"></div>
+            {/* Top glow */}
+            <div
+              className="
+        absolute inset-0 rounded-3xl 
+        bg-[radial-gradient(circle_at_top_left,rgba(179,211,53,0.08),transparent_60%)]
+        pointer-events-none
+      "
+            ></div>
+
+            {/* Icon */}
+            <Icon className="text-white text-4xl mb-6 opacity-90 group-hover:text-[#B3D335] transition-all" />
 
             {/* Title */}
-            <h3 className="relative z-10 text-xl font-semibold text-primary transition-colors duration-300">
-              {service.title}
-            </h3>
+            <h3 className="text-xl font-semibold text-white mb-3">{title}</h3>
 
             {/* Description */}
-            <p className="relative z-10 mt-3 text-gray-200 leading-relaxed">
-              {service.description}
-            </p>
-
-            {/* Button */}
-            <div className="relative z-10 mt-5">
-              <Link to={service.url}>
-                <button
-                  className={`text-[18px] rounded-md border border-primary text-primary hover:text-primary/80 duration-700 px-[14px] py-[7px] md:px-[16px] md:py-[6px] flex gap-2 items-center`}
-                >
-                  <span>Details</span>
-                  <HiArrowRight className="w-4 h-4 md:w-4 md:h-4" />
-                </button>
-              </Link>
-            </div>
-          </div>
+            <p className="text-gray-300 leading-relaxed">{description}</p>
+          </a>
         ))}
       </motion.div>
 
@@ -135,3 +151,5 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
+
+// black shadow: hover:shadow-[0px_0px_35px_rgba(0,0,0,0.6)]
