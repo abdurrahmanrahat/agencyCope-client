@@ -47,8 +47,8 @@ export default function AboutIntro() {
           </h2>
 
           <p className="text-gray-300 mb-4 leading-relaxed 2xl:text-lg">
-            Go Studio is your 360° creative and digital agency. With more than 5
-            years of expertise, we craft high-impact digital marketing
+            AgencyCope is your 360° creative and digital agency. With more than
+            5 years of expertise, we craft high-impact digital marketing
             strategies and creative content that deliver measurable growth.
             Whether you’re a start-up or an established company, we help
             businesses thrive in the fast-moving digital world.

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoArrowUp } from "react-icons/io5";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,10 +32,15 @@ const GoToTop = () => {
     <div className="flex justify-center items-center">
       {isVisible && (
         <div
-          className="text-[18px] w-[40px] h-[40px] 2xl:w-[48px] 2xl:h-[48px] text-primary border-[2.3px] hover:bg-primary hover:text-dark transition-all duration-500 border-primary rounded-full fixed bottom-[32px] right-[32px] sm:bottom-[50px] sm:right-[50px] z-[999] flex justify-center items-center cursor-pointer"
+          className="bg-white flex items-center gap-2 rounded-full fixed bottom-[32px] right-[32px] sm:bottom-[50px] sm:right-[50px] z-[999] px-4 py-2"
           onClick={goToHandler}
         >
-          <IoIosArrowUp className="" />
+          <div className="w-[20px] h-[20px] 2xl:w-[24px] 2xl:h-[24px] bg-dark transition-all duration-500 rounded-full flex justify-center items-center cursor-pointer">
+            <IoArrowUp />
+          </div>
+          <span className="text-dark text-sm font-medium 2xl:text-base">
+            Back to Top
+          </span>
         </div>
       )}
     </div>
