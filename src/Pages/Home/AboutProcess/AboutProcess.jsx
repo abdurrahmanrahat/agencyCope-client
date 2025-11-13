@@ -13,7 +13,7 @@ export default function AboutProcess() {
         {/* Parent Wrapper */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-1 text-center relative">
           {/* ------------ ITEM 1 ------------ */}
-          <div className="relative rounded-lg shadow-myCustomShadow lg:p-6 w-full md:w-auto">
+          <div className="relative rounded-lg shadow-myCustomShadow lg:p-3 w-full md:w-auto">
             <div className="flex justify-center mb-4">
               <FaSearch className="text-primary w-8 2xl:w-10 h-8 2xl:h-10" />
             </div>
@@ -30,7 +30,7 @@ export default function AboutProcess() {
 
           {/* Line 1 (Between Item 1 & 2) */}
           <div className="lg:block hidden">
-            <img src="/images/others/line1.png" className="w-48" alt="line" />
+            <img src="/images/others/line1.png" className="w-60" alt="line" />
           </div>
 
           {/* Mobile Bottom Line 1 */}
@@ -58,7 +58,7 @@ export default function AboutProcess() {
 
           {/* Line 2 */}
           <div className="lg:block hidden">
-            <img src="/images/others/line2.png" className="w-48" alt="line" />
+            <img src="/images/others/line2.png" className="w-60" alt="line" />
           </div>
 
           {/* Mobile Bottom Line 2 */}
@@ -87,7 +87,7 @@ export default function AboutProcess() {
 
           {/* Line 3 */}
           <div className="lg:block hidden">
-            <img src="/images/others/line1.png" className="w-48" alt="line" />
+            <img src="/images/others/line1.png" className="w-60" alt="line" />
           </div>
 
           {/* Mobile Bottom Line 3 */}

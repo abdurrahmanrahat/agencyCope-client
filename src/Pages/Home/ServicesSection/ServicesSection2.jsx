@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { HiArrowRight } from "react-icons/hi";
+import {
+  FaBullhorn,
+  FaFilm,
+  FaGlobe,
+  FaPaintBrush,
+  FaPhotoVideo,
+  FaRobot,
+} from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import MyButton from "../../../components/ui/MyButton";
@@ -9,13 +16,15 @@ const services = [
   {
     _id: 1,
     title: "Graphic Design",
+    icon: FaPaintBrush,
     description:
-      "Creative designs that communicate your brand, engage your audience, and captivate their attention.",
+      "Creative designs that communicate your brand, engage your audience, and captivate their attention with lasting impressions.",
     url: "/services/#item-three",
   },
   {
     _id: 2,
-    title: "Animation & Motion Graphics",
+    title: "Motion Graphics",
+    icon: FaFilm,
     description:
       "Dynamic visuals and animated storytelling that elevate your messaging and captivate your audience.",
     url: "/services/#item-six",
@@ -23,6 +32,7 @@ const services = [
   {
     _id: 3,
     title: "Web Design & Development",
+    icon: FaGlobe,
     description:
       "Modern and responsive websites tailored to your business needs, providing an exceptional user experience.",
     url: "/services/#item-three",
@@ -30,6 +40,7 @@ const services = [
   {
     _id: 4,
     title: "Digital Marketing",
+    icon: FaBullhorn,
     description:
       "Strategies to boost your online presence, reach your target audience, and drive measurable result for your business.",
     url: "/services/#item-three",
@@ -37,6 +48,7 @@ const services = [
   {
     _id: 5,
     title: "Social Media Content",
+    icon: FaPhotoVideo,
     description:
       "Scroll-stopping content strategies that drive engagement, build community, and amplify your brand story.",
     url: "/services/#item-five",
@@ -44,8 +56,9 @@ const services = [
   {
     _id: 6,
     title: "AI Content & Motion",
+    icon: FaRobot,
     description:
-      "Generate innovative Ai-driven content to save time and maximize productivity.",
+      "Generate innovative AI-driven content to save time and maximize productivity for faster, smarter creative output.",
     url: "/services/#item-five",
   },
 ];
@@ -63,7 +76,7 @@ const cardVariants = {
   }),
 };
 
-const ServicesSection = () => {
+const ServicesSection2 = () => {
   return (
     <section className="container-class py-14 lg:py-20 overflow-hidden">
       <SectionTitle
@@ -80,44 +93,52 @@ const ServicesSection = () => {
         whileInView="visible"
         // viewport={{ once: true, amount: 0.2 }}
       >
-        {services.map((service) => (
-          <div
-            key={service._id}
-            className="
-    group relative overflow-hidden rounded-2xl
-    border border-white/20
-    bg-white/10 backdrop-blur-[12px]
-    p-6 md:p-8
-    transition-all duration-500
-     hover:border-primary/40 shadow-[0_0_35px_rgba(0,0,0,0.5)]
-  "
-          >
-            {/* Gradient overlay for motion glow */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-transparent to-primary/10 opacity-60"></div>
+        {services.map((item) => {
+          const Icon = item.icon;
 
-            {/* Title */}
-            <h3 className="relative z-10 text-xl font-semibold text-primary transition-colors duration-300">
-              {service.title}
-            </h3>
-
-            {/* Description */}
-            <p className="relative z-10 mt-3 text-gray-200 leading-relaxed">
-              {service.description}
-            </p>
-
-            {/* Button */}
-            <div className="relative z-10 mt-5">
-              <Link to={service.url}>
-                <button
-                  className={`text-[18px] rounded-md border border-primary text-primary hover:text-primary/80 duration-700 px-[14px] py-[7px] md:px-[16px] md:py-[6px] flex gap-2 items-center`}
+          return (
+            <a key={item._id} href={item.url}>
+              <div
+                className="relative w-full flex items-center gap-5 p-6 
+    rounded-xl overflow-hidden
+    bg-gradient-to-br from-[#191919] via-[#0f0f0f] to-[#0a0a0a]
+    shadow-[0_0_30px_rgba(0,0,0,0.45)]"
+              >
+                {/* LEFT ICON */}
+                <div
+                  className="relative w-[80px] h-[60px] rounded-xl 
+        bg-[#111]  
+        border border-[#1c1c1c]
+        flex items-center justify-center
+        shadow-[0_0_18px_rgba(179,211,53,0.35)]"
                 >
-                  <span>Details</span>
-                  <HiArrowRight className="w-4 h-4 md:w-4 md:h-4" />
-                </button>
-              </Link>
-            </div>
-          </div>
-        ))}
+                  {/* Inner radial light */}
+                  <div
+                    className="
+                            absolute inset-0 rounded-xl
+                            bg-[radial-gradient(circle_at_top_left,rgba(179,211,53,0.20),transparent_60%)]
+                            "
+                  />
+
+                  {/* Main content */}
+                  <div className="relative z-10">
+                    <Icon />
+                  </div>
+                </div>
+
+                {/* TEXT */}
+                <div className="relative z-10">
+                  <h3 className="text-xl 2xl:text-2xl font-semibold text-white">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed max-w-lg">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </a>
+          );
+        })}
       </motion.div>
 
       <div className="mt-8 flex justify-center items-center">
@@ -134,4 +155,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default ServicesSection2;

@@ -6,14 +6,15 @@ import BannerSection from "../BannerSection/BannerSection";
 import Collaboration from "../Collaboration/Collaboration";
 import Portfolio from "../Portfolio/Portfolio";
 import ReviewSection from "../ReviewSection/ReviewSection";
-import ServicesSection from "../ServicesSection/ServicesSection";
+import ServicesSection2 from "../ServicesSection/ServicesSection2";
 
 const Home = () => {
   return (
     <div>
       <BannerSection />
       <AboutAgency />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+      <ServicesSection2 />
       <TeamSection />
       <Portfolio />
       <AboutProcess />
