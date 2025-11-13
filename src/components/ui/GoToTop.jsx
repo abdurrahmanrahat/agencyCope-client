@@ -32,10 +32,10 @@ const GoToTop = () => {
     <div className="flex justify-center items-center">
       {isVisible && (
         <div
-          className="bg-white flex items-center gap-2 rounded-full fixed bottom-[32px] right-[32px] sm:bottom-[50px] sm:right-[50px] z-[999] px-4 py-2"
+          className="bg-white flex items-center gap-2 rounded-full fixed bottom-[32px] right-[32px] sm:bottom-[50px] sm:right-[50px] z-[999] px-4 py-2 cursor-pointer"
           onClick={goToHandler}
         >
-          <div className="w-[20px] h-[20px] 2xl:w-[24px] 2xl:h-[24px] bg-dark transition-all duration-500 rounded-full flex justify-center items-center cursor-pointer">
+          <div className="w-[20px] h-[20px] 2xl:w-[24px] 2xl:h-[24px] bg-dark transition-all duration-500 rounded-full flex justify-center items-center">
             <IoArrowUp />
           </div>
           <span className="text-dark text-sm font-medium 2xl:text-base">

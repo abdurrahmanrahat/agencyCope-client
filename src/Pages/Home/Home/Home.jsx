@@ -5,6 +5,7 @@ import AboutProcess from "../AboutProcess/AboutProcess";
 import BannerSection from "../BannerSection/BannerSection";
 import Collaboration from "../Collaboration/Collaboration";
 import Portfolio from "../Portfolio/Portfolio";
+import Pricing from "../Pricing/Pricing";
 import ReviewSection from "../ReviewSection/ReviewSection";
 import ServicesSection from "../ServicesSection/ServicesSection";
 
@@ -17,6 +18,7 @@ const Home = () => {
       {/* <ServicesSection2 /> */}
       <TeamSection />
       <Portfolio />
+      <Pricing />
       <AboutProcess />
       <ReviewSection />
       <GlobalCoverage />

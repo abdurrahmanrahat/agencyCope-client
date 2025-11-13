@@ -53,9 +53,27 @@ const Footer = () => {
 
         {/* Resources */}
         <div>
-          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:2px] md:[word-spacing:4px]">
+          {/* <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:2px] md:[word-spacing:4px]">
             Quick Links
-          </h4>
+          </h4> */}
+          <div className="relative overflow-hidden border border-primary text-white px-6 py-1 font-medium rounded-full group w-fit mb-4">
+            {/* Text */}
+            <span
+              className="relative z-10 inline-block transition-all duration-300 delay-200 
+               group-hover:text-black "
+            >
+              Quick Links
+            </span>
+
+            {/* Animated background */}
+            <span
+              className="absolute inset-0 bg-white 
+               transition-transform duration-500 ease-in-out
+               translate-y-full 
+               group-hover:translate-y-0 
+               group-[&:not(:hover)]:translate-y-full"
+            ></span>
+          </div>
 
           <ul className="space-y-2 text-base text-gray-300">
             {quickLinks.map(({ label, to }, i) => (
@@ -68,9 +86,27 @@ const Footer = () => {
 
         {/* Support */}
         <div>
-          <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:2px] md:[word-spacing:4px]">
+          {/* <h4 className="uppercase text-lg font-medium border-b-2 border-primary inline-block mb-4 [word-spacing:2px] md:[word-spacing:4px]">
             Support
-          </h4>
+          </h4> */}
+          <div className="relative overflow-hidden border border-primary text-white px-6 py-1 font-medium rounded-full group w-fit mb-4">
+            {/* Text */}
+            <span
+              className="relative z-10 inline-block transition-all duration-300 delay-200 
+               group-hover:text-black "
+            >
+              Support
+            </span>
+
+            {/* Animated background */}
+            <span
+              className="absolute inset-0 bg-white 
+               transition-transform duration-500 ease-in-out
+               translate-y-full 
+               group-hover:translate-y-0 
+               group-[&:not(:hover)]:translate-y-full"
+            ></span>
+          </div>
 
           <ul className="space-y-2 text-base text-gray-300">
             {supportLinks.map(({ label, to }, i) => (

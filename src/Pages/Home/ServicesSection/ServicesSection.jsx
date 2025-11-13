@@ -110,10 +110,7 @@ const ServicesSection = () => {
         group relative p-6 rounded-3xl 
         bg-gradient-to-br from-black via-primary/10 to-primary/40
         shadow-[-1px_0px_4px_rgba(179,211,53,0.4)]
-        backdrop-blur-sm 
-        transition-all duration-300
-        
-      "
+        backdrop-blur-sm transition-all duration-300"
           >
             {/* Top glow */}
             <div

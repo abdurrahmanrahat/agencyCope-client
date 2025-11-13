@@ -49,7 +49,7 @@ const servicesData = [
       "2 months maintenance free",
     ],
     timeframe: "9 days",
-    price: "$560 - $760",
+    price: "$760 - $1260",
   },
   {
     id: "item-three",
@@ -72,7 +72,7 @@ const servicesData = [
       "Digital Mockups",
     ],
     timeframe: "3 weeks",
-    price: "$1799",
+    price: "$799",
   },
   {
     id: "item-four",
