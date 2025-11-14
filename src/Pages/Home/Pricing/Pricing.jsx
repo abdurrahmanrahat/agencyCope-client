@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SectionTitle from "../../../components/ui/SectionTitle";
 import PricingSlider from "./PricingSlider";
 
@@ -51,23 +52,40 @@ import PricingSlider from "./PricingSlider";
 //     url: "/services/#item-four",
 //   },
 // ];
+const cardVariants = {
+  hidden: { opacity: 0.3, y: 80 }, // starts slightly to the right
+  visible: () => ({
+    opacity: 1,
+    y: 0, // slides into place
+    transition: {
+      delay: 0.1,
+      duration: 1.2, // smooth duration
+      ease: "easeOut", // smooth cubic-bezier ease
+    },
+  }),
+};
 
 export default function Pricing() {
   return (
-    <section className="container-class pb-14 md:pb-24">
+    <section className="container-class pb-14 md:pb-24 overflow-hidden">
       <SectionTitle
         title={"Pricing Plans"}
         description={"Smart Choices, Exceptional Results"}
       />
 
-      <div className="">
+      <motion.div
+        variants={cardVariants}
+        initial="hidden"
+        whileInView="visible"
+        className=""
+      >
         {/* <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {pricing.map((p, i) => (
             <PricingCard key={i} {...p} />
           ))}
         </div> */}
         <PricingSlider />
-      </div>
+      </motion.div>
     </section>
   );
 }

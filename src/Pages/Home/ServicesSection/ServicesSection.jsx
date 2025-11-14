@@ -1,13 +1,5 @@
 import { motion } from "framer-motion";
 import { IoMdArrowForward } from "react-icons/io";
-// import {
-//   RiGlobalLine,
-//   RiImageEditLine,
-//   RiMegaphoneLine,
-//   RiMovie2Line,
-//   RiPaintBrushLine,
-//   RiRobot2Line,
-// } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import MyButton from "../../../components/ui/MyButton";
 import SectionTitle from "../../../components/ui/SectionTitle";

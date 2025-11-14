@@ -21,7 +21,7 @@ const BannerSection = () => {
       {/* Content */}
       <div className="relative z-10 text-white text-center px-4 flex flex-col items-center justify-center gap-5 2xl:gap-7 mt-12 lg:mt-12 2xl:mt-14">
         <motion.h2
-          initial={{ opacity: 0, y: 100 }} // start far below
+          initial={{ opacity: 0, y: 80 }} // start far below
           whileInView={{ opacity: 1, y: 0 }} // smooth upward reveal
           transition={{
             duration: 1.6,

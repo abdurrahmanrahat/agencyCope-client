@@ -3,7 +3,7 @@ import GlobalCoverage from "../../Contact/GlobalCoverage";
 import AboutAgency from "../AboutAgency/AboutAgency";
 import AboutProcess from "../AboutProcess/AboutProcess";
 import BannerSection from "../BannerSection/BannerSection";
-import Collaboration from "../Collaboration/Collaboration";
+import BrandMarquee from "../BrandMarquee/BrandMarquee";
 import Portfolio from "../Portfolio/Portfolio";
 import Pricing from "../Pricing/Pricing";
 import ReviewSection from "../ReviewSection/ReviewSection";
@@ -13,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <BannerSection />
+      <BrandMarquee />
       <AboutAgency />
       <ServicesSection />
       {/* <ServicesSection2 /> */}
@@ -22,7 +23,6 @@ const Home = () => {
       <AboutProcess />
       <ReviewSection />
       <GlobalCoverage />
-      <Collaboration />
     </div>
   );
 };

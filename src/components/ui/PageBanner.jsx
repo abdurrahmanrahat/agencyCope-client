@@ -1,4 +1,18 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
+const h2Variants = {
+  hidden: { opacity: 0.3, x: 180 }, // starts slightly to the right
+  visible: () => ({
+    opacity: 1,
+    x: 0, // slides into place
+    transition: {
+      delay: 0.1,
+      duration: 1.2, // smooth duration
+      ease: "easeOut", // smooth cubic-bezier ease
+    },
+  }),
+};
 
 const PageBanner = ({ title, image, breadcrumb }) => {
   return (
@@ -18,9 +32,14 @@ const PageBanner = ({ title, image, breadcrumb }) => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 mt-12">
         {/* Title */}
-        <h1 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-semibold tracking-wide [word-spacing:4px]">
+        <motion.h1
+          variants={h2Variants}
+          initial="hidden"
+          whileInView="visible"
+          className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-semibold tracking-wide [word-spacing:4px]"
+        >
           {title}
-        </h1>
+        </motion.h1>
 
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm 2xl:text-lg sm:text-base mt-1 md:mt-2 xl:mt-3">

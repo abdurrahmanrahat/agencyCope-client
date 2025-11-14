@@ -1,5 +1,31 @@
+import { motion } from "framer-motion";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { IoMdInformationCircleOutline } from "react-icons/io";
+
+// const experienceCardVariants = {
+//   hidden: { opacity: 0.3, y: 180 }, // starts slightly to the right
+//   visible: () => ({
+//     opacity: 1,
+//     y: 0, // slides into place
+//     transition: {
+//       duration: 1, // smooth duration
+//       ease: "easeOut", // smooth cubic-bezier ease
+//     },
+//   }),
+// };
+
+const headingVariants = {
+  hidden: { opacity: 0.2, x: 80 }, // starts slightly to the right
+  visible: () => ({
+    opacity: 1,
+    x: 0, // slides into place
+    transition: {
+      delay: 0.1,
+      duration: 1.4, // smooth duration
+      ease: "easeOut", // smooth cubic-bezier ease
+    },
+  }),
+};
 
 export default function AboutIntro() {
   return (
@@ -8,7 +34,12 @@ export default function AboutIntro() {
         {/* Left Side */}
         <div className="relative rounded-xl overflow-hidden group">
           {/* Experience Box */}
-          <div className="absolute top-3 left-3 xl:top-6 xl:left-6 bg-[#111]/80 border border-primary/30 rounded-xl px-6 py-4 shadow-[-3px_-3px_6px_rgba(179,211,53,0.9),0_0px_10px_rgba(179,211,53,0.6)] hover:shadow-[3px_3px_6px_rgba(179,211,53,0.9),0_0px_10px_rgba(179,211,53,0.6)] transition-all duration-500 backdrop-blur-md z-10">
+          <div
+            // variants={experienceCardVariants}
+            // initial="hidden"
+            // whileInView="visible"
+            className="absolute top-3 left-3 xl:top-6 xl:left-6 bg-[#111]/80 border border-primary/30 rounded-xl px-6 py-4 shadow-[-3px_-3px_6px_rgba(179,211,53,0.9),0_0px_10px_rgba(179,211,53,0.6)] hover:shadow-[3px_3px_6px_rgba(179,211,53,0.9),0_0px_10px_rgba(179,211,53,0.6)] transition-all duration-500 backdrop-blur-md z-10"
+          >
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-2">
                 <span className="text-4xl xl:text-6xl font-semibold text-primary leading-none">
@@ -35,16 +66,23 @@ export default function AboutIntro() {
 
         {/* Right Side */}
         <div>
-          <div className="flex items-center gap-2 mb-3">
-            <IoMdInformationCircleOutline className="text-primary w-5 h-5" />
-            <span className="text-primary text-sm 2xl:text-base font-medium uppercase tracking-wide">
-              About Us
-            </span>
-          </div>
+          <motion.div
+            variants={headingVariants}
+            initial="hidden"
+            whileInView="visible"
+            className="mb-4"
+          >
+            <div className="flex items-center gap-2 mb-3">
+              <IoMdInformationCircleOutline className="text-primary w-5 h-5" />
+              <span className="text-primary text-sm 2xl:text-base font-medium uppercase tracking-wide">
+                About Us
+              </span>
+            </div>
 
-          <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-semibold mb-4">
-            Who We Are
-          </h2>
+            <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-semibold">
+              Who We Are
+            </h2>
+          </motion.div>
 
           <p className="text-gray-300 mb-4 leading-relaxed 2xl:text-lg">
             Agency Cope is a performance-driven digital marketing agency

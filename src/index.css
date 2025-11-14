@@ -26,3 +26,23 @@ body {
             rgba(179, 211, 53, 0) 75%,
             rgba(179, 211, 53, 0.3) 100%);
 }
+
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,9 +1,28 @@
+import { motion } from "framer-motion";
 import { FiChevronRight } from "react-icons/fi";
+
+const cardVariants = {
+  hidden: { opacity: 0.3, y: 60 }, // starts slightly to the right
+  visible: () => ({
+    opacity: 1,
+    y: 0, // slides into place
+    transition: {
+      delay: 0.1,
+      duration: 1.2, // smooth duration
+      ease: "easeOut", // smooth cubic-bezier ease
+    },
+  }),
+};
 
 export default function AboutAgency() {
   return (
     <section className="relative w-full pt-16 md:pt-24">
-      <div className="container-class mx-auto max-w-5xl px-6 text-center">
+      <motion.div
+        variants={cardVariants}
+        initial="hidden"
+        whileInView="visible"
+        className="container-class mx-auto max-w-5xl px-6 text-center"
+      >
         {/* Section Title with Icon */}
         <div className="flex items-center justify-center gap-1 mb-6">
           <FiChevronRight className="text-primary text-4xl font-extrabold" />
@@ -30,7 +49,7 @@ export default function AboutAgency() {
         <div className="mt-8 flex justify-center">
           <span className="block w-32 h-1 rounded-full bg-gradient-to-r from-primary/70 via-primary to-primary/70"></span>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

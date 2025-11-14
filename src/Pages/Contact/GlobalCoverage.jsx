@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import {
@@ -37,6 +38,31 @@ const OFFICES = [
   },
 ];
 
+const rightCardVariants = {
+  hidden: { opacity: 0.3, x: 80 }, // starts slightly to the right
+  visible: () => ({
+    opacity: 1,
+    x: 0, // slides into place
+    transition: {
+      delay: 0.1,
+      duration: 1.2, // smooth duration
+      ease: "easeOut", // smooth cubic-bezier ease
+    },
+  }),
+};
+const leftCardVariants = {
+  hidden: { opacity: 0.3, x: -80 }, // starts slightly to the right
+  visible: () => ({
+    opacity: 1,
+    x: 0, // slides into place
+    transition: {
+      delay: 0.1,
+      duration: 1.2, // smooth duration
+      ease: "easeOut", // smooth cubic-bezier ease
+    },
+  }),
+};
+
 export default function GlobalCoverage() {
   const [active, setActive] = useState("bd");
 
@@ -49,7 +75,7 @@ export default function GlobalCoverage() {
   const zoom = zoomByOffice[active];
 
   return (
-    <section className="relative w-full pb-16 md:pb-24">
+    <section className="relative w-full pb-16 md:pb-24 overflow-hidden">
       <div className="container-class">
         <SectionTitle
           title="Global Offices Network"
@@ -58,7 +84,12 @@ export default function GlobalCoverage() {
 
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           {/* Left column: selector */}
-          <div className="lg:col-span-3">
+          <motion.div
+            variants={leftCardVariants}
+            initial="hidden"
+            whileInView="visible"
+            className="lg:col-span-3"
+          >
             <div className="lg:h-[300px] rounded-2xl p-6 md:p-8 border border-white/10">
               <p className="mb-4 text-sm uppercase tracking-widest text-neutral-300 text-center">
                 Select a location
@@ -92,7 +123,7 @@ export default function GlobalCoverage() {
                 Active office
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right column: map */}
           <div className="lg:col-span-6">
@@ -215,7 +246,13 @@ export default function GlobalCoverage() {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-3">
+
+          <motion.div
+            variants={rightCardVariants}
+            initial="hidden"
+            whileInView="visible"
+            className="lg:col-span-3"
+          >
             <div className="lg:h-[300px] rounded-2xl border border-white/10 px-6 py-4 md:py-4 md:px-6">
               <h3 className="text-2xl font-semibold text-center mb-2 text-white">
                 Contact Us
@@ -256,7 +293,7 @@ export default function GlobalCoverage() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
