@@ -1,9 +1,20 @@
+import Banner from "../../../components/ui/Banner";
+
 export default function TermsAndConditions() {
   return (
     <div className="">
+      <Banner
+        bgImage="/images/page-banners/about-page-banner.jpg"
+        title="Terms & Conditions"
+        description="Please read these Terms and Conditions carefully before using our
+            website and services."
+        breadcrumbs={[
+          { label: "Terms & Conditions", href: "/terms-and-conditions" },
+        ]}
+      />
+
       {/* Banner */}
-      <section className="relative w-full h-52 md:h-68 lg:h-80 flex items-center justify-center border-y border-gray-700">
-        {/* Title */}
+      {/* <section className="relative w-full h-52 md:h-68 lg:h-80 flex items-center justify-center border-y border-gray-700">
         <div className="relative z-10 text-center px-6">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wide uppercase [word-spacing:2px]">
             Terms & Conditions
@@ -13,7 +24,7 @@ export default function TermsAndConditions() {
             website and services.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Content */}
       <section className="container-class mx-auto max-w-5xl py-16 px-6 space-y-10">

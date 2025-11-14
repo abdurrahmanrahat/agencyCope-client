@@ -75,7 +75,7 @@ export default function FaqPage() {
           <div className="absolute inset-0 bg-black opacity-70"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 px-6 grid place-items-center">
+          <div className="absolute inset-0 mt-16 px-6 grid place-items-center">
             <div className="flex flex-col items-center justify-center text-center">
               <h2 className="text-white text-[26px] md:text-[36px] lg:text-[44px] font-medium leading-snug drop-shadow-md">
                 Frequently Asked Questions

@@ -1,9 +1,17 @@
+import Banner from "../../../components/ui/Banner";
+
 export default function PrivacyPolicy() {
   return (
     <div className="">
+      <Banner
+        bgImage="/images/page-banners/about-page-banner.jpg"
+        title="Privacy Policy"
+        description="This Privacy Policy explains how we collect, use, and protect your
+            information."
+        breadcrumbs={[{ label: "Privacy Policy", href: "/privacy-policy" }]}
+      />
       {/* Banner */}
-      <section className="relative w-full h-52 md:h-68 lg:h-80 flex items-center justify-center border-y border-gray-700">
-        {/* Title */}
+      {/* <section className="relative w-full h-52 md:h-68 lg:h-80 flex items-center justify-center border-y border-gray-700">
         <div className="relative z-10 text-center px-6">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wide uppercase [word-spacing:2px]">
             Privacy Policy
@@ -13,7 +21,7 @@ export default function PrivacyPolicy() {
             information.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Content */}
       <section className="container-class mx-auto max-w-5xl py-16 px-6 space-y-10">

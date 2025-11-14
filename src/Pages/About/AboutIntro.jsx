@@ -29,7 +29,7 @@ export default function AboutIntro() {
               alt="About Us"
               className="object-cover brightness-75 group-hover:scale-105 transition-transform duration-700 h-[250px] md:h-[420px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-tl from-primary/50 via-transparent to-black "></div>
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,black,rgba(0,0,0,0.6),rgba(0,0,0,0.4),rgba(179,211,53,0.2),rgba(179,211,53,0.5))]"></div>
           </div>
         </div>
 
@@ -47,11 +47,10 @@ export default function AboutIntro() {
           </h2>
 
           <p className="text-gray-300 mb-4 leading-relaxed 2xl:text-lg">
-            AgencyCope is your 360° creative and digital agency. With more than
-            5 years of expertise, we craft high-impact digital marketing
-            strategies and creative content that deliver measurable growth.
-            Whether you’re a start-up or an established company, we help
-            businesses thrive in the fast-moving digital world.
+            Agency Cope is a performance-driven digital marketing agency
+            specializing in Graphic Design, SEO, Web Development, and Brand
+            Identity. With over 7 years of hands-on experience, we help brands
+            grow smarter and faster, based in Bangladesh serving globally.
           </p>
 
           <p className="text-gray-400 mb-6 leading-relaxed 2xl:text-lg">

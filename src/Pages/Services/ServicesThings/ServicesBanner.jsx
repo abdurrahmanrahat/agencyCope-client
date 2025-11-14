@@ -5,14 +5,14 @@ const ServicesBanner = () => {
   return (
     <section className="relative">
       <div
-        className="bg-cover bg-center bg-no-repeat h-[500px] md:h-[380px] xl:h-[440px] 2xl:h-[460px] relative"
+        className="bg-cover bg-center bg-no-repeat h-[600px] md:h-[480px] xl:h-[500px] 2xl:h-[560px] relative"
         style={{ backgroundImage: `url(${ServicesCover})` }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 px-6 grid place-items-center">
+        <div className="absolute inset-0 mt-16 px-6 grid place-items-center">
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-white text-[26px] md:text-[36px] lg:text-[44px] leading-snug drop-shadow-md">
               Building Strong Brands, United
